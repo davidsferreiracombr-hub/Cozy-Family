@@ -12,7 +12,7 @@ export function SidebarBuyCard() {
     <Card
       className="bg-[linear-gradient(180deg,_#fff,_#fff)] text-center dark:bg-[linear-gradient(180deg,_hsl(var(--card)),_hsl(var(--card)))]"
       role="complementary"
-      aria-label="Comprar Cozy Doodles"
+      aria-label="Comprar Cozy Coloring"
     >
       <CardContent className="p-4">
         <div className="text-3xl font-extrabold text-[#5a3940] dark:text-primary-foreground">

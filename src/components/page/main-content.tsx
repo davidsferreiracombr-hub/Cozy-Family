@@ -14,10 +14,10 @@ export function MainContent() {
     <main>
       <Card>
         <CardHeader>
-          <CardTitle id="product-title">Sobre o “Cozy Doodles”</CardTitle>
+          <CardTitle id="product-title">Sobre o “Cozy Coloring”</CardTitle>
           <CardDescription>
-            “Cozy Doodles” é um PDF com <strong>30 ilustrações</strong>,
-            desenhadas para oferecer momentos simples de bem-estar. São traços
+            “Cozy Coloring” é um PDF com <strong>30 ilustrações</strong>,
+            desenhadas para oferecer moments simples de bem-estar. São traços
             suaves, formas fofas e temas acolhedores — pensados para todas as
             idades. O arquivo vem em páginas para impressão em A4 (ou uso
             digital).

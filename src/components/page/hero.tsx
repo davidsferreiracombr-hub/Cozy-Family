@@ -13,7 +13,7 @@ export function Hero() {
       aria-labelledby="hero-title"
     >
       <div className="text-3xl font-bold tracking-tight text-[#6b4950] dark:text-primary-foreground/90">
-        <span className="font-extrabold text-primary">Cozy</span> Doodles{' '}
+        <span className="font-extrabold text-primary">Cozy</span> Coloring{' '}
         <small className="font-medium text-muted"> — Bobbie Goods</small>
       </div>
       <h1 id="hero-title" className="mt-2.5 text-muted-foreground">

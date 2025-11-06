@@ -17,8 +17,9 @@ export function Hero() {
         <small className="font-medium text-muted"> — Bobbie Goods</small>
       </div>
       <h1 id="hero-title" className="mt-2.5 text-muted-foreground">
-        Ilustrações fofas e aconchegantes para colorir e relaxar — perfeitas
-        para todas as idades.
+        Ilustrações <strong>fofas</strong> e <strong>aconchegantes</strong> para{' '}
+        <strong>colorir</strong> e <strong>relaxar</strong> — perfeitas para
+        todas as idades.
       </h1>
 
       <div

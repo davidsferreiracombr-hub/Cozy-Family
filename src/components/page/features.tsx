@@ -7,7 +7,7 @@ const features = [
   },
   {
     icon: <Puzzle className="mx-auto h-9 w-9 text-muted-foreground" />,
-    label: 'Simples & Acessível',
+    label: 'Criatividade',
   },
   {
     icon: <Smile className="mx-auto h-9 w-9 text-muted-foreground" />,

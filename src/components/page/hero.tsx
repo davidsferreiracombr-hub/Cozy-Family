@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { useModal } from '@/context/modal-context';
-import { HelpCircle, Sparkles } from 'lucide-react';
+import { HelpCircle, Lock } from 'lucide-react';
 
 export function Hero() {
   const { openModal } = useModal();
@@ -22,31 +22,36 @@ export function Hero() {
       </h1>
 
       <div
-        className="mt-6 flex flex-wrap items-center justify-center gap-3"
+        className="mt-6 flex flex-col items-center justify-center gap-3"
         role="group"
         aria-label="Call to action"
       >
-        <div className="rounded-full bg-secondary px-3 py-2 font-semibold text-secondary-foreground shadow-[0_4px_14px_rgba(216,150,160,0.12)]">
-          30 artes • PDF • R$ 34,90
+        <div className="flex flex-wrap items-center justify-center gap-3">
+          <div className="rounded-full bg-secondary px-3 py-2 font-semibold text-secondary-foreground shadow-[0_4px_14px_rgba(216,150,160,0.12)]">
+            30 artes • PDF • R$ 34,90
+          </div>
+          <Button
+            onClick={openModal}
+            className="rounded-full px-5 py-6 font-bold shadow-[0_8px_18px_rgba(232,143,160,0.16)] transition-transform duration-150 ease-in-out hover:-translate-y-0.5 hover:bg-[#d86e86]"
+            size="lg"
+          >
+            <Lock className="mr-2 h-5 w-5" />
+            Comprar com segurança
+          </Button>
+          <Button
+            variant="ghost"
+            className="rounded-md border border-secondary text-muted-foreground"
+            asChild
+          >
+            <a href="#faq">
+              <HelpCircle />
+              Perguntas frequentes
+            </a>
+          </Button>
         </div>
-        <Button
-          onClick={openModal}
-          className="rounded-full px-5 py-6 font-bold shadow-[0_8px_18px_rgba(232,143,160,0.16)] transition-transform duration-150 ease-in-out hover:-translate-y-0.5 hover:bg-[#d86e86]"
-          size="lg"
-        >
-          <Sparkles className="mr-2 h-5 w-5" />
-          Pagar R$ 34,90 — Quero agora
-        </Button>
-        <Button
-          variant="ghost"
-          className="rounded-md border border-secondary text-muted-foreground"
-          asChild
-        >
-          <a href="#faq">
-            <HelpCircle />
-            Perguntas frequentes
-          </a>
-        </Button>
+        <p className="mt-2 text-xs text-muted-foreground">
+          Pagamento seguro • Acesso imediato
+        </p>
       </div>
     </section>
   );

@@ -15,6 +15,9 @@ export function DoodleSamples() {
       <h3 className="text-base font-semibold text-foreground">
         Amostras de Ilustrações
       </h3>
+      <p className="text-sm text-muted-foreground">
+        Imagens para todas as idades
+      </p>
       <Carousel
         opts={{
           align: 'center',
@@ -28,7 +31,7 @@ export function DoodleSamples() {
               key={sample.id}
               className="pl-2 basis-4/5 md:basis-1/2"
             >
-              <div className="overflow-hidden rounded-md bg-card shadow-[0_6px_14px_rgba(120,90,95,0.04)] dark:bg-secondary">
+              <div className="overflow-hidden rounded-md bg-card shadow-[0_8px_30px_rgba(83,62,64,0.08)] dark:bg-secondary">
                 <div className="relative aspect-[210/297] w-full">
                   <Image
                     src={sample.imageUrl}

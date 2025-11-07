@@ -17,16 +17,16 @@ export function DoodleSamples() {
       </h3>
       <Carousel
         opts={{
-          align: 'start',
+          align: 'center',
           loop: true,
         }}
-        className="mt-3 -ml-4 w-full"
+        className="mt-3 w-full"
       >
-        <CarouselContent>
+        <CarouselContent className="-ml-2">
           {samples.map((sample) => (
             <CarouselItem
               key={sample.id}
-              className="basis-full pl-4 md:basis-1/2"
+              className="pl-2 basis-4/5 md:basis-1/2"
             >
               <div className="overflow-hidden rounded-md bg-card shadow-[0_6px_14px_rgba(120,90,95,0.04)] dark:bg-secondary">
                 <div className="relative aspect-[210/297] w-full">

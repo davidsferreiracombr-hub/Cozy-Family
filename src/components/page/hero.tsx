@@ -10,19 +10,19 @@ export function Hero() {
 
   return (
     <section
-      className="rounded-lg bg-[linear-gradient(180deg,_rgba(255,255,255,0.8),_rgba(255,255,255,0.9))] p-7 text-center shadow-[0_8px_30px_rgba(83,62,64,0.06)] dark:bg-[linear-gradient(180deg,_hsl(var(--card)/0.8),_hsl(var(--card)/0.9))]"
+      className="rounded-lg bg-[linear-gradient(180deg,_rgba(255,255,255,0.8),_rgba(255,255,255,0.9))] p-4 text-center shadow-[0_8px_30px_rgba(83,62,64,0.06)] dark:bg-[linear-gradient(180deg,_hsl(var(--card)/0.8),_hsl(var(--card)/0.9))] sm:p-7"
       aria-labelledby="hero-title"
     >
       <div className="text-3xl font-bold tracking-tight text-[#6b4950] dark:text-primary-foreground/90">
         <span className="font-extrabold text-primary">Cozy</span> Coloring{' '}
         <small className="font-medium text-muted"> — Bobbie Goods</small>
       </div>
-      <div className="mt-4 mx-auto max-w-md overflow-hidden rounded-lg shadow-lg">
+      <div className="mx-auto mt-4 max-w-sm overflow-hidden rounded-lg shadow-lg">
         <Image
           src="https://i.imgur.com/zCChdNI.png"
           alt="Cozy Coloring book cover"
-          width={800}
-          height={600}
+          width={600}
+          height={450}
           className="w-full object-cover"
           data-ai-hint="coloring book cover"
         />
@@ -38,13 +38,13 @@ export function Hero() {
         role="group"
         aria-label="Call to action"
       >
-        <div className="flex flex-wrap items-center justify-center gap-3">
+        <div className="flex flex-col flex-wrap items-center justify-center gap-3 sm:flex-row">
           <div className="rounded-full bg-secondary px-3 py-2 font-semibold text-secondary-foreground shadow-[0_4px_14px_rgba(216,150,160,0.12)]">
             30 artes • PDF • R$ 34,90
           </div>
           <Button
             onClick={openModal}
-            className="rounded-full px-5 py-6 font-bold shadow-[0_8px_18px_rgba(232,143,160,0.16)] transition-transform duration-150 ease-in-out hover:-translate-y-0.5 hover:bg-[#d86e86]"
+            className="w-full rounded-full px-5 py-6 font-bold shadow-[0_8px_18px_rgba(232,143,160,0.16)] transition-transform duration-150 ease-in-out hover:-translate-y-0.5 hover:bg-[#d86e86] sm:w-auto"
             size="lg"
           >
             <Lock className="mr-2 h-5 w-5" />

@@ -69,7 +69,7 @@ export function CheckoutModal() {
         <p className="text-xs text-muted-foreground">
           Pagamento e entrega via plataforma segura.
         </p>
-        <DialogFooter className="sm:justify-end">
+        <DialogFooter className="flex-col-reverse gap-2 sm:flex-row sm:justify-end">
           <Button type="button" variant="secondary" onClick={closeModal}>
             Cancelar
           </Button>

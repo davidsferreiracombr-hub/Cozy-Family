@@ -17,13 +17,13 @@ export function Hero() {
         <span className="font-extrabold text-primary">Cozy</span> Coloring{' '}
         <small className="font-medium text-muted"> — Bobbie Goods</small>
       </div>
-      <div className="mt-4 overflow-hidden rounded-lg shadow-lg">
+      <div className="mt-4 mx-auto max-w-md overflow-hidden rounded-lg shadow-lg">
         <Image
           src="https://i.imgur.com/zCChdNI.png"
           alt="Cozy Coloring book cover"
           width={800}
           height={600}
-          className="aspect-video w-full object-cover"
+          className="w-full object-cover"
           data-ai-hint="coloring book cover"
         />
       </div>

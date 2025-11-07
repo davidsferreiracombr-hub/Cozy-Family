@@ -16,7 +16,7 @@ export function DoodleSamples() {
             key={sample.id}
             className="overflow-hidden rounded-md bg-card shadow-[0_6px_14px_rgba(120,90,95,0.04)] dark:bg-secondary"
           >
-            <div className="relative aspect-square w-full">
+            <div className="relative aspect-[210/297] w-full">
               <Image
                 src={sample.imageUrl}
                 alt={sample.description}

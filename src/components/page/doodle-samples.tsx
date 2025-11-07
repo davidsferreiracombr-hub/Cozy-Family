@@ -10,7 +10,7 @@ export function DoodleSamples() {
       <h3 className="text-base font-semibold text-foreground">
         Amostras de Ilustrações
       </h3>
-      <div className="mt-3 grid grid-cols-1 gap-4 sm:grid-cols-3">
+      <div className="mt-3 grid grid-cols-2 gap-4 sm:grid-cols-3">
         {samples.map((sample) => (
           <div
             key={sample.id}

@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { useModal } from '@/context/modal-context';
 import { HelpCircle, Lock } from 'lucide-react';
+import Image from 'next/image';
 
 export function Hero() {
   const { openModal } = useModal();
@@ -16,7 +17,17 @@ export function Hero() {
         <span className="font-extrabold text-primary">Cozy</span> Coloring{' '}
         <small className="font-medium text-muted"> — Bobbie Goods</small>
       </div>
-      <h1 id="hero-title" className="mt-2.5 text-muted-foreground">
+      <div className="mt-4 overflow-hidden rounded-lg shadow-lg">
+        <Image
+          src="https://i.imgur.com/zCChdNI.png"
+          alt="Cozy Coloring book cover"
+          width={800}
+          height={600}
+          className="aspect-video w-full object-cover"
+          data-ai-hint="coloring book cover"
+        />
+      </div>
+      <h1 id="hero-title" className="mt-6 text-muted-foreground">
         Ilustrações <strong>fofas</strong> e <strong>aconchegantes</strong> para{' '}
         <strong>colorir</strong> e <strong>relaxar</strong> — perfeitas para
         todas as idades.

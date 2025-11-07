@@ -29,7 +29,7 @@ export function DoodleSamples() {
           {samples.map((sample) => (
             <CarouselItem
               key={sample.id}
-              className="basis-4/5 pl-2 md:basis-1/2"
+              className="basis-3/4 pl-2 md:basis-1/2"
             >
               <div className="overflow-hidden rounded-md bg-card shadow-xl dark:bg-secondary">
                 <div className="relative aspect-[210/297] w-full">

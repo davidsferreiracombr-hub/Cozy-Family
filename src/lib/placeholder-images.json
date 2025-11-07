@@ -14,9 +14,9 @@
     },
     {
       "id": "sample-3",
-      "description": "A sweet dessert coloring page sample.",
-      "imageUrl": "https://images.unsplash.com/photo-1580511100759-f91e5b2d0c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzd2VldCUyMGRlc3NlcnR8ZW58MHx8fHwxNzYyNDY5MTU3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "sweet dessert"
+      "description": "A cute items coloring page sample.",
+      "imageUrl": "https://i.imgur.com/qAzrT2T.png",
+      "imageHint": "cute items"
     }
   ]
 }

@@ -10,6 +10,7 @@ export function SidebarBuyCard() {
 
   return (
     <Card
+      id="buy-now"
       className="bg-[linear-gradient(180deg,_#fff,_#fff)] text-center dark:bg-[linear-gradient(180deg,_hsl(var(--card)),_hsl(var(--card)))]"
       role="complementary"
       aria-label="Comprar Cozy Coloring"

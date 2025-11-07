@@ -1,16 +1,13 @@
 "use client";
 
 import { Button } from '@/components/ui/button';
-import { useModal } from '@/context/modal-context';
 import { Eye, HelpCircle, Lock } from 'lucide-react';
 import Image from 'next/image';
 
 export function Hero() {
-  const { openModal } = useModal();
-
   return (
     <section
-      className="rounded-xl bg-[linear-gradient(180deg,_rgba(255,255,255,0.8),_rgba(255,255,255,0.9))] p-4 text-center shadow-lg shadow-primary/10 dark:bg-[linear-gradient(180deg,_hsl(var(--card)/0.8),_hsl(var(--card)/0.9))] sm:p-7"
+      className="rounded-xl bg-card p-4 text-center shadow-lg shadow-primary/10 sm:p-7"
       aria-labelledby="hero-title"
     >
       <div className="text-4xl font-bold tracking-tight text-[#6b4950] dark:text-primary-foreground/90">
@@ -23,7 +20,7 @@ export function Hero() {
           alt="Cozy Coloring book cover"
           width={600}
           height={450}
-          className="w-full object-cover"
+          className="w-full rounded-lg object-cover"
           data-ai-hint="coloring book cover"
         />
       </div>
@@ -43,12 +40,14 @@ export function Hero() {
             30 artes • PDF • R$ 34,90
           </div>
           <Button
-            onClick={openModal}
+            asChild
             className="w-full rounded-full px-6 py-6 text-base font-bold shadow-lg shadow-primary/20 transition-transform duration-150 ease-in-out hover:-translate-y-0.5 hover:bg-[#d86e86] sm:w-auto"
             size="lg"
           >
-            <Lock className="mr-2 h-5 w-5" />
-            Comprar com segurança
+            <a href="#buy-now">
+              <Lock className="mr-2 h-5 w-5" />
+              Comprar com segurança
+            </a>
           </Button>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-2">

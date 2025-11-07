@@ -11,7 +11,7 @@ export function DoodleSamples() {
   const samples = PlaceHolderImages.slice(0, 3);
 
   return (
-    <div className="mt-6">
+    <div className="mt-6" id="doodle-samples">
       <h3 className="text-base font-semibold text-foreground">
         Amostras de Ilustrações
       </h3>
@@ -31,7 +31,7 @@ export function DoodleSamples() {
               key={sample.id}
               className="basis-4/5 pl-2 md:basis-1/2"
             >
-              <div className="overflow-hidden rounded-md bg-card shadow-lg dark:bg-secondary">
+              <div className="overflow-hidden rounded-md bg-card shadow-xl dark:bg-secondary">
                 <div className="relative aspect-[210/297] w-full">
                   <Image
                     src={sample.imageUrl}

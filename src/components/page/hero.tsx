@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { useModal } from '@/context/modal-context';
-import { HelpCircle, Lock } from 'lucide-react';
+import { Eye, HelpCircle, Lock } from 'lucide-react';
 import Image from 'next/image';
 
 export function Hero() {
@@ -49,6 +49,12 @@ export function Hero() {
           >
             <Lock className="mr-2 h-5 w-5" />
             Comprar com segurança
+          </Button>
+          <Button variant="outline" className="rounded-md" asChild>
+            <a href="#doodle-samples">
+              <Eye />
+              Ver amostras
+            </a>
           </Button>
           <Button
             variant="ghost"

@@ -17,7 +17,7 @@ export function Hero() {
         <span className="font-extrabold text-primary">Cozy</span> Coloring{' '}
         <small className="font-medium text-muted"> — Bobbie Goods</small>
       </div>
-      <div className="mx-auto mt-4 max-w-xs overflow-hidden rounded-lg shadow-lg">
+      <div className="mx-auto mt-4 max-w-[280px] overflow-hidden rounded-lg border border-foreground/20">
         <Image
           src="https://i.imgur.com/zCChdNI.png"
           alt="Cozy Coloring book cover"

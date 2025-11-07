@@ -16,22 +16,22 @@ export function DoodleSamples() {
         Amostras de Ilustrações
       </h3>
       <p className="text-sm text-muted-foreground">
-        Imagens para todas as idades
+        Um convite para colorir e relaxar
       </p>
       <Carousel
         opts={{
           align: 'center',
           loop: true,
         }}
-        className="mt-3 w-full"
+        className="mt-4 w-full"
       >
         <CarouselContent className="-ml-2">
           {samples.map((sample) => (
             <CarouselItem
               key={sample.id}
-              className="pl-2 basis-4/5 md:basis-1/2"
+              className="basis-4/5 pl-2 md:basis-1/2"
             >
-              <div className="overflow-hidden rounded-md bg-card shadow-[0_8px_30px_rgba(83,62,64,0.08)] dark:bg-secondary">
+              <div className="overflow-hidden rounded-md bg-card shadow-lg dark:bg-secondary">
                 <div className="relative aspect-[210/297] w-full">
                   <Image
                     src={sample.imageUrl}

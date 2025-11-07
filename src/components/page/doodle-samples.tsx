@@ -15,7 +15,7 @@ export function DoodleSamples() {
       <h3 className="text-base font-semibold text-foreground">
         Amostras de Ilustrações
       </h3>
-      <p className="text-sm text-muted-foreground">
+      <p className="mt-2 text-sm text-muted-foreground">
         Um convite para colorir e relaxar
       </p>
       <Carousel
@@ -31,7 +31,7 @@ export function DoodleSamples() {
               key={sample.id}
               className="basis-3/4 pl-2 md:basis-1/2"
             >
-              <div className="overflow-hidden rounded-md bg-card shadow-xl dark:bg-secondary">
+              <div className="overflow-hidden rounded-md border border-foreground/20 bg-card dark:bg-secondary">
                 <div className="relative aspect-[210/297] w-full">
                   <Image
                     src={sample.imageUrl}

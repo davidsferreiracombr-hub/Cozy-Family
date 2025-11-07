@@ -23,7 +23,7 @@
     --border: 354 63% 92%;
     --input: 354 63% 94%;
     --ring: 348 78% 78%;
-    --radius: 18px;
+    --radius: 1rem;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -58,7 +58,7 @@
     --border: 348 10% 30%;
     --input: 348 10% 25%;
     --ring: 348 78% 78%;
-    --radius: 18px;
+    --radius: 1rem;
   }
 }
 

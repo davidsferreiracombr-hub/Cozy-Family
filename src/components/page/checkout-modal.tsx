@@ -31,16 +31,9 @@ export function CheckoutModal() {
       return;
     }
     
-    // Placeholder for payment integration
+    window.open('https://pay.cakto.com.br/oc4ztnt_639973', '_blank');
     closeModal();
-    setTimeout(() => {
-      toast({
-        title: 'Obrigado!',
-        description:
-          'Em breve, você será redirecionado para o pagamento. Após a confirmação, enviaremos o link para o seu e-mail.',
-      });
-      setEmail('');
-    }, 300);
+    setEmail('');
   };
 
   return (

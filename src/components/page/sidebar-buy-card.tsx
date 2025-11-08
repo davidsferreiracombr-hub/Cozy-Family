@@ -6,8 +6,6 @@ import { useModal } from '@/context/modal-context';
 import { ShoppingBag } from 'lucide-react';
 
 export function SidebarBuyCard() {
-  const { openModal } = useModal();
-
   return (
     <Card
       id="buy-now"
@@ -21,12 +19,14 @@ export function SidebarBuyCard() {
         </div>
         <div className="text-sm text-muted-foreground">30 ilustrações • PDF digital</div>
         <Button
-          onClick={openModal}
+          asChild
           className="mt-4 w-full rounded-full px-5 py-6 font-bold shadow-lg transition-transform duration-150 ease-in-out hover:-translate-y-0.5 hover:bg-[#d86e86]"
           size="lg"
         >
-          <ShoppingBag className="mr-2 h-5 w-5" />
-          Comprar agora
+          <a href="https://pay.cakto.com.br/oc4ztnt_639973" target="_blank" rel="noopener noreferrer">
+            <ShoppingBag className="mr-2 h-5 w-5" />
+            Comprar agora
+          </a>
         </Button>
         <div className="mt-2.5 text-xs text-muted-foreground">
           Pagamento seguro • Arquivo entregue por link após confirmação

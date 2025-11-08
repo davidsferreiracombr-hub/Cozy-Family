@@ -40,7 +40,7 @@ export function CheckoutModal() {
     <Dialog open={isOpen} onOpenChange={closeModal}>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle>Finalizar compra — R$ 34,90</DialogTitle>
+          <DialogTitle>Finalizar compra — R$ 19,90</DialogTitle>
           <DialogDescription>
             Insira seu e-mail para receber o link de download após a confirmação
             do pagamento.
@@ -71,7 +71,7 @@ export function CheckoutModal() {
             onClick={handlePayment}
             className="rounded-lg font-bold transition-transform duration-150 ease-in-out hover:-translate-y-0.5 hover:bg-[#d86e86]"
           >
-            Pagar R$ 34,90
+            Pagar R$ 19,90
           </Button>
         </DialogFooter>
         <p className="text-xs text-muted-foreground">

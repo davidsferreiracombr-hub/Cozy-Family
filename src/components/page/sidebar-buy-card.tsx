@@ -15,7 +15,7 @@ export function SidebarBuyCard() {
     >
       <CardContent className="p-4">
         <div className="text-3xl font-extrabold text-[#5a3940] dark:text-primary-foreground">
-          R$ 34,90
+          R$ 19,90
         </div>
         <div className="text-sm text-muted-foreground">30 ilustrações • PDF digital</div>
         <Button

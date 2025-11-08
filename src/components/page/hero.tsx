@@ -37,7 +37,7 @@ export function Hero() {
       >
         <div className="flex flex-col flex-wrap items-center justify-center gap-3 sm:flex-row">
           <div className="rounded-full bg-secondary px-4 py-2 text-base font-semibold text-secondary-foreground shadow-sm">
-            30 artes • PDF • R$ 34,90
+            30 artes • PDF • R$ 19,90
           </div>
           <Button
             asChild

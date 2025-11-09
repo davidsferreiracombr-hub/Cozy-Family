@@ -4,21 +4,27 @@ import { Faq } from './faq';
 
 export function Sidebar() {
   return (
-    <aside className="flex flex-col gap-4">
+    <aside className="flex flex-col gap-8">
       <SidebarBuyCard />
       <Card>
         <CardHeader>
-          <CardTitle>Detalhes</CardTitle>
+          <CardTitle className="text-xl">Detalhes do Produto</CardTitle>
         </CardHeader>
-        <CardContent className="text-sm text-muted-foreground">
+        <CardContent className="space-y-3 text-sm text-muted-foreground">
           <p>
-            Formato: PDF • Páginas: 30 • Estilo: ilustrativo, traços suaves •
-            Para todas as idades.
+            <strong>Formato:</strong> PDF Digital
+            <br />
+            <strong>Páginas:</strong> 30 ilustrações
+            <br />
+            <strong>Estilo:</strong> Traços suaves e fofos
+            <br />
+            <strong>Idade:</strong> Para todas as idades
           </p>
-          <ul className="ml-5 mt-4 list-disc space-y-1">
+          <ul className="ml-4 list-disc space-y-1">
             <li>Arquivo único em PDF (download)</li>
             <li>Impressão A4 recomendada</li>
-            <li>Uso pessoal; para revenda, entre em contato</li>
+            <li>Compatível com apps de pintura digital</li>
+            <li>Uso pessoal. Para licença comercial, entre em contato.</li>
           </ul>
         </CardContent>
       </Card>

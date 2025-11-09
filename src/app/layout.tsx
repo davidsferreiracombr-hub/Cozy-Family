@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Providers } from '@/components/providers';
 import { cn } from '@/lib/utils';
+import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
   title: 'Cozy Coloring — Bobbie Goods',
@@ -24,17 +25,13 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body
-        className={cn(
-          'font-body antialiased',
-          "bg-[linear-gradient(180deg,_hsl(var(--background)),_#fff)]"
-        )}
-      >
-        <Providers>{children}</Providers>
+      <body className={cn('font-body antialiased')}>
+        {children}
+        <Toaster />
       </body>
     </html>
   );

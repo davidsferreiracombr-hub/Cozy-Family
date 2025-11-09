@@ -1,38 +1,59 @@
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+import { Card, CardContent } from '../ui/card';
+
 const testimonials = [
   {
     quote:
       'Simplesmente adorei — desenhos delicados e super relaxantes. Usei com meus sobrinhos e aproveitamos muito.',
-    author: 'Marina, SP',
+    author: 'Marina S.',
+    location: 'São Paulo, SP',
+    avatar: 'M',
   },
   {
     quote:
       'Comprei para mim e também para presentear minha mãe. Qualidade excelente e super prazeroso de colorir.',
-    author: 'Rafael, RJ',
+    author: 'Rafael L.',
+    location: 'Rio de Janeiro, RJ',
+    avatar: 'R',
   },
   {
     quote:
       'Design fofo e temas acolhedores. Recomendo para quem quer relaxar depois do trabalho.',
-    author: 'Camila, BH',
+    author: 'Camila P.',
+    location: 'Belo Horizonte, BH',
+    avatar: 'C',
   },
 ];
 
 export function Testimonials() {
   return (
-    <div className="mt-6">
-      <h2 className="text-xl font-semibold tracking-tight">Comentários</h2>
-      <div className="mt-4 flex flex-col gap-3" aria-live="polite">
+    <div className="mt-12">
+      <h2 className="text-center text-2xl font-bold tracking-tight">
+        O que nossos clientes dizem
+      </h2>
+      <div
+        className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+        aria-live="polite"
+      >
         {testimonials.map((testimonial, index) => (
-          <blockquote
-            key={index}
-            className="rounded-md bg-secondary p-4 text-left text-sm"
-          >
-            <p className="italic text-secondary-foreground/80">
-              "{testimonial.quote}"
-            </p>
-            <footer className="mt-2 text-sm font-bold text-secondary-foreground">
-              — {testimonial.author}
-            </footer>
-          </blockquote>
+          <Card key={index}>
+            <CardContent className="p-6">
+              <blockquote className="text-base text-foreground">
+                <p>"{testimonial.quote}"</p>
+              </blockquote>
+              <div className="mt-4 flex items-center">
+                <Avatar>
+                  <AvatarFallback>{testimonial.avatar}</AvatarFallback>
+                </Avatar>
+                <div className="ml-3">
+                  <p className="font-semibold">{testimonial.author}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {testimonial.location}
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         ))}
       </div>
     </div>

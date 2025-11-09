@@ -1,39 +1,45 @@
+import { Card } from '@/components/ui/card';
 import { HeartHandshake, Puzzle, Smile } from 'lucide-react';
 
 const features = [
   {
-    icon: <HeartHandshake className="mx-auto h-9 w-9 text-muted-foreground" />,
-    label: 'Relaxamento',
+    icon: <HeartHandshake className="h-8 w-8 text-primary" />,
+    label: 'Relaxe e Desconecte',
+    description:
+      'Uma atividade terapêutica para aliviar o estresse do dia a dia.',
   },
   {
-    icon: <Puzzle className="mx-auto h-9 w-9 text-muted-foreground" />,
-    label: 'Criatividade',
+    icon: <Puzzle className="h-8 w-8 text-primary" />,
+    label: 'Estimule a Criatividade',
+    description:
+      'Dê vida aos desenhos com suas cores e libere seu lado artístico.',
   },
   {
-    icon: <Smile className="mx-auto h-9 w-9 text-muted-foreground" />,
-    label: 'Para todas as idades',
+    icon: <Smile className="h-8 w-8 text-primary" />,
+    label: 'Para Todas as Idades',
+    description:
+      'Perfeito para crianças, adultos e para compartilhar em família.',
   },
 ];
 
 export function Features() {
   return (
-    <div className="mt-6">
-      <h2 className="text-xl font-semibold tracking-tight">Por que vai amar</h2>
-      <div
-        className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-3"
-        role="list"
-      >
+    <div className="mt-12">
+      <h2 className="text-center text-2xl font-bold tracking-tight">
+        Por que você vai amar
+      </h2>
+      <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
         {features.map((feature, index) => (
-          <div
+          <Card
             key={index}
-            className="rounded-md bg-secondary p-3 text-center"
-            role="listitem"
+            className="flex flex-col items-center p-6 text-center"
           >
             {feature.icon}
-            <small className="mt-2 block font-semibold text-secondary-foreground">
-              {feature.label}
-            </small>
-          </div>
+            <h3 className="mt-4 text-lg font-semibold">{feature.label}</h3>
+            <p className="mt-2 text-sm text-muted-foreground">
+              {feature.description}
+            </p>
+          </Card>
         ))}
       </div>
     </div>

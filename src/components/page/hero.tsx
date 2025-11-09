@@ -1,75 +1,98 @@
 "use client";
 
 import { Button } from '@/components/ui/button';
-import { Eye, HelpCircle, Lock } from 'lucide-react';
+import { ArrowRight, CheckCircle, Eye, HelpCircle } from 'lucide-react';
 import Image from 'next/image';
 
 export function Hero() {
   return (
     <section
-      className="rounded-xl bg-card p-4 text-center shadow-lg shadow-primary/10 sm:p-7"
+      className="rounded-xl bg-card p-6 text-center sm:p-8"
       aria-labelledby="hero-title"
     >
-      <div className="text-4xl font-bold tracking-tight text-[#6b4950] dark:text-primary-foreground/90">
-        <span className="font-extrabold text-primary">Cozy</span> Coloring{' '}
-        <small className="font-medium text-muted"> — Bobbie Goods</small>
+      <div className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
+        <span className="text-primary">Cozy</span> Coloring
       </div>
-      <div className="mx-auto mt-6 max-w-[280px]">
-        <Image
-          src="https://i.imgur.com/zCChdNI.png"
-          alt="Cozy Coloring book cover"
-          width={600}
-          height={450}
-          className="w-full rounded-lg object-cover"
-          data-ai-hint="coloring book cover"
-        />
+      <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground">
+        por <strong>Bobbie Goods</strong>
+      </p>
+
+      <div className="mt-8 grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+        <div className="relative mx-auto w-full max-w-sm">
+          <Image
+            src="https://i.imgur.com/zCChdNI.png"
+            alt="Cozy Coloring book cover"
+            width={600}
+            height={450}
+            className="w-full rounded-lg object-cover"
+            data-ai-hint="coloring book cover"
+            priority
+          />
+        </div>
+        <div className="text-left">
+          <h1
+            id="hero-title"
+            className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl"
+          >
+            Ilustrações fofas e aconchegantes para colorir e relaxar.
+          </h1>
+          <p className="mt-4 text-muted-foreground">
+            Perfeito para todas as idades, nosso livro digital oferece 30
+            desenhos únicos para despertar sua criatividade e proporcionar
+            momentos de paz.
+          </p>
+          <ul className="mt-6 space-y-3 text-muted-foreground">
+            <li className="flex items-center gap-2">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <span>
+                <strong>30 ilustrações</strong> originais em alta resolução.
+              </span>
+            </li>
+            <li className="flex items-center gap-2">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <span>
+                Formato <strong>PDF pronto para imprimir</strong> ou usar em
+                tablets.
+              </span>
+            </li>
+            <li className="flex items-center gap-2">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <span>
+                Acesso <strong>imediato</strong> após a compra.
+              </span>
+            </li>
+          </ul>
+        </div>
       </div>
-      <h1 id="hero-title" className="mt-6 text-lg text-muted-foreground">
-        Ilustrações <strong>fofas</strong> e <strong>aconchegantes</strong> para{' '}
-        <strong>colorir</strong> e <strong>relaxar</strong> — perfeitas para
-        todas as idades.
-      </h1>
 
       <div
-        className="mt-8 flex flex-col items-center justify-center gap-4"
+        className="mt-10 flex flex-col items-center justify-center gap-4"
         role="group"
         aria-label="Call to action"
       >
-        <div className="flex flex-col flex-wrap items-center justify-center gap-3 sm:flex-row">
-          <div className="rounded-full bg-secondary px-4 py-2 text-base font-semibold text-secondary-foreground shadow-sm">
-            30 artes • PDF • R$ 19,90
-          </div>
-          <Button
-            asChild
-            className="w-full rounded-full px-6 py-6 text-base font-bold shadow-lg shadow-primary/20 transition-transform duration-150 ease-in-out hover:-translate-y-0.5 hover:bg-[#d86e86] sm:w-auto"
-            size="lg"
-          >
-            <a href="#buy-now">
-              <Lock className="mr-2 h-5 w-5" />
-              Comprar com segurança
-            </a>
-          </Button>
-        </div>
-        <div className="flex flex-wrap items-center justify-center gap-2">
-           <Button variant="outline" className="rounded-full" asChild>
+        <Button asChild size="lg" className="w-full font-bold sm:w-auto">
+          <a href="#buy-now">
+            Comprar Agora por R$ 19,90
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </a>
+        </Button>
+
+        <div className="flex flex-wrap items-center justify-center gap-4">
+          <Button variant="ghost" asChild>
             <a href="#doodle-samples">
-              <Eye />
+              <Eye className="mr-2" />
               Ver amostras
             </a>
           </Button>
-          <Button
-            variant="ghost"
-            className="rounded-full border border-transparent text-muted-foreground hover:border-secondary hover:bg-secondary"
-            asChild
-          >
+          <Button variant="ghost" asChild>
             <a href="#faq">
-              <HelpCircle />
+              <HelpCircle className="mr-2" />
               Perguntas frequentes
             </a>
           </Button>
         </div>
         <p className="mt-2 text-xs text-muted-foreground">
-          Pagamento seguro • Acesso imediato
+          Pagamento seguro • Acesso vitalício
         </p>
       </div>
     </section>

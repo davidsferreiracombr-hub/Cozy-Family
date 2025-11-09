@@ -5,17 +5,20 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from '@/components/ui/carousel';
+import { Card } from '../ui/card';
 
 export function DoodleSamples() {
   const samples = PlaceHolderImages.slice(0, 3);
 
   return (
-    <div className="mt-8 pt-4" id="doodle-samples">
-      <h3 className="text-center text-xl font-semibold text-foreground">
+    <div className="mt-12 pt-4" id="doodle-samples">
+      <h3 className="text-center text-2xl font-bold text-foreground">
         Amostras de Ilustrações
       </h3>
-      <p className="mt-2 text-center text-sm text-muted-foreground">
+      <p className="mt-2 text-center text-muted-foreground">
         Um convite para colorir e relaxar
       </p>
       <Carousel
@@ -23,28 +26,30 @@ export function DoodleSamples() {
           align: 'center',
           loop: true,
         }}
-        className="mt-6 w-full"
+        className="mt-8 w-full"
       >
-        <CarouselContent className="-ml-2">
+        <CarouselContent className="-ml-4">
           {samples.map((sample) => (
             <CarouselItem
               key={sample.id}
-              className="basis-3/4 pl-2 md:basis-1/2"
+              className="pl-4 md:basis-1/2 lg:basis-1/3"
             >
-              <div className="overflow-hidden rounded-xl border-2 border-foreground/10 bg-card p-2 shadow-sm dark:bg-secondary">
-                <div className="relative aspect-[210/297] w-full overflow-hidden rounded-lg">
+              <Card className="overflow-hidden">
+                <div className="relative aspect-[210/297] w-full">
                   <Image
                     src={sample.imageUrl}
                     alt={sample.description}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-300 hover:scale-105"
                     data-ai-hint={sample.imageHint}
                   />
                 </div>
-              </div>
+              </Card>
             </CarouselItem>
           ))}
         </CarouselContent>
+        <CarouselPrevious className="ml-14" />
+        <CarouselNext className="mr-14" />
       </Carousel>
     </div>
   );

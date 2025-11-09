@@ -20,7 +20,7 @@ export function DoodleSamples() {
         Amostras de Ilustrações
       </h2>
       <p className="mx-auto mt-4 max-w-2xl text-center text-lg text-muted-foreground">
-        Um convite para colorir e relaxar com nossos desenhos.
+        Um convite para colorir e relaxar com nossos desenhos. Deslize ou use as setas para explorar um pouco do que você encontrará.
       </p>
       <Carousel
         opts={{
@@ -36,16 +36,14 @@ export function DoodleSamples() {
               className="pl-4 md:basis-1/2 lg:basis-1/3"
             >
               <Card className="overflow-hidden rounded-xl border-border/10 shadow-lg transition-shadow hover:shadow-xl">
-                <div className="relative aspect-[210/297] w-full bg-white flex items-center justify-center p-4">
-                  <Image
-                    src={sample.imageUrl}
-                    alt={sample.description}
-                    width={210}
-                    height={297}
-                    className="object-contain h-full w-full transition-transform duration-300 hover:scale-105"
-                    data-ai-hint={sample.imageHint}
-                  />
-                </div>
+                <Image
+                  src={sample.imageUrl}
+                  alt={sample.description}
+                  width={420}
+                  height={594}
+                  className="aspect-[210/297] w-full bg-white object-contain p-4 transition-transform duration-300 hover:scale-105"
+                  data-ai-hint={sample.imageHint}
+                />
               </Card>
             </CarouselItem>
           ))}

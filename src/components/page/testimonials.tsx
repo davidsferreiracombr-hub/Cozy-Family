@@ -1,3 +1,5 @@
+"use client";
+
 import { Avatar, AvatarFallback } from '../ui/avatar';
 import { Card, CardContent } from '../ui/card';
 
@@ -28,15 +30,15 @@ const testimonials = [
 export function Testimonials() {
   return (
     <div className="mt-12">
-      <h2 className="text-center text-4xl font-extrabold tracking-tight">
+      <h2 className="text-center text-3xl font-extrabold tracking-tight sm:text-4xl">
         O que nossos clientes dizem
       </h2>
       <div
-        className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+        className="mt-8 grid grid-cols-1 gap-8 sm:mt-12 md:grid-cols-2 lg:grid-cols-3"
         aria-live="polite"
       >
         {testimonials.map((testimonial, index) => (
-          <Card key={index} className="shadow-lg">
+          <Card key={index} className="shadow-xl border-border/10">
             <CardContent className="p-6">
               <blockquote className="text-lg text-foreground">
                 <p>"{testimonial.quote}"</p>

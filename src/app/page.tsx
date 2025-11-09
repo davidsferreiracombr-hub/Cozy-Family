@@ -17,11 +17,11 @@ export default function Home() {
         <header>
           <Hero />
         </header>
-        <main className="mt-20 flex flex-col gap-20 sm:gap-32">
+        <main className="mt-16 flex flex-col gap-16 sm:mt-20 sm:gap-32">
           <DoodleSamples />
           <Features />
-          <Testimonials />
           <BuySection />
+          <Testimonials />
           <Faq />
         </main>
       </div>

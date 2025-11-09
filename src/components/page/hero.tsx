@@ -7,18 +7,18 @@ import Image from 'next/image';
 export function Hero() {
   return (
     <section
-      className="relative overflow-hidden rounded-2xl bg-card p-8 text-center"
+      className="relative overflow-hidden rounded-2xl bg-card p-6 text-center md:p-8"
       aria-labelledby="hero-title"
     >
-      <div className="text-5xl font-extrabold tracking-tight text-foreground sm:text-6xl">
+      <div className="text-4xl font-extrabold tracking-tight text-foreground sm:text-6xl">
         <span className="text-primary">Cozy</span> Coloring
       </div>
-      <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground">
+      <p className="mx-auto mt-2 max-w-2xl text-base text-muted-foreground sm:text-lg">
         por <strong>Bobbie Goods</strong>
       </p>
 
-      <div className="mt-10 grid grid-cols-1 items-center gap-8 sm:grid-cols-5">
-        <div className="relative mx-auto w-full max-w-xs sm:col-span-2">
+      <div className="mt-8 grid grid-cols-1 items-center gap-8 text-left sm:mt-10 md:grid-cols-5">
+        <div className="relative mx-auto w-full max-w-xs sm:col-span-2 md:max-w-sm">
           <Image
             src="https://i.imgur.com/zCChdNI.png"
             alt="Cozy Coloring book cover"
@@ -29,14 +29,14 @@ export function Hero() {
             priority
           />
         </div>
-        <div className="text-left sm:col-span-3">
+        <div className="sm:col-span-3">
           <h1
             id="hero-title"
-            className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl"
+            className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl"
           >
             Ilustrações fofas e aconchegantes para colorir e relaxar.
           </h1>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <p className="mt-4 text-base text-muted-foreground sm:text-lg">
             Perfeito para todas as idades, nosso livro digital oferece 30
             desenhos únicos para despertar sua criatividade e proporcionar
             momentos de paz.
@@ -45,7 +45,7 @@ export function Hero() {
       </div>
 
       <div
-        className="mt-12 flex flex-col items-center justify-center gap-4"
+        className="mt-10 flex flex-col items-center justify-center gap-4 sm:mt-12"
         role="group"
         aria-label="Call to action"
       >

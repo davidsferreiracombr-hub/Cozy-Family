@@ -10,12 +10,10 @@ import { Faq } from '@/components/page/faq';
 import { BuySection } from '@/components/page/buy-section';
 import { Guarantee } from '@/components/page/guarantee';
 import { AppFooter } from '@/components/page/footer';
-import { SalesNotifier } from '@/components/page/sales-notifier';
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center">
-      <SalesNotifier />
       <div className="w-full max-w-5xl p-4 sm:p-8">
         <header>
           <Hero />

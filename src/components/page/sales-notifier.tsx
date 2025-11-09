@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import { ShoppingBag } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 const names = [
     'Ana P.', 'João V.', 'Maria C.', 'Lucas G.', 'Juliana S.', 'Pedro H.',
@@ -23,7 +24,13 @@ const locations = [
 ];
 
 function getRandomItem<T>(arr: T[]): T {
-    return arr[Math.floor(Math.random() * arr.length)];
+    const [item, setItem] = React.useState<T | null>(null);
+
+    React.useEffect(() => {
+        setItem(arr[Math.floor(Math.random() * arr.length)]);
+    }, [arr])
+
+    return item as T;
 }
 
 export function SalesNotifier() {
@@ -33,14 +40,15 @@ export function SalesNotifier() {
         let toastTimeout: NodeJS.Timeout;
 
         const showRandomToast = () => {
-            const randomName = getRandomItem(names);
-            const randomLocation = getRandomItem(locations);
+            const randomName = names[Math.floor(Math.random() * names.length)];
+            const randomLocation = locations[Math.floor(Math.random() * locations.length)];
 
             toast({
+                className: cn('p-3'),
                 title: (
-                    <div className="flex items-center gap-2">
-                        <ShoppingBag className="h-4 w-4 text-primary" />
-                        <span className="font-semibold text-sm">
+                    <div className="flex items-center gap-3">
+                        <ShoppingBag className="h-5 w-5 text-primary flex-shrink-0" />
+                        <span className="font-semibold text-sm text-foreground/90">
                             {randomName} de {randomLocation} comprou Cozy Coloring.
                         </span>
                     </div>

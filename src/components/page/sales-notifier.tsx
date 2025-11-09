@@ -33,10 +33,11 @@ export function SalesNotifier() {
                 title: (
                     <div className="flex items-center gap-3">
                         <ShoppingBag className="h-5 w-5 text-primary" />
-                        <span className="font-semibold">Nova Compra!</span>
+                        <span className="font-semibold text-sm">
+                            {randomName} de {randomLocation} comprou Cozy Coloring.
+                        </span>
                     </div>
                 ),
-                description: `${randomName} de ${randomLocation} acabou de comprar.`,
             });
 
             // Schedule the next toast at a random interval

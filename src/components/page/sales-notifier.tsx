@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import { ShoppingBag } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -23,52 +23,50 @@ const locations = [
     'João Pessoa, PB', 'Teresina, PI', 'Aracaju, SE'
 ];
 
-function getRandomItem<T>(arr: T[]): T {
-    const [item, setItem] = React.useState<T | null>(null);
-
-    React.useEffect(() => {
-        setItem(arr[Math.floor(Math.random() * arr.length)]);
-    }, [arr])
-
-    return item as T;
-}
-
 export function SalesNotifier() {
     const { toast } = useToast();
+    const [name, setName] = useState('');
+    const [location, setLocation] = useState('');
+
+    const showRandomToast = useCallback(() => {
+        const randomName = names[Math.floor(Math.random() * names.length)];
+        const randomLocation = locations[Math.floor(Math.random() * locations.length)];
+        
+        setName(randomName);
+        setLocation(randomLocation);
+
+        toast({
+            variant: 'compact',
+            className: cn('p-3'),
+            description: (
+                <div className="flex items-center gap-2">
+                    <ShoppingBag className="h-4 w-4 text-primary flex-shrink-0" />
+                    <span className="font-medium text-xs text-foreground/90">
+                        {randomName} de {randomLocation} comprou Cozy Coloring.
+                    </span>
+                </div>
+            ),
+        });
+    }, [toast]);
 
     useEffect(() => {
         let toastTimeout: NodeJS.Timeout;
 
-        const showRandomToast = () => {
-            const randomName = names[Math.floor(Math.random() * names.length)];
-            const randomLocation = locations[Math.floor(Math.random() * locations.length)];
-
-            toast({
-                className: cn('p-3'),
-                title: (
-                    <div className="flex items-center gap-3">
-                        <ShoppingBag className="h-5 w-5 text-primary flex-shrink-0" />
-                        <span className="font-semibold text-sm text-foreground/90">
-                            {randomName} de {randomLocation} comprou Cozy Coloring.
-                        </span>
-                    </div>
-                ),
-            });
-
-            // Schedule the next toast at a random interval
-            const randomInterval = Math.random() * (25000 - 10000) + 10000; // between 10-25 seconds
-            toastTimeout = setTimeout(showRandomToast, randomInterval);
+        const scheduleToast = () => {
+            showRandomToast();
+            // Schedule the next toast every 30 seconds
+            toastTimeout = setTimeout(scheduleToast, 30000);
         };
 
         // Start the first toast after a short delay
-        const initialTimeout = setTimeout(showRandomToast, 8000); // 8 seconds delay for the first one
+        const initialTimeout = setTimeout(scheduleToast, 8000); // 8 seconds delay for the first one
 
         // Cleanup function to clear timeouts when the component unmounts
         return () => {
             clearTimeout(initialTimeout);
             clearTimeout(toastTimeout);
         };
-    }, [toast]);
+    }, [showRandomToast]);
 
     return null; // This component does not render anything
 }

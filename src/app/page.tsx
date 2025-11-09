@@ -13,15 +13,15 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center">
       <SalesNotifier />
-      <div className="w-full max-w-4xl p-4 sm:p-8">
+      <div className="w-full max-w-5xl p-4 sm:p-8">
         <header>
           <Hero />
         </header>
-        <main className="mt-16 flex flex-col gap-16 sm:gap-24">
+        <main className="mt-20 flex flex-col gap-20 sm:gap-32">
           <DoodleSamples />
           <Features />
-          <BuySection />
           <Testimonials />
+          <BuySection />
           <Faq />
         </main>
       </div>

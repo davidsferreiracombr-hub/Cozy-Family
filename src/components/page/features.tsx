@@ -25,17 +25,17 @@ const features = [
 export function Features() {
   return (
     <div>
-      <h2 className="text-center text-3xl font-extrabold tracking-tight">
+      <h2 className="text-center text-4xl font-extrabold tracking-tight">
         Por que você vai amar o Cozy Coloring
       </h2>
-      <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
+      <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3">
         {features.map((feature, index) => (
           <Card
             key={index}
-            className="flex flex-col items-center p-8 text-center"
+            className="flex flex-col items-center p-8 text-center shadow-lg"
           >
             {feature.icon}
-            <h3 className="mt-4 text-xl font-semibold">{feature.label}</h3>
+            <h3 className="mt-4 text-xl font-bold">{feature.label}</h3>
             <p className="mt-2 text-base text-muted-foreground">
               {feature.description}
             </p>

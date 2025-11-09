@@ -16,11 +16,11 @@ export function BuySection() {
   return (
     <Card
       id="buy-now"
-      className="w-full max-w-2xl mx-auto shadow-2xl"
+      className="w-full max-w-2xl mx-auto shadow-lg"
       role="region"
       aria-label="Comprar Cozy Coloring"
     >
-      <CardHeader className="text-center">
+      <CardHeader className="text-center pb-4">
         <CardTitle className="text-3xl font-extrabold">Adquira sua Cópia Digital</CardTitle>
         <CardDescription className="text-lg text-muted-foreground pt-2">
           Receba acesso imediato a 30 ilustrações fofas e aconchegantes.
@@ -42,7 +42,7 @@ export function BuySection() {
         
         <Button
           size="lg"
-          className="w-full max-w-md font-bold text-lg py-7"
+          className="w-full max-w-md font-bold text-lg py-7 shadow-lg shadow-primary/30 transition-transform hover:scale-105"
           asChild
         >
           <a

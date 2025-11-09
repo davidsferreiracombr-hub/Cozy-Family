@@ -15,7 +15,7 @@ export function DoodleSamples() {
 
   return (
     <div className="pt-4" id="doodle-samples">
-      <h2 className="text-center text-3xl font-extrabold text-foreground">
+      <h2 className="text-center text-4xl font-extrabold text-foreground">
         Amostras de Ilustrações
       </h2>
       <p className="mt-2 text-center text-lg text-muted-foreground">
@@ -26,7 +26,7 @@ export function DoodleSamples() {
           align: 'center',
           loop: true,
         }}
-        className="mt-8 w-full"
+        className="mt-12 w-full"
       >
         <CarouselContent className="-ml-4">
           {samples.map((sample) => (
@@ -34,14 +34,14 @@ export function DoodleSamples() {
               key={sample.id}
               className="pl-4 md:basis-1/2 lg:basis-1/3"
             >
-              <Card className="overflow-hidden rounded-xl border-2">
-                <div className="relative aspect-[210/297] w-full bg-white flex items-center justify-center">
+              <Card className="overflow-hidden rounded-xl border shadow-sm">
+                <div className="relative aspect-[210/297] w-full bg-white flex items-center justify-center p-4">
                   <Image
                     src={sample.imageUrl}
                     alt={sample.description}
                     width={210}
                     height={297}
-                    className="object-contain h-full w-full p-4 transition-transform duration-300 hover:scale-105"
+                    className="object-contain h-full w-full transition-transform duration-300 hover:scale-105"
                     data-ai-hint={sample.imageHint}
                   />
                 </div>

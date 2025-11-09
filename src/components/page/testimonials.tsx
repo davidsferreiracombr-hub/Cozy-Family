@@ -28,22 +28,22 @@ const testimonials = [
 export function Testimonials() {
   return (
     <div className="mt-12">
-      <h2 className="text-center text-3xl font-extrabold tracking-tight">
+      <h2 className="text-center text-4xl font-extrabold tracking-tight">
         O que nossos clientes dizem
       </h2>
       <div
-        className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+        className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
         aria-live="polite"
       >
         {testimonials.map((testimonial, index) => (
-          <Card key={index} className="bg-card/50">
+          <Card key={index} className="shadow-lg">
             <CardContent className="p-6">
-              <blockquote className="text-base text-foreground">
+              <blockquote className="text-lg text-foreground">
                 <p>"{testimonial.quote}"</p>
               </blockquote>
               <div className="mt-4 flex items-center">
                 <Avatar className="h-12 w-12">
-                  <AvatarFallback className="text-lg font-bold bg-primary/20 text-primary">
+                  <AvatarFallback className="text-lg font-bold bg-primary/10 text-primary">
                     {testimonial.avatar}
                   </AvatarFallback>
                 </Avatar>

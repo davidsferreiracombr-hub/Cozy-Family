@@ -25,8 +25,8 @@ export default function Home() {
           <ForWho />
           <WhatYouGet />
           <Features />
-          <Testimonials />
           <BuySection />
+          <Testimonials />
           <Guarantee />
           <Faq />
         </main>

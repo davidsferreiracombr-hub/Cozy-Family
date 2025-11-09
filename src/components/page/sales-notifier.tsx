@@ -25,19 +25,13 @@ const locations = [
 
 export function SalesNotifier() {
     const { toast } = useToast();
-    const [name, setName] = useState('');
-    const [location, setLocation] = useState('');
 
     const showRandomToast = useCallback(() => {
         const randomName = names[Math.floor(Math.random() * names.length)];
         const randomLocation = locations[Math.floor(Math.random() * locations.length)];
         
-        setName(randomName);
-        setLocation(randomLocation);
-
         toast({
-            variant: 'compact',
-            className: cn('p-3'),
+            className: cn('p-3 bg-background/95 backdrop-blur-sm'),
             description: (
                 <div className="flex items-center gap-2">
                     <ShoppingBag className="h-4 w-4 text-primary flex-shrink-0" />
@@ -54,19 +48,16 @@ export function SalesNotifier() {
 
         const scheduleToast = () => {
             showRandomToast();
-            // Schedule the next toast every 30 seconds
             toastTimeout = setTimeout(scheduleToast, 30000);
         };
 
-        // Start the first toast after a short delay
-        const initialTimeout = setTimeout(scheduleToast, 8000); // 8 seconds delay for the first one
+        const initialTimeout = setTimeout(scheduleToast, 8000);
 
-        // Cleanup function to clear timeouts when the component unmounts
         return () => {
             clearTimeout(initialTimeout);
             clearTimeout(toastTimeout);
         };
     }, [showRandomToast]);
 
-    return null; // This component does not render anything
+    return null;
 }

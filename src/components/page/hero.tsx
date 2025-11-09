@@ -20,7 +20,7 @@ export function Hero() {
       <div className="mt-8 grid grid-cols-1 items-center gap-8 text-left sm:mt-10 md:grid-cols-2">
         <div className="relative mx-auto w-full max-w-xs sm:max-w-sm">
           <Image
-            src="https://i.imgur.com/zCChdNI.png"
+            src="https://i.imgur.com/GaQPUrX.png"
             alt="Cozy Coloring book cover"
             width={600}
             height={450}

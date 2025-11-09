@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import { ShoppingBag } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -26,24 +26,24 @@ const locations = [
 export function SalesNotifier() {
     const { toast } = useToast();
 
-    const showRandomToast = useCallback(() => {
-        const randomName = names[Math.floor(Math.random() * names.length)];
-        const randomLocation = locations[Math.floor(Math.random() * locations.length)];
-        
-        toast({
-            className: cn('p-3 bg-background/95 backdrop-blur-sm'),
-            description: (
-                <div className="flex items-center gap-2">
-                    <ShoppingBag className="h-4 w-4 text-primary flex-shrink-0" />
-                    <span className="font-medium text-xs text-foreground/90">
-                        {randomName} de {randomLocation} comprou Cozy Coloring.
-                    </span>
-                </div>
-            ),
-        });
-    }, [toast]);
-
     useEffect(() => {
+        const showRandomToast = () => {
+            const randomName = names[Math.floor(Math.random() * names.length)];
+            const randomLocation = locations[Math.floor(Math.random() * locations.length)];
+            
+            toast({
+                className: cn('p-3 bg-background/95 backdrop-blur-sm'),
+                description: (
+                    <div className="flex items-center gap-2">
+                        <ShoppingBag className="h-4 w-4 text-primary flex-shrink-0" />
+                        <span className="font-medium text-xs text-foreground/90">
+                            {randomName} de {randomLocation} comprou Cozy Coloring.
+                        </span>
+                    </div>
+                ),
+            });
+        };
+
         let toastTimeout: NodeJS.Timeout;
 
         const scheduleToast = () => {
@@ -57,7 +57,7 @@ export function SalesNotifier() {
             clearTimeout(initialTimeout);
             clearTimeout(toastTimeout);
         };
-    }, [showRandomToast]);
+    }, [toast]);
 
     return null;
 }

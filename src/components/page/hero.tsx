@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Eye } from 'lucide-react';
+import { Eye, Wand2 } from 'lucide-react';
 import Image from 'next/image';
 
 export function Hero() {
@@ -49,10 +49,14 @@ export function Hero() {
         role="group"
         aria-label="Call to action"
       >
-        <Button asChild size="lg" className="w-full font-bold sm:w-auto">
+        <Button
+          size="lg"
+          className="w-full sm:w-auto font-bold text-lg py-7 shadow-lg shadow-primary/30 transition-transform hover:scale-105"
+          asChild
+        >
           <a href="#buy-now">
-            Quero o meu por R$ 19,90
-            <ArrowDown className="ml-2 h-5 w-5" />
+            <Wand2 className="mr-3 h-6 w-6" />
+            Garantir Acesso Imediato
           </a>
         </Button>
 
@@ -65,7 +69,7 @@ export function Hero() {
           </Button>
         </div>
         <p className="mt-2 text-xs text-muted-foreground">
-          Pagamento seguro • Acesso vitalício
+          Compre uma vez, use para sempre.
         </p>
       </div>
     </section>

@@ -8,22 +8,22 @@ import { AppFooter } from '@/components/page/footer';
 
 export default function Home() {
   return (
-    <>
-      <div className="flex justify-center p-4 sm:p-8">
-        <div className="w-full max-w-4xl">
-          <header>
-            <Hero />
-          </header>
-          <main className="mt-16 flex flex-col gap-16 sm:gap-24">
-            <DoodleSamples />
-            <Features />
-            <Testimonials />
-            <BuySection />
-            <Faq />
-          </main>
-        </div>
+    <div className="flex flex-col items-center">
+      <div className="w-full max-w-4xl p-4 sm:p-8">
+        <header>
+          <Hero />
+        </header>
+        <main className="mt-16 flex flex-col gap-16 sm:gap-24">
+          <DoodleSamples />
+          <Features />
+          <Testimonials />
+          <BuySection />
+          <Faq />
+        </main>
       </div>
-      <AppFooter />
-    </>
+      <div className="w-full">
+        <AppFooter />
+      </div>
+    </div>
   );
 }

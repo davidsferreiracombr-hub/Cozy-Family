@@ -35,12 +35,13 @@ export function DoodleSamples() {
               className="pl-4 md:basis-1/2 lg:basis-1/3"
             >
               <Card className="overflow-hidden rounded-xl border-2">
-                <div className="relative aspect-[210/297] w-full">
+                <div className="relative aspect-[210/297] w-full bg-white flex items-center justify-center">
                   <Image
                     src={sample.imageUrl}
                     alt={sample.description}
-                    fill
-                    className="object-cover transition-transform duration-300 hover:scale-105"
+                    width={210}
+                    height={297}
+                    className="object-contain h-full w-full p-4 transition-transform duration-300 hover:scale-105"
                     data-ai-hint={sample.imageHint}
                   />
                 </div>

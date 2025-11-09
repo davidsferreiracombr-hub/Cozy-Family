@@ -9,7 +9,7 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import { Card } from '../ui/card';
-import { Paintbrush, Undo2 } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 export function DoodleSamples() {
   const samples = PlaceHolderImages.slice(0, 3);
@@ -51,10 +51,10 @@ export function DoodleSamples() {
           ))}
         </CarouselContent>
         <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 transform rounded-full bg-background/50 text-foreground opacity-0 backdrop-blur-sm transition-all group-hover:opacity-100 hover:bg-background/75 sm:left-4">
-          <Undo2 className="h-5 w-5" />
+          <ArrowLeft className="h-5 w-5" />
         </CarouselPrevious>
         <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2 transform rounded-full bg-background/50 text-foreground opacity-0 backdrop-blur-sm transition-all group-hover:opacity-100 hover:bg-background/75 sm:right-4">
-          <Paintbrush className="h-5 w-5" />
+          <ArrowRight className="h-5 w-5" />
         </CarouselNext>
       </Carousel>
     </div>

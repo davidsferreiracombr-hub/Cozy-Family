@@ -20,8 +20,8 @@ export default function Home() {
         <main className="mt-16 flex flex-col gap-16 sm:gap-24">
           <DoodleSamples />
           <Features />
-          <Testimonials />
           <BuySection />
+          <Testimonials />
           <Faq />
         </main>
       </div>

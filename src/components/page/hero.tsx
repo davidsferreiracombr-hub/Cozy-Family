@@ -7,18 +7,18 @@ import Image from 'next/image';
 export function Hero() {
   return (
     <section
-      className="relative overflow-hidden rounded-2xl bg-card p-6 text-center shadow-lg md:p-8"
+      className="relative rounded-2xl bg-card p-6 text-center shadow-lg md:p-8"
       aria-labelledby="hero-title"
     >
-      <div className="text-4xl font-extrabold tracking-tight text-foreground sm:text-6xl md:text-5xl">
+      <div className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl">
         <span className="text-primary">Cozy</span> Coloring
       </div>
       <p className="mx-auto mt-2 max-w-2xl text-base text-muted-foreground sm:text-lg">
         por <strong>Bobbie Goods</strong>
       </p>
 
-      <div className="mt-8 grid grid-cols-1 items-center gap-8 text-left sm:mt-10 md:grid-cols-5">
-        <div className="relative mx-auto w-full max-w-xs sm:col-span-2 md:max-w-sm">
+      <div className="mt-8 grid grid-cols-1 items-center gap-8 text-left sm:mt-10 md:grid-cols-2">
+        <div className="relative mx-auto w-full max-w-xs sm:max-w-sm">
           <Image
             src="https://i.imgur.com/zCChdNI.png"
             alt="Cozy Coloring book cover"
@@ -29,10 +29,10 @@ export function Hero() {
             priority
           />
         </div>
-        <div className="sm:col-span-3">
+        <div>
           <h1
             id="hero-title"
-            className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl"
+            className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl"
           >
             Ilustrações fofas e aconchegantes para colorir e relaxar.
           </h1>

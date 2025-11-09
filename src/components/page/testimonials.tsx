@@ -38,7 +38,7 @@ export function Testimonials() {
         aria-live="polite"
       >
         {testimonials.map((testimonial, index) => (
-          <Card key={index} className="shadow-xl border-border/10">
+          <Card key={index} className="shadow-lg border-border/10 transition-shadow hover:shadow-xl">
             <CardContent className="p-6">
               <blockquote className="text-lg text-foreground">
                 <p>"{testimonial.quote}"</p>

@@ -35,7 +35,7 @@ export function DoodleSamples() {
               key={sample.id}
               className="pl-4 md:basis-1/2 lg:basis-1/3"
             >
-              <Card className="overflow-hidden rounded-xl border-border/10 shadow-xl">
+              <Card className="overflow-hidden rounded-xl border-border/10 shadow-lg transition-shadow hover:shadow-xl">
                 <div className="relative aspect-[210/297] w-full bg-white flex items-center justify-center p-4">
                   <Image
                     src={sample.imageUrl}

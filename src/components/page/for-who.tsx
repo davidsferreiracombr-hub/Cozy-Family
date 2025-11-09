@@ -32,7 +32,7 @@ export function ForWho() {
       </p>
       <div className="mt-8 grid grid-cols-1 gap-8 sm:mt-12 md:grid-cols-3">
         {whoIsItFor.map((item, index) => (
-          <Card key={index} className="flex flex-col items-center p-8 text-center shadow-lg border-border/10">
+          <Card key={index} className="flex flex-col items-center p-8 text-center shadow-lg border-border/10 transition-shadow hover:shadow-xl">
             {item.icon}
             <h3 className="mt-4 text-xl font-bold">{item.label}</h3>
             <p className="mt-2 text-base text-muted-foreground">

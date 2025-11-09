@@ -34,7 +34,7 @@ export function Features() {
         {features.map((feature, index) => (
           <Card
             key={index}
-            className="flex flex-col items-center p-8 text-center shadow-xl border-border/10"
+            className="flex flex-col items-center p-8 text-center shadow-lg border-border/10 transition-shadow hover:shadow-xl"
           >
             {feature.icon}
             <h3 className="mt-4 text-xl font-bold">{feature.label}</h3>

@@ -22,7 +22,7 @@ const paymentMethods = [
     icon: <Barcode className="h-6 w-6" />,
   },
   {
-    name: 'Cartão de Crédito',
+    name: 'Cartão',
     icon: <CreditCard className="h-6 w-6" />,
   },
   {
@@ -54,7 +54,7 @@ const paymentMethods = [
     ),
   },
   {
-    name: 'Google Pay',
+    name: 'G Pay',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -79,11 +79,11 @@ export function PaymentMethods() {
         {paymentMethods.map((method) => (
           <div
             key={method.name}
-            className="flex flex-col items-center justify-center rounded-lg border border-border/10 bg-background/50 p-3 text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+            className="flex flex-col items-center justify-center rounded-lg border bg-background/50 p-3 text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
             title={method.name}
           >
             {method.icon}
-            <span className="mt-1 text-[10px] font-medium sr-only">
+            <span className="mt-1 text-[10px] font-medium">
               {method.name}
             </span>
           </div>

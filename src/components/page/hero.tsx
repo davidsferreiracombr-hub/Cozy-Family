@@ -14,7 +14,7 @@ export function Hero() {
         <span className="text-primary">Cozy</span> Coloring
       </div>
       <p className="mx-auto mt-2 max-w-2xl text-base text-muted-foreground sm:text-lg">
-        por <strong>Bobbie Goods</strong>
+        tema <strong>Bobbie Goods</strong>
       </p>
 
       <div className="mt-8 grid grid-cols-1 items-center gap-8 text-left sm:mt-10 md:grid-cols-2">
@@ -26,7 +26,6 @@ export function Hero() {
             height={450}
             className="w-full rounded-lg object-cover"
             data-ai-hint="coloring book cover"
-            priority
           />
         </div>
         <div>

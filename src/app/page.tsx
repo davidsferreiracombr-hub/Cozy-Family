@@ -3,7 +3,7 @@
 import { Hero } from '@/components/page/hero';
 import { DoodleSamples } from '@/components/page/doodle-samples';
 import { ForWho } from '@/components/page/for-who';
-import { AboutCreator } from '@/components/page/about-creator';
+import { WhatYouGet } from '@/components/page/what-you-get';
 import { Features } from '@/components/page/features';
 import { Testimonials } from '@/components/page/testimonials';
 import { Faq } from '@/components/page/faq';
@@ -23,9 +23,9 @@ export default function Home() {
         <main className="mt-16 flex flex-col gap-16 sm:mt-20 sm:gap-24">
           <DoodleSamples />
           <ForWho />
+          <WhatYouGet />
           <Features />
           <Testimonials />
-          <AboutCreator />
           <BuySection />
           <Guarantee />
           <Faq />

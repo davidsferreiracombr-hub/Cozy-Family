@@ -7,10 +7,10 @@ import Image from 'next/image';
 export function Hero() {
   return (
     <section
-      className="relative overflow-hidden rounded-2xl bg-card p-6 text-center md:p-8"
+      className="relative overflow-hidden rounded-2xl bg-card p-6 text-center shadow-lg md:p-8"
       aria-labelledby="hero-title"
     >
-      <div className="text-4xl font-extrabold tracking-tight text-foreground sm:text-6xl">
+      <div className="text-4xl font-extrabold tracking-tight text-foreground sm:text-6xl md:text-5xl">
         <span className="text-primary">Cozy</span> Coloring
       </div>
       <p className="mx-auto mt-2 max-w-2xl text-base text-muted-foreground sm:text-lg">
@@ -24,7 +24,7 @@ export function Hero() {
             alt="Cozy Coloring book cover"
             width={600}
             height={450}
-            className="w-full rounded-lg object-cover shadow-2xl"
+            className="w-full rounded-lg object-cover"
             data-ai-hint="coloring book cover"
             priority
           />

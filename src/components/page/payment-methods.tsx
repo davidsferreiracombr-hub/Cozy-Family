@@ -1,11 +1,10 @@
 "use client";
 
 import { cn } from '@/lib/utils';
-import { CreditCard, Barcode } from 'lucide-react';
 
 const paymentMethods = [
   {
-    name: 'Pix',
+    name: 'PIX',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -15,39 +14,36 @@ const paymentMethods = [
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="h-8 w-8 text-black"
+        className="h-10 w-10 text-white"
       >
-        <path d="M12.21,6.34,8.5,9.63l-.11.1a2.33,2.33,0,0,0,0,3.3l.11.1,3.71,3.29a2.33,2.33,0,0,0,3.3,0l3.71-3.29.11-.1a2.33,2.33,0,0,0,0-3.3l-.11-.1-3.71-3.29A2.33,2.33,0,0,0,12.21,6.34Z" />
-        <path d="M11.79,17.66,8.5,14.37l-.11-.1a2.33,2.33,0,0,1,0-3.3l.11-.1,3.29-3.71a2.33,2.33,0,0,1,3.3,0l3.29,3.71.11.1a2.33,2.33,0,0,1,0,3.3l-.11.1-3.29,3.71A2.33,2.33,0,0,1,11.79,17.66Z" />
+        <path d="M12.21,6.34,8.5,9.63l-.11.1a2.33,2.33,0,0,0,0,3.3l.11.1,3.71,3.29a2.33,2.33,0,0,0,3.3,0l3.71-3.29.11-.1a2.33,2.33,0,0,0,0-3.3l-.11-.1-3.71-3.29A2.33,2.33,0,0,0,12.21,6.34Z" stroke="white" strokeWidth="1.5" />
+        <path d="M11.79,17.66,8.5,14.37l-.11-.1a2.33,2.33,0,0,1,0-3.3l.11-.1,3.29-3.71a2.33,2.33,0,0,1,3.3,0l3.29,3.71.11.1a2.33,2.33,0,0,1,0,3.3l-.11.1-3.29,3.71A2.33,2.33,0,0,1,11.79,17.66Z" stroke="white" strokeWidth="1.5" />
       </svg>
     ),
+    isPrimary: true,
   },
   {
     name: 'Boleto',
-    icon: <Barcode className="h-8 w-8 text-black" />,
+    icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h16M6 4v16M10 4v16M14 4v16M18 4v16" />
+        </svg>
+    ),
   },
   {
     name: 'Cartão de Crédito',
-    icon: <CreditCard className="h-8 w-8 text-black" />,
+    icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3 10h18M3 6a2 2 0 012-2h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V6z" />
+        </svg>
+    ),
   },
   {
     name: 'PicPay',
     icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="h-8 w-8 text-black"
-      >
-        <path d="M10.33,20.33H6.4a2,2,0,0,1-2-2V7.1a2,2,0,0,1,2-2h9.2a2,2,0,0,1,2,2v5.7" />
-        <path d="M10.33,5.1V3.7a2,2,0,0,1,2-2h0a2,2,0,0,1,2,2V5.1" />
-        <rect x="15.63" y="14.33" width="6" height="6" rx="1.5" />
-        <path d="M15.63,12.5a2,2,0,0,0,2,2h2a2,2,0,0,0,2-2v-2a2,2,0,0,0-2-2h-2a2,2,0,0,0-2,2Z" />
-      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-black" viewBox="0 0 256 256" fill="currentColor">
+            <path d="M141.2,56.29a35.11,35.11,0,0,0-50.4,0,8,8,0,0,0,11.31,11.31,19.12,19.12,0,0,1,27.78,0,8,8,0,0,0,11.31-11.31Zm-82.68,137a8,8,0,0,0,8,8h90.8L93.1,137a8,8,0,0,0-14.58,7.95l38.83,59.34H65.33a24,24,0,0,1-24-24v-104A24,24,0,0,1,65.33,52.29H184a24,24,0,0,1,24,24v50.54a8,8,0,0,0,16,0V76.29a40,40,0,0,0-40-40H65.33a40,40,0,0,0-40,40v104a40,40,0,0,0,40,40h61.85a8,8,0,0,0,7.21-4.43,8,8,0,0,0-1.8-8.86Zm138.81-42.59a8,8,0,0,0-8.86,1.81L163.2,191.8V166.33a8,8,0,0,0-16,0v34.54a8,8,0,0,0,4.42,7.21,8,8,0,0,0,8.87-1.81L185.6,181.7V206.2a8,8,0,0,0,16,0V171.67a8,8,0,0,0-4.42-7.21A8,8,0,0,0,197.33,166.29Zm26.69-21.36h-8v8a8,8,0,0,1-16,0v-8h-8a8,8,0,0,1,0-16h8v-8a8,8,0,0,1,16,0v8h8a8,8,0,0,1,0,16Z"/>
+        </svg>
     ),
   },
   {
@@ -55,7 +51,7 @@ const paymentMethods = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-8 w-8"
+        className="h-10 w-10"
         viewBox="0 0 64 64"
       >
         <path
@@ -72,38 +68,33 @@ const paymentMethods = [
   {
     name: 'Google Pay',
     icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-8 w-8"
-        viewBox="0 0 24 24"
-        fill="black"
-      >
-        <path d="M20.3,9.5H18V8.1c0-1-0.8-1.8-1.8-1.8h-4c-1.4,0-2.6,0.8-3.2,2h-1c-1,0-1.8,0.8-1.8,1.8v1.4h1c0.5,0,0.9,0.4,0.9,0.9 v4.3c0,0.5-0.4,0.9-0.9,0.9h-1v1.4c0,1,0.8,1.8,1.8,1.8h9.8c1,0,1.8-0.8,1.8-1.8V10.4C21.2,9.9,20.8,9.5,20.3,9.5z M13.1,12.7 c0,0.8-0.7,1.5-1.5,1.5s-1.5-0.7-1.5-1.5v-2.3c0-0.8,0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5V12.7z" />
-        <path d="M11.5,8.8c-1.4,0-2.6,1.2-2.6,2.6v2.3c0,1.4,1.2,2.6,2.6,2.6s2.6-1.2,2.6-2.6v-2.3C14.1,10,12.9,8.8,11.5,8.8z M11.5,14.2c-0.8,0-1.5-0.7-1.5-1.5v-2.3c0-0.8,0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5v2.3C13.1,13.5,12.3,14.2,11.5,14.2z" />
-      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-black" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M10.1,6.54c-2.43,0-4.4,1.97-4.4,4.4s1.97,4.4,4.4,4.4s4.4-1.97,4.4-4.4S12.53,6.54,10.1,6.54z M10.1,13.54 c-1.5,0-2.7-1.2-2.7-2.7s1.2-2.7,2.7-2.7s2.7,1.2,2.7,2.7S11.6,13.54,10.1,13.54z M20,10.94v2.2h-1.83 c-0.28,2.8-2.63,5.03-5.46,5.19v1.83h-2.2v-1.83c-2.8-0.28-5.03-2.63-5.19-5.46H3.5v-2.2h1.83c0.28-2.8,2.63-5.03,5.46-5.19 V3.54h2.2v1.83c2.8,0.28,5.03,2.63,5.19,5.46H20z M14.3,10.94c-0.22-2.25-2.1-4-4.39-4s-4,1.75-4.21,4H14.3z"/>
+        </svg>
     ),
   },
 ];
 
 export function PaymentMethods() {
   return (
-    <div className="mt-8 w-full max-w-lg">
+    <div className="mt-8 w-full max-w-2xl">
       <p className="text-center text-sm font-medium text-muted-foreground">
         Formas de Pagamento Seguras
       </p>
-      <div className="mt-4 grid grid-cols-3 gap-3 sm:grid-cols-6">
+      <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3">
         {paymentMethods.map((method) => (
           <div
             key={method.name}
             className={cn(
-                "flex flex-col items-center justify-center rounded-lg border bg-card p-3 text-muted-foreground transition-all duration-300 ease-in-out hover:shadow-md hover:border-border/60 hover:-translate-y-1"
+                "flex h-32 flex-col items-center justify-center rounded-lg border border-gray-200 bg-white shadow-sm transition-all duration-300 ease-in-out hover:shadow-md hover:border-gray-300 hover:-translate-y-1",
+                method.isPrimary && 'bg-primary text-white hover:bg-primary/90'
             )}
             title={method.name}
           >
-            <div className="flex h-10 w-10 items-center justify-center">
+            <div className={cn("flex h-12 w-12 items-center justify-center", method.isPrimary && 'text-white')}>
                 {method.icon}
             </div>
-            <span className="mt-2 text-[11px] font-semibold text-center text-foreground/80">
+            <span className={cn("mt-2 text-base font-semibold text-center text-foreground/80", method.isPrimary && 'text-white')}>
               {method.name}
             </span>
           </div>

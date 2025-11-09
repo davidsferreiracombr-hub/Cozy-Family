@@ -17,7 +17,7 @@ export function Hero() {
         por <strong>Bobbie Goods</strong>
       </p>
 
-      <div className="mt-8 grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+      <div className="mt-8 grid grid-cols-1 items-center gap-8 sm:grid-cols-2">
         <div className="relative mx-auto w-full max-w-xs">
           <Image
             src="https://i.imgur.com/zCChdNI.png"

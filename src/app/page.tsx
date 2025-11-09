@@ -2,10 +2,13 @@
 
 import { Hero } from '@/components/page/hero';
 import { DoodleSamples } from '@/components/page/doodle-samples';
+import { ForWho } from '@/components/page/for-who';
+import { AboutCreator } from '@/components/page/about-creator';
 import { Features } from '@/components/page/features';
 import { Testimonials } from '@/components/page/testimonials';
 import { Faq } from '@/components/page/faq';
 import { BuySection } from '@/components/page/buy-section';
+import { Guarantee } from '@/components/page/guarantee';
 import { AppFooter } from '@/components/page/footer';
 import { SalesNotifier } from '@/components/page/sales-notifier';
 
@@ -17,11 +20,14 @@ export default function Home() {
         <header>
           <Hero />
         </header>
-        <main className="mt-16 flex flex-col gap-16 sm:mt-20 sm:gap-32">
+        <main className="mt-16 flex flex-col gap-16 sm:mt-20 sm:gap-24">
           <DoodleSamples />
+          <ForWho />
           <Features />
-          <BuySection />
           <Testimonials />
+          <AboutCreator />
+          <BuySection />
+          <Guarantee />
           <Faq />
         </main>
       </div>

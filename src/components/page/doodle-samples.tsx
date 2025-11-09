@@ -14,12 +14,12 @@ export function DoodleSamples() {
   const samples = PlaceHolderImages.slice(0, 3);
 
   return (
-    <div className="mt-12 pt-4" id="doodle-samples">
-      <h3 className="text-center text-2xl font-bold text-foreground">
+    <div className="pt-4" id="doodle-samples">
+      <h2 className="text-center text-3xl font-extrabold text-foreground">
         Amostras de Ilustrações
-      </h3>
-      <p className="mt-2 text-center text-muted-foreground">
-        Um convite para colorir e relaxar
+      </h2>
+      <p className="mt-2 text-center text-lg text-muted-foreground">
+        Um convite para colorir e relaxar com nossos desenhos.
       </p>
       <Carousel
         opts={{
@@ -34,7 +34,7 @@ export function DoodleSamples() {
               key={sample.id}
               className="pl-4 md:basis-1/2 lg:basis-1/3"
             >
-              <Card className="overflow-hidden">
+              <Card className="overflow-hidden rounded-xl border-2">
                 <div className="relative aspect-[210/297] w-full">
                   <Image
                     src={sample.imageUrl}

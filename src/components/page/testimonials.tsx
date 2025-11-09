@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+import { Avatar, AvatarFallback } from '../ui/avatar';
 import { Card, CardContent } from '../ui/card';
 
 const testimonials = [
@@ -28,7 +28,7 @@ const testimonials = [
 export function Testimonials() {
   return (
     <div className="mt-12">
-      <h2 className="text-center text-2xl font-bold tracking-tight">
+      <h2 className="text-center text-3xl font-extrabold tracking-tight">
         O que nossos clientes dizem
       </h2>
       <div
@@ -36,17 +36,19 @@ export function Testimonials() {
         aria-live="polite"
       >
         {testimonials.map((testimonial, index) => (
-          <Card key={index}>
+          <Card key={index} className="bg-card/50">
             <CardContent className="p-6">
               <blockquote className="text-base text-foreground">
                 <p>"{testimonial.quote}"</p>
               </blockquote>
               <div className="mt-4 flex items-center">
-                <Avatar>
-                  <AvatarFallback>{testimonial.avatar}</AvatarFallback>
+                <Avatar className="h-12 w-12">
+                  <AvatarFallback className="text-lg font-bold bg-primary/20 text-primary">
+                    {testimonial.avatar}
+                  </AvatarFallback>
                 </Avatar>
-                <div className="ml-3">
-                  <p className="font-semibold">{testimonial.author}</p>
+                <div className="ml-4">
+                  <p className="font-semibold text-lg">{testimonial.author}</p>
                   <p className="text-sm text-muted-foreground">
                     {testimonial.location}
                   </p>

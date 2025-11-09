@@ -1,13 +1,13 @@
 "use client";
 
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckCircle, Eye, HelpCircle } from 'lucide-react';
+import { ArrowDown, Eye } from 'lucide-react';
 import Image from 'next/image';
 
 export function Hero() {
   return (
     <section
-      className="rounded-xl bg-card p-6 text-center sm:p-8"
+      className="relative overflow-hidden rounded-2xl bg-card p-6 text-center sm:p-8"
       aria-labelledby="hero-title"
     >
       <div className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl">
@@ -18,7 +18,7 @@ export function Hero() {
       </p>
 
       <div className="mt-8 grid grid-cols-1 items-center gap-8 md:grid-cols-2">
-        <div className="relative mx-auto w-full max-w-sm">
+        <div className="relative mx-auto w-full max-w-xs">
           <Image
             src="https://i.imgur.com/zCChdNI.png"
             alt="Cozy Coloring book cover"
@@ -41,27 +41,6 @@ export function Hero() {
             desenhos únicos para despertar sua criatividade e proporcionar
             momentos de paz.
           </p>
-          <ul className="mt-6 space-y-3 text-muted-foreground">
-            <li className="flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-primary" />
-              <span>
-                <strong>30 ilustrações</strong> originais em alta resolução.
-              </span>
-            </li>
-            <li className="flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-primary" />
-              <span>
-                Formato <strong>PDF pronto para imprimir</strong> ou usar em
-                tablets.
-              </span>
-            </li>
-            <li className="flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-primary" />
-              <span>
-                Acesso <strong>imediato</strong> após a compra.
-              </span>
-            </li>
-          </ul>
         </div>
       </div>
 
@@ -72,8 +51,8 @@ export function Hero() {
       >
         <Button asChild size="lg" className="w-full font-bold sm:w-auto">
           <a href="#buy-now">
-            Comprar Agora por R$ 19,90
-            <ArrowRight className="ml-2 h-5 w-5" />
+            Quero o meu por R$ 19,90
+            <ArrowDown className="ml-2 h-5 w-5" />
           </a>
         </Button>
 
@@ -82,12 +61,6 @@ export function Hero() {
             <a href="#doodle-samples">
               <Eye className="mr-2" />
               Ver amostras
-            </a>
-          </Button>
-          <Button variant="ghost" asChild>
-            <a href="#faq">
-              <HelpCircle className="mr-2" />
-              Perguntas frequentes
             </a>
           </Button>
         </div>

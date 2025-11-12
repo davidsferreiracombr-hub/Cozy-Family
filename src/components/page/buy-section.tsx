@@ -7,6 +7,7 @@ import { PaymentMethods } from './payment-methods';
 
 const includedFeatures = [
     "30 ilustrações originais e fofas",
+    "Aplicativo interativo para colorir",
     "Acesso imediato ao arquivo PDF",
     "Pronto para imprimir ou colorir no tablet",
     "Perfeito para relaxar e estimular a criatividade",

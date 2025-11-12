@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardContent } from '@/components/ui/card';
-import { FileDown, Image as ImageIcon, Printer, Tablet } from 'lucide-react';
+import { FileDown, Image as ImageIcon, Printer, Tablet, Smartphone } from 'lucide-react';
 import Image from 'next/image';
 
 const benefits = [
@@ -11,19 +11,19 @@ const benefits = [
         description: 'Desenhos fofos e aconchegantes, criados com carinho para você.',
     },
     {
+        icon: <Smartphone className="h-8 w-8 text-primary" />,
+        label: 'Aplicativo de Colorir',
+        description: 'Uma forma divertida de pintar digitalmente no seu dispositivo favorito.',
+    },
+    {
         icon: <FileDown className="h-8 w-8 text-primary" />,
         label: 'Acesso Imediato ao PDF',
         description: 'Baixe o arquivo em alta resolução assim que confirmar a compra.',
     },
     {
-        icon: <Printer className="h-8 w-8 text-primary" />,
-        label: 'Imprima em Casa',
-        description: 'Perfeito para imprimir em papel A4 e colorir com seus materiais favoritos.',
-    },
-    {
         icon: <Tablet className="h-8 w-8 text-primary" />,
-        label: 'Use no Tablet',
-        description: 'Compatível com apps de desenho como Procreate, GoodNotes e outros.',
+        label: 'Use no Tablet ou Imprima',
+        description: 'Compatível com apps de desenho e otimizado para impressão em A4.',
     },
 ];
 

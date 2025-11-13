@@ -6,12 +6,12 @@ import { CheckCircle, ShoppingBag } from 'lucide-react';
 import { PaymentMethods } from './payment-methods';
 
 const includedFeatures = [
-    "Aplicativo interativo para colorir",
+    "Aplicativo de colorir interativo",
+    "Bônus: PDF com 30 páginas para imprimir",
     "30 ilustrações originais e fofas",
-    "PDF complementar pronto para imprimir",
-    "Acesso vitalício ao seu livro digital",
+    "Acesso vitalício ao conteúdo",
     "Suporte prioritário via e-mail",
-    "Acesso a todas as futuras atualizações"
+    "Todas as futuras atualizações inclusas"
 ]
 
 export function BuySection() {
@@ -23,14 +23,14 @@ export function BuySection() {
       aria-label="Comprar Cozy Coloring"
     >
       <CardHeader className="text-center pb-4">
-        <CardTitle className="text-3xl font-extrabold tracking-tight">Adquira sua Cópia Digital</CardTitle>
+        <CardTitle className="text-3xl font-extrabold tracking-tight">Garanta seu Acesso Agora</CardTitle>
         <CardDescription className="text-lg text-muted-foreground pt-2">
-          Receba acesso imediato ao aplicativo interativo com 30 ilustrações fofas e seu PDF complementar.
+          Acesso imediato ao aplicativo de colorir interativo + PDF bônus com 30 páginas para imprimir.
         </CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col items-center text-center">
         <div className="mb-6 text-6xl font-extrabold text-foreground">
-          R$ 27,90
+          R$ 19,90
         </div>
 
         <ul className="mb-8 space-y-3 text-left text-muted-foreground">

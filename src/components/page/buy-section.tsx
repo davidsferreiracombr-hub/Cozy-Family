@@ -23,7 +23,7 @@ export function BuySection() {
                     Oferta por Tempo Limitado
                 </div>
                 <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                    Adquira o Acesso Completo
+                    Adquira o Acesso ao Plano Básico
                 </h2>
                 <p className="max-w-2xl text-lg text-muted-foreground mx-auto lg:mx-0">
                     Garanta sua vaga e comece a colorir agora mesmo. Você recebe acesso imediato a todo o conteúdo, incluindo o app interativo e o PDF para impressão.

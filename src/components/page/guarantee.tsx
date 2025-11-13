@@ -17,7 +17,7 @@ export function Guarantee() {
         Sua Satisfação ou Seu Dinheiro de Volta!
       </h2>
       <p className="mx-auto mt-4 max-w-2xl text-base text-muted-foreground sm:text-lg">
-        Sua compra é 100% segura. Se por qualquer motivo você não amar o livro de colorir, basta nos enviar um e-mail dentro de 7 dias e nós devolveremos seu dinheiro na hora. Sem perguntas, sem burocracia.
+        Sua compra é 100% segura. Se por qualquer motivo você não amar o plano, basta nos enviar um e-mail dentro de 7 dias e nós devolveremos seu dinheiro na hora. Sem perguntas, sem burocracia.
       </p>
     </div>
   );

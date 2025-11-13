@@ -30,7 +30,7 @@ export function BuySection() {
       </CardHeader>
       <CardContent className="flex flex-col items-center text-center">
         <div className="mb-6 text-6xl font-extrabold text-foreground">
-          R$ 19,90
+          R$ 14,90
         </div>
 
         <ul className="mb-8 space-y-3 text-left text-muted-foreground">

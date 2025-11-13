@@ -14,7 +14,7 @@ export function ForWho() {
           Com temas e paletas de cores variadas, nosso livro agrada a todos, de crianças a adultos.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         <div className="flex flex-col items-center text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4">Tema Delicado</h3>
             <Card className="overflow-hidden rounded-xl border-border/10 shadow-lg w-full max-w-md">
@@ -24,7 +24,7 @@ export function ForWho() {
                     alt="Demonstração do aplicativo de colorir com um tema de cores delicado"
                     width={500}
                     height={500}
-                    className="object-cover w-full aspect-square"
+                    className="object-contain w-full"
                     data-ai-hint="delicate coloring theme"
                 />
                 </CardContent>
@@ -39,7 +39,7 @@ export function ForWho() {
                     alt="Demonstração do aplicativo de colorir com um tema de cores vibrante"
                     width={500}
                     height={500}
-                    className="object-cover w-full aspect-square"
+                    className="object-contain w-full"
                     data-ai-hint="vibrant coloring theme"
                 />
                 </CardContent>

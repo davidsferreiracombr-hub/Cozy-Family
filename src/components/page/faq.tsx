@@ -7,24 +7,24 @@ import {
 
 const faqs = [
   {
-    q: 'Posso imprimir em casa?',
-    a: 'Sim — o PDF está otimizado para impressão A4. Você pode imprimir em papel comum ou especial para colorir.',
+    q: 'O que eu recebo exatamente após a compra?',
+    a: 'Você recebe acesso imediato e vitalício tanto ao aplicativo de colorir interativo quanto ao livro em formato PDF, que contém todas as 30 ilustrações e está pronto para imprimir.',
   },
   {
-    q: 'Receberei o link para download após o pagamento?',
-    a: 'Sim — após a confirmação do pagamento, você receberá um link para download no e-mail informado durante a compra.',
+    q: 'Como vou receber os arquivos?',
+    a: 'Após a confirmação do pagamento, você receberá um link seguro por e-mail para baixar o PDF e acessar o aplicativo. O processo é rápido e automatizado.',
   },
   {
-    q: 'Posso usar o livro de colorir em um tablet?',
-    a: 'Sim — o arquivo PDF funciona perfeitamente com aplicativos de pintura digital como Procreate, GoodNotes, e outros.',
+    q: 'Posso usar o aplicativo em um tablet, como o iPad?',
+    a: 'Sim! O aplicativo interativo funciona em celulares, tablets e computadores. O PDF também é compatível com apps de desenho como Procreate e GoodNotes.',
   },
   {
     q: 'Quais são as formas de pagamento aceitas?',
-    a: 'Aceitamos as principais formas de pagamento, incluindo cartão de crédito, débito e Pix. Tudo de forma segura.',
+    a: 'Aceitamos as principais formas de pagamento, incluindo Pix, cartão de crédito e boleto. Sua compra é processada em um ambiente 100% seguro.',
   },
   {
-    q: 'O acesso ao livro de colorir é vitalício?',
-    a: 'Sim, uma vez adquirido, o acesso ao arquivo PDF é seu para sempre. Você pode baixar e imprimir quantas vezes quiser.',
+    q: 'O acesso é vitalício?',
+    a: 'Sim, uma vez adquirido, o acesso ao aplicativo e ao PDF é seu para sempre. Você pode usar e imprimir quantas vezes quiser, sem custos adicionais.',
   },
 ];
 

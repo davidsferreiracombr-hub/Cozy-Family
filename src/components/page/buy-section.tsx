@@ -6,12 +6,9 @@ import { Check, ShieldCheck, Sparkles, ShoppingCart } from 'lucide-react';
 import { CountdownTimer } from './countdown-timer';
 
 const includedFeatures = [
-    "Acesso vitalício ao app de colorir",
-    "30 ilustrações originais e fofas",
-    "PDF bônus para imprimir e pintar",
-    "Use em celular, tablet ou computador",
-    "Suporte prioritário via e-mail",
-    "Acesso a todas as futuras atualizações"
+    "Acesso vitalício ao aplicativo",
+    "30 ilustrações em PDF para imprimir",
+    "Garantia de 7 dias para sua segurança"
 ]
 
 export function BuySection() {
@@ -49,7 +46,7 @@ export function BuySection() {
                 <CardHeader className="bg-muted/30 p-6 text-center">
                     <div className="flex items-center justify-center gap-2">
                         <Sparkles className="h-6 w-6 text-primary" />
-                        <CardTitle className="text-2xl font-bold tracking-tight">Oferta Especial</CardTitle>
+                        <CardTitle className="text-2xl font-bold tracking-tight">Plano Básico</CardTitle>
                     </div>
                      <CardDescription className="mt-2 text-md text-muted-foreground">
                         A promoção termina em:

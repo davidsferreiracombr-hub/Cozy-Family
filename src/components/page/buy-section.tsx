@@ -44,14 +44,14 @@ export function BuySection() {
             aria-label="Comprar Cozy Coloring"
             >
                 <CardHeader className="bg-muted/30 p-6 text-center">
-                    <div className="flex items-center justify-center gap-2">
-                        <Sparkles className="h-6 w-6 text-primary" />
-                        <CardTitle className="text-2xl font-bold tracking-tight">Plano Básico</CardTitle>
-                    </div>
-                     <CardDescription className="mt-2 text-md text-muted-foreground">
+                    <CardDescription className="text-md text-muted-foreground">
                         A promoção termina em:
                     </CardDescription>
                     <CountdownTimer endTime={offerEndTime.toISOString()} />
+                    <div className="flex items-center justify-center gap-2 mt-4">
+                        <Sparkles className="h-6 w-6 text-primary" />
+                        <CardTitle className="text-2xl font-bold tracking-tight">Plano Básico</CardTitle>
+                    </div>
                 </CardHeader>
                 <CardContent className="p-8 bg-background">
                     <div className="mb-6 text-center">

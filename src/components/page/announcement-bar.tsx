@@ -2,45 +2,27 @@
 
 import { Sparkles } from 'lucide-react';
 
+const messages = [
+    "Bem-vindo ao Cozy Coloring ✨",
+    "A experiência de colorir mais fofa e relaxante 🎨",
+    "Relaxe, crie e divirta-se 💖",
+    "30 ilustrações no estilo Bobbie Goods 🧸",
+];
+
 export function AnnouncementBar() {
-  const message = "Bem-vindo ao Cozy Coloring";
   return (
-    <div className="bg-primary text-primary-foreground">
-      <div className="container mx-auto flex items-center justify-center px-0 py-2 text-sm font-medium overflow-hidden whitespace-nowrap">
-        <div className="animate-marquee flex min-w-full shrink-0 items-center justify-center gap-12">
-            <div className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4" />
-                <span>{message}</span>
+    <div className="bg-primary text-primary-foreground h-10 flex items-center overflow-hidden">
+      <div className="w-full flex">
+        <div className="animate-marquee-vertical-wrapper flex-none flex flex-col items-start w-full">
+            <div className="animate-marquee-vertical py-2">
+                {messages.map((message, index) => (
+                    <p key={index} className="text-sm font-medium whitespace-nowrap px-4 leading-loose">{message}</p>
+                ))}
             </div>
-             <div className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4" />
-                <span>{message}</span>
-            </div>
-             <div className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4" />
-                <span>{message}</span>
-            </div>
-             <div className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4" />
-                <span>{message}</span>
-            </div>
-        </div>
-        <div className="animate-marquee-2 flex min-w-full shrink-0 items-center justify-center gap-12">
-            <div className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4" />
-                <span>{message}</span>
-            </div>
-             <div className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4" />
-                <span>{message}</span>
-            </div>
-             <div className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4" />
-                <span>{message}</span>
-            </div>
-             <div className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4" />
-                <span>{message}</span>
+            <div className="animate-marquee-vertical py-2">
+                 {messages.map((message, index) => (
+                    <p key={index} className="text-sm font-medium whitespace-nowrap px-4 leading-loose">{message}</p>
+                ))}
             </div>
         </div>
       </div>

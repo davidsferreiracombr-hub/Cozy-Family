@@ -29,6 +29,9 @@ export function ForWho() {
                 />
                 </CardContent>
             </Card>
+            <p className="mt-4 text-base text-muted-foreground max-w-md">
+                Ideal para quem busca uma experiência tranquila e relaxante, com tons pastéis e suaves que acalmam a mente.
+            </p>
         </div>
         <div className="flex flex-col items-center text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4">Tema Vibrante</h3>
@@ -44,6 +47,9 @@ export function ForWho() {
                 />
                 </CardContent>
             </Card>
+            <p className="mt-4 text-base text-muted-foreground max-w-md">
+                Perfeito para estimular a criatividade e a energia, com cores vivas e fortes que dão vida a cada ilustração.
+            </p>
         </div>
       </div>
     </div>

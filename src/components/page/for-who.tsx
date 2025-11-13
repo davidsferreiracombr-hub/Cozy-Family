@@ -1,45 +1,50 @@
 "use client";
 
-import { Card, CardContent } from '@/components/ui/card';
-import { BrainCircuit, Heart, Users } from 'lucide-react';
-
-const whoIsItFor = [
-  {
-    icon: <Heart className="h-10 w-10 text-primary" />,
-    label: 'Quem quer relaxar',
-    description: 'Uma atividade terapêutica para aliviar a ansiedade e encontrar calma no dia a dia.',
-  },
-  {
-    icon: <BrainCircuit className="h-10 w-10 text-primary" />,
-    label: 'Mentes criativas',
-    description: 'Perfeito para quem ama arte e quer explorar combinações de cores sem a pressão de desenhar do zero.',
-  },
-  {
-    icon: <Users className="h-10 w-10 text-primary" />,
-    label: 'Toda a família',
-    description: 'Uma atividade divertida e unificadora para compartilhar com crianças, pais e avós.',
-  },
-];
+import Image from 'next/image';
+import { Card, CardContent } from '../ui/card';
 
 export function ForWho() {
   return (
-    <div className="text-center" id="for-who">
-      <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-        Perfeito para todos
-      </h2>
-      <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-        Seja para um momento de paz ou diversão em grupo, o Cozy Coloring foi feito para você.
-      </p>
-      <div className="mt-8 grid grid-cols-1 gap-8 sm:mt-12 md:grid-cols-3">
-        {whoIsItFor.map((item, index) => (
-          <Card key={index} className="flex flex-col items-center p-8 text-center shadow-lg border-border/10 transition-shadow hover:shadow-xl">
-            {item.icon}
-            <h3 className="mt-4 text-xl font-bold">{item.label}</h3>
-            <p className="mt-2 text-base text-muted-foreground">
-              {item.description}
-            </p>
-          </Card>
-        ))}
+    <div id="for-who" className="w-full">
+      <div className="text-center mb-8 sm:mb-12">
+        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          Perfeito para Todos os Estilos
+        </h2>
+        <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground">
+          Com temas e paletas de cores variadas, nosso livro agrada a todos, de crianças a adultos.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="flex flex-col items-center text-center">
+            <h3 className="text-2xl font-bold text-foreground mb-4">Tema Delicado</h3>
+            <Card className="overflow-hidden rounded-xl border-border/10 shadow-lg w-full max-w-md">
+                <CardContent className="p-0">
+                <Image
+                    src="https://i.imgur.com/PBdaDyP.png"
+                    alt="Demonstração do aplicativo de colorir com um tema de cores delicado"
+                    width={500}
+                    height={500}
+                    className="object-cover w-full aspect-square"
+                    data-ai-hint="delicate coloring theme"
+                />
+                </CardContent>
+            </Card>
+        </div>
+        <div className="flex flex-col items-center text-center">
+            <h3 className="text-2xl font-bold text-foreground mb-4">Tema Vibrante</h3>
+             <Card className="overflow-hidden rounded-xl border-border/10 shadow-lg w-full max-w-md">
+                <CardContent className="p-0">
+                <Image
+                    src="https://i.imgur.com/U2JJeXF.png"
+                    alt="Demonstração do aplicativo de colorir com um tema de cores vibrante"
+                    width={500}
+                    height={500}
+                    className="object-cover w-full aspect-square"
+                    data-ai-hint="vibrant coloring theme"
+                />
+                </CardContent>
+            </Card>
+        </div>
       </div>
     </div>
   );

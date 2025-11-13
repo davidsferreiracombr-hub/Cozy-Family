@@ -10,7 +10,6 @@ import { Faq } from '@/components/page/faq';
 import { BuySection } from '@/components/page/buy-section';
 import { Guarantee } from '@/components/page/guarantee';
 import { AppFooter } from '@/components/page/footer';
-import { AppExperience } from './app-experience';
 
 export default function HomePageClient() {
   return (
@@ -20,10 +19,9 @@ export default function HomePageClient() {
           <Hero />
         </header>
         <main className="mt-16 flex flex-col gap-16 sm:mt-20 sm:gap-24">
-          <DoodleSamples />
           <ForWho />
           <WhatYouGet />
-          <AppExperience />
+          <DoodleSamples />
           <Features />
           <BuySection />
           <Testimonials />

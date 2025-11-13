@@ -33,12 +33,10 @@ export function Hero() {
             id="hero-title"
             className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl"
           >
-            Ilustrações fofas e aconchegantes para colorir e relaxar.
+            A experiência de colorir mais fofa e relaxante, agora no seu dispositivo.
           </h1>
           <p className="mt-4 text-base text-muted-foreground sm:text-lg">
-            Perfeito para todas as idades, nosso livro digital oferece 30
-            desenhos únicos para despertar sua criatividade e proporcionar
-            momentos de paz.
+            Liberte sua criatividade com nosso aplicativo de colorir interativo. E para uma experiência tátil, leve suas obras de arte para o papel com o nosso PDF complementar, pronto para imprimir.
           </p>
         </div>
       </div>

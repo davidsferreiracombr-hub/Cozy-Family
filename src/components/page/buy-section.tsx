@@ -6,10 +6,9 @@ import { CheckCircle, ShoppingBag } from 'lucide-react';
 import { PaymentMethods } from './payment-methods';
 
 const includedFeatures = [
-    "30 ilustrações originais e fofas",
     "Aplicativo interativo para colorir",
-    "Acesso imediato ao arquivo PDF",
-    "Pronto para imprimir ou colorir no tablet",
+    "30 ilustrações originais e fofas",
+    "PDF complementar pronto para imprimir",
     "Perfeito para relaxar e estimular a criatividade",
     "Acesso vitalício ao seu livro digital"
 ]

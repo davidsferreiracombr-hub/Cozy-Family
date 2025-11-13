@@ -6,24 +6,24 @@ import Image from 'next/image';
 
 const benefits = [
     {
-        icon: <ImageIcon className="h-8 w-8 text-primary" />,
-        label: '30 Ilustrações Exclusivas',
-        description: 'Desenhos fofos e aconchegantes, criados com carinho para você.',
+        icon: <Smartphone className="h-8 w-8 text-primary" />,
+        label: 'Aplicativo Interativo',
+        description: 'Uma forma divertida e moderna de pintar digitalmente no seu dispositivo favorito.',
     },
     {
-        icon: <Smartphone className="h-8 w-8 text-primary" />,
-        label: 'Aplicativo de Colorir',
-        description: 'Uma forma divertida de pintar digitalmente no seu dispositivo favorito.',
+        icon: <ImageIcon className="h-8 w-8 text-primary" />,
+        label: '30 Ilustrações Exclusivas',
+        description: 'Desenhos fofos e aconchegantes, criados com carinho para você usar no app ou imprimir.',
     },
     {
         icon: <FileDown className="h-8 w-8 text-primary" />,
-        label: 'Acesso Imediato ao PDF',
-        description: 'Baixe o arquivo em alta resolução assim que confirmar a compra.',
+        label: 'PDF para Imprimir',
+        description: 'Um complemento perfeito para levar sua arte para o papel quando quiser.',
     },
     {
         icon: <Tablet className="h-8 w-8 text-primary" />,
-        label: 'Use no Tablet ou Imprima',
-        description: 'Compatível com apps de desenho e otimizado para impressão em A4.',
+        label: 'Use Onde Quiser',
+        description: 'Pinte no aplicativo ou imprima em papel A4 para uma experiência tátil.',
     },
 ];
 

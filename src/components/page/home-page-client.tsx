@@ -10,6 +10,7 @@ import { Faq } from '@/components/page/faq';
 import { BuySection } from '@/components/page/buy-section';
 import { Guarantee } from '@/components/page/guarantee';
 import { AppFooter } from '@/components/page/footer';
+import { AppExperience } from './app-experience';
 
 export default function HomePageClient() {
   return (
@@ -22,6 +23,7 @@ export default function HomePageClient() {
           <DoodleSamples />
           <ForWho />
           <WhatYouGet />
+          <AppExperience />
           <Features />
           <BuySection />
           <Testimonials />

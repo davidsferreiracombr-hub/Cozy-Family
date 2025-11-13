@@ -18,7 +18,7 @@ export function Hero() {
       </p>
 
       <div className="mt-8 grid grid-cols-1 items-center gap-8 text-left sm:mt-10 md:grid-cols-2">
-        <div className="relative mx-auto w-full max-w-xs sm:max-w-sm">
+        <div className="relative mx-auto w-full max-w-sm sm:max-w-md md:-mt-8">
           <Image
             src="https://i.imgur.com/NgKmfL8.png"
             alt="Cozy Coloring book cover"

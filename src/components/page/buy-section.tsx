@@ -9,8 +9,9 @@ const includedFeatures = [
     "Aplicativo interativo para colorir",
     "30 ilustrações originais e fofas",
     "PDF complementar pronto para imprimir",
-    "Perfeito para relaxar e estimular a criatividade",
-    "Acesso vitalício ao seu livro digital"
+    "Acesso vitalício ao seu livro digital",
+    "Suporte prioritário via e-mail",
+    "Acesso a todas as futuras atualizações"
 ]
 
 export function BuySection() {
@@ -29,7 +30,7 @@ export function BuySection() {
       </CardHeader>
       <CardContent className="flex flex-col items-center text-center">
         <div className="mb-6 text-6xl font-extrabold text-foreground">
-          R$ 19,90
+          R$ 27,90
         </div>
 
         <ul className="mb-8 space-y-3 text-left text-muted-foreground">

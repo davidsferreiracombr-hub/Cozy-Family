@@ -6,24 +6,24 @@ import { Card, CardContent } from '../ui/card';
 const testimonials = [
   {
     quote:
-      'Simplesmente adorei — desenhos delicados e super relaxantes. Usei com meus sobrinhos e aproveitamos muito.',
-    author: 'Marina S.',
-    location: 'São Paulo, SP',
-    avatar: 'M',
+      'Finalmente um momento de paz! É a minha atividade favorita para relaxar depois de um dia corrido com as crianças. Os desenhos são lindos e ajudam a desligar a mente.',
+    author: 'Juliana M.',
+    location: 'Porto Alegre, RS',
+    avatar: 'J',
   },
   {
     quote:
-      'Comprei para mim e também para presentear minha mãe. Qualidade excelente e super prazeroso de colorir.',
-    author: 'Rafael L.',
-    location: 'Rio de Janeiro, RJ',
-    avatar: 'R',
+      'Meus filhos adoraram! Passamos a tarde inteira colorindo juntos, longe das telas. O aplicativo é super fácil de usar e o PDF para imprimir é um bônus maravilhoso.',
+    author: 'Ana Clara V.',
+    location: 'Recife, PE',
+    avatar: 'A',
   },
   {
     quote:
-      'Design fofo e temas acolhedores. Recomendo para quem quer relaxar depois do trabalho.',
-    author: 'Camila P.',
-    location: 'Belo Horizonte, BH',
-    avatar: 'C',
+      'Comprei para minha mãe e foi um sucesso. Ela amou a delicadeza dos desenhos. É uma ótima forma de presentear com algo que proporciona bem-estar e criatividade.',
+    author: 'Beatriz L.',
+    location: 'Curitiba, PR',
+    avatar: 'B',
   },
 ];
 

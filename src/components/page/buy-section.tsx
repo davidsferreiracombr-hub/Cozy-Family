@@ -55,9 +55,9 @@ export function BuySection() {
                 </CardHeader>
                 <CardContent className="p-8 bg-background">
                     <div className="mb-6 text-center">
-                        <span className="text-xl font-medium text-muted-foreground line-through">De R$ 34,90</span>
+                        <span className="text-xl font-medium text-muted-foreground line-through">De R$ 17,90</span>
                         <div className="mt-2 text-5xl font-extrabold text-foreground">
-                            Por R$ 14,90
+                            Por R$ 7,90
                         </div>
                         <p className="mt-2 text-lg text-muted-foreground">
                             Pagamento único. Acesso vitalício.

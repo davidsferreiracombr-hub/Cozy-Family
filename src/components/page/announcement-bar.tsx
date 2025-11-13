@@ -1,7 +1,5 @@
 "use client";
 
-import { Sparkles } from 'lucide-react';
-
 const messages = [
     "Bem-vindo ao Cozy Coloring ✨",
     "A experiência de colorir mais fofa e relaxante 🎨",
@@ -11,20 +9,16 @@ const messages = [
 
 export function AnnouncementBar() {
   return (
-    <div className="bg-primary text-primary-foreground h-10 flex items-center overflow-hidden">
-      <div className="w-full flex">
-        <div className="animate-marquee-vertical-wrapper flex-none flex flex-col items-start w-full">
-            <div className="animate-marquee-vertical py-2">
-                {messages.map((message, index) => (
-                    <p key={index} className="text-sm font-medium whitespace-nowrap px-4 leading-loose">{message}</p>
-                ))}
-            </div>
-            <div className="animate-marquee-vertical py-2">
-                 {messages.map((message, index) => (
-                    <p key={index} className="text-sm font-medium whitespace-nowrap px-4 leading-loose">{message}</p>
-                ))}
-            </div>
-        </div>
+    <div className="relative flex h-10 w-full overflow-x-hidden bg-primary text-primary-foreground">
+      <div className="animate-marquee whitespace-nowrap py-2">
+        {messages.map((message, index) => (
+            <span key={index} className="mx-4 text-sm font-medium">{message}</span>
+        ))}
+      </div>
+      <div className="absolute top-0 animate-marquee2 whitespace-nowrap py-2">
+        {messages.map((message, index) => (
+            <span key={index} className="mx-4 text-sm font-medium">{message}</span>
+        ))}
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ import { Faq } from '@/components/page/faq';
 import { BuySection } from '@/components/page/buy-section';
 import { AppFooter } from '@/components/page/footer';
 import { AnnouncementBar } from './announcement-bar';
+import { Guarantee } from './guarantee';
 
 export default function HomePageClient() {
   return (
@@ -18,6 +19,9 @@ export default function HomePageClient() {
           <Features />
           <DoodleSamples />
           <BuySection />
+          <div className="py-16 sm:py-24">
+            <Guarantee />
+          </div>
           <Faq />
         </div>
       </main>

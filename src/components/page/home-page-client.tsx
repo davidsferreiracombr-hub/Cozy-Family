@@ -19,9 +19,9 @@ export default function HomePageClient() {
           <Features />
           <DoodleSamples />
           <BuySection />
-          <div className="py-16 sm:py-24">
+          <section className="py-16 sm:py-24">
             <Guarantee />
-          </div>
+          </section>
           <Faq />
         </div>
       </main>

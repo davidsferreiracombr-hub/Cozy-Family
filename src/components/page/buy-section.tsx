@@ -25,7 +25,7 @@ export function BuySection() {
       <CardHeader className="text-center pb-4">
         <CardTitle className="text-3xl font-extrabold tracking-tight">Adquira sua Cópia Digital</CardTitle>
         <CardDescription className="text-lg text-muted-foreground pt-2">
-          Receba acesso imediato a 30 ilustrações fofas e aconchegantes.
+          Receba acesso imediato ao aplicativo interativo com 30 ilustrações fofas e seu PDF complementar.
         </CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col items-center text-center">

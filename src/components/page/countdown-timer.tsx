@@ -8,7 +8,6 @@ interface CountdownTimerProps {
 
 export function CountdownTimer({ endTime }: CountdownTimerProps) {
   const [timeLeft, setTimeLeft] = useState({
-    hours: '00',
     minutes: '00',
     seconds: '00',
   });
@@ -17,14 +16,12 @@ export function CountdownTimer({ endTime }: CountdownTimerProps) {
     const calculateTimeLeft = () => {
       const difference = +new Date(endTime) - +new Date();
       let timeLeft = {
-        hours: '00',
         minutes: '00',
         seconds: '00',
       };
 
       if (difference > 0) {
         timeLeft = {
-          hours: String(Math.floor((difference / (1000 * 60 * 60)) % 24)).padStart(2, '0'),
           minutes: String(Math.floor((difference / 1000 / 60) % 60)).padStart(2, '0'),
           seconds: String(Math.floor((difference / 1000) % 60)).padStart(2, '0'),
         };
@@ -54,8 +51,6 @@ export function CountdownTimer({ endTime }: CountdownTimerProps) {
 
   return (
     <div className="flex justify-center items-center gap-3 mt-3">
-      {renderTimeBlock(timeLeft.hours, 'Horas')}
-      <span className="text-3xl font-bold text-foreground">:</span>
       {renderTimeBlock(timeLeft.minutes, 'Minutos')}
       <span className="text-3xl font-bold text-foreground">:</span>
       {renderTimeBlock(timeLeft.seconds, 'Segundos')}

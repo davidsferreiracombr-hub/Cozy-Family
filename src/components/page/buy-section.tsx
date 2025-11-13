@@ -16,7 +16,7 @@ const includedFeatures = [
 
 export function BuySection() {
   const offerEndTime = new Date();
-  offerEndTime.setHours(offerEndTime.getHours() + 4);
+  offerEndTime.setMinutes(offerEndTime.getMinutes() + 15);
 
   return (
     <section id="buy-now" className="w-full py-16 sm:py-24">

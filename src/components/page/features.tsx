@@ -1,49 +1,52 @@
 "use client";
 
-import { Card } from '@/components/ui/card';
-import { HeartHandshake, Puzzle, Smile } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { HeartHandshake, Paintbrush, TabletSmartphone } from 'lucide-react';
 
 const features = [
   {
-    icon: <HeartHandshake className="h-10 w-10 text-primary" />,
+    icon: <TabletSmartphone className="h-8 w-8 text-primary" />,
+    label: 'App Interativo + PDF',
+    description:
+      'Pinte no seu dispositivo com nosso app ou imprima o PDF para uma experiência clássica.',
+  },
+  {
+    icon: <HeartHandshake className="h-8 w-8 text-primary" />,
     label: 'Relaxe e Desconecte',
     description:
-      'Uma atividade terapêutica para aliviar o estresse do dia a dia.',
+      'Uma atividade terapêutica e divertida para aliviar o estresse e estimular a mente.',
   },
   {
-    icon: <Puzzle className="h-10 w-10 text-primary" />,
-    label: 'Estimule a Criatividade',
-    description:
-      'Dê vida aos desenhos com suas cores e libere seu lado artístico.',
-  },
-  {
-    icon: <Smile className="h-10 w-10 text-primary" />,
+    icon: <Paintbrush className="h-8 w-8 text-primary" />,
     label: 'Para Todas as Idades',
     description:
-      'Perfeito para crianças, adultos e para compartilhar em família.',
+      'Ilustrações fofas e aconchegantes, perfeitas para crianças, adultos e para curtir em família.',
   },
 ];
 
 export function Features() {
   return (
-    <div>
-      <h2 className="text-center text-3xl font-extrabold tracking-tight sm:text-4xl">
-        Por que você vai amar o Cozy Coloring
-      </h2>
-      <div className="mt-8 grid grid-cols-1 gap-8 sm:mt-12 sm:grid-cols-3">
+    <section className="py-20 md:py-32">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
         {features.map((feature, index) => (
           <Card
             key={index}
-            className="flex flex-col items-center p-8 text-center shadow-lg border-border/10 transition-shadow hover:shadow-xl"
+            className="border-none bg-transparent shadow-none text-center"
           >
-            {feature.icon}
-            <h3 className="mt-4 text-xl font-bold">{feature.label}</h3>
-            <p className="mt-2 text-base text-muted-foreground">
-              {feature.description}
-            </p>
+            <CardHeader className="flex justify-center items-center">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                {feature.icon}
+              </div>
+            </CardHeader>
+            <CardContent>
+              <CardTitle className="mb-2 text-xl font-bold">{feature.label}</CardTitle>
+              <p className="text-muted-foreground">
+                {feature.description}
+              </p>
+            </CardContent>
           </Card>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

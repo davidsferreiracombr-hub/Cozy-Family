@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Accordion,
   AccordionContent,
@@ -19,10 +21,6 @@ const faqs = [
     a: 'Sim! O aplicativo interativo funciona em celulares, tablets e computadores. O PDF também é compatível com apps de desenho como Procreate e GoodNotes.',
   },
   {
-    q: 'Quais são as formas de pagamento aceitas?',
-    a: 'Aceitamos as principais formas de pagamento, incluindo Pix, cartão de crédito e boleto. Sua compra é processada em um ambiente 100% seguro.',
-  },
-  {
     q: 'O acesso é vitalício?',
     a: 'Sim, uma vez adquirido, o acesso ao aplicativo e ao PDF é seu para sempre. Você pode usar e imprimir quantas vezes quiser, sem custos adicionais.',
   },
@@ -30,10 +28,12 @@ const faqs = [
 
 export function Faq() {
   return (
-    <div id="faq" className="w-full max-w-3xl mx-auto">
-      <h2 className="mb-6 text-center text-3xl font-extrabold text-foreground">
-        Perguntas Frequentes
-      </h2>
+    <section id="faq" className="w-full max-w-3xl mx-auto py-20 md:py-32">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          Perguntas Frequentes
+        </h2>
+      </div>
       <Accordion type="single" collapsible className="w-full">
         {faqs.map((faq, index) => (
           <AccordionItem key={index} value={`item-${index}`}>
@@ -46,6 +46,6 @@ export function Faq() {
           </AccordionItem>
         ))}
       </Accordion>
-    </div>
+    </section>
   );
 }

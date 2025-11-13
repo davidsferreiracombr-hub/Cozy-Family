@@ -2,36 +2,24 @@
 
 import { Hero } from '@/components/page/hero';
 import { DoodleSamples } from '@/components/page/doodle-samples';
-import { ForWho } from '@/components/page/for-who';
-import { WhatYouGet } from '@/components/page/what-you-get';
 import { Features } from '@/components/page/features';
-import { Testimonials } from '@/components/page/testimonials';
 import { Faq } from '@/components/page/faq';
 import { BuySection } from '@/components/page/buy-section';
-import { Guarantee } from '@/components/page/guarantee';
 import { AppFooter } from '@/components/page/footer';
 
 export default function HomePageClient() {
   return (
-    <div className="flex flex-col items-center">
-      <div className="w-full max-w-5xl p-4 sm:p-8">
-        <header>
+    <div className="flex min-h-screen flex-col bg-background">
+      <main className="flex-1">
+        <div className="container relative px-4 sm:px-8">
           <Hero />
-        </header>
-        <main className="mt-16 flex flex-col gap-16 sm:mt-20 sm:gap-24">
-          <ForWho />
-          <WhatYouGet />
-          <DoodleSamples />
           <Features />
+          <DoodleSamples />
           <BuySection />
-          <Testimonials />
-          <Guarantee />
           <Faq />
-        </main>
-      </div>
-      <div className="w-full">
-        <AppFooter />
-      </div>
+        </div>
+      </main>
+      <AppFooter />
     </div>
   );
 }

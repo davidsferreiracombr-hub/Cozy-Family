@@ -6,10 +6,12 @@ import { Features } from '@/components/page/features';
 import { Faq } from '@/components/page/faq';
 import { BuySection } from '@/components/page/buy-section';
 import { AppFooter } from '@/components/page/footer';
+import { AnnouncementBar } from './announcement-bar';
 
 export default function HomePageClient() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
+      <AnnouncementBar />
       <main className="flex-1">
         <Hero />
         <div className="container relative px-4 sm:px-8">

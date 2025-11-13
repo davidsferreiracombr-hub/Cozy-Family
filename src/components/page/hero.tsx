@@ -5,7 +5,7 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section className="w-full py-20 md:py-32 flex items-center justify-center text-center bg-background">
+    <section className="w-full py-16 sm:py-24 flex items-center justify-center text-center bg-background">
       <div className="p-4 sm:p-6 flex flex-col items-center">
          <div className="mx-auto max-w-3xl">
             <h1

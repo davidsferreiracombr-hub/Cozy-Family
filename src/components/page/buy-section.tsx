@@ -19,7 +19,7 @@ export function BuySection() {
   offerEndTime.setHours(offerEndTime.getHours() + 4);
 
   return (
-    <section id="buy-now" className="w-full py-20 sm:py-32">
+    <section id="buy-now" className="w-full py-16 sm:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 text-center lg:text-left">
                 <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">

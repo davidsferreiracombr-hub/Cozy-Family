@@ -38,52 +38,56 @@ export function BuySection() {
                 </ul>
             </div>
             
-            <Card
-            className="mx-auto w-full max-w-md overflow-hidden rounded-2xl shadow-2xl border-2 border-primary/50"
-            role="region"
-            aria-label="Comprar Cozy Coloring"
-            >
-                <CardHeader className="bg-muted/30 p-6 text-center">
-                    <CardDescription className="text-md text-muted-foreground">
+            <div className="flex flex-col items-center">
+                <div className="text-center mb-4">
+                    <p className="text-md text-muted-foreground">
                         A promoção termina em:
-                    </CardDescription>
+                    </p>
                     <CountdownTimer endTime={offerEndTime.toISOString()} />
-                    <div className="flex items-center justify-center gap-2 mt-4">
-                        <Sparkles className="h-6 w-6 text-primary" />
-                        <CardTitle className="text-2xl font-bold tracking-tight">Plano Básico</CardTitle>
-                    </div>
-                </CardHeader>
-                <CardContent className="p-8 bg-background">
-                    <div className="mb-6 text-center">
-                        <span className="text-xl font-medium text-muted-foreground line-through">De R$ 17,90</span>
-                        <div className="mt-2 text-5xl font-extrabold text-foreground">
-                            Por R$ 7,90
+                </div>
+                <Card
+                className="mx-auto w-full max-w-md overflow-hidden rounded-2xl shadow-2xl border-2 border-primary/50"
+                role="region"
+                aria-label="Comprar Cozy Coloring"
+                >
+                    <CardHeader className="bg-muted/30 p-6 text-center">
+                        <div className="flex items-center justify-center gap-2">
+                            <Sparkles className="h-6 w-6 text-primary" />
+                            <CardTitle className="text-2xl font-bold tracking-tight">Plano Básico</CardTitle>
                         </div>
-                        <p className="mt-2 text-lg text-muted-foreground">
-                            Pagamento único. Acesso vitalício.
-                        </p>
-                    </div>
-                    
-                    <Button
-                        size="lg"
-                        className="w-full text-lg h-14 font-bold shadow-lg"
-                        asChild
-                    >
-                        <a
-                            href="https://pay.cakto.com.br/oc4ztnt_639973"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                    </CardHeader>
+                    <CardContent className="p-8 bg-background">
+                        <div className="mb-6 text-center">
+                            <span className="text-xl font-medium text-muted-foreground line-through">De R$ 17,90</span>
+                            <div className="mt-2 text-5xl font-extrabold text-foreground">
+                                Por R$ 7,90
+                            </div>
+                            <p className="mt-2 text-lg text-muted-foreground">
+                                Pagamento único. Acesso vitalício.
+                            </p>
+                        </div>
+                        
+                        <Button
+                            size="lg"
+                            className="w-full text-lg h-14 font-bold shadow-lg"
+                            asChild
                         >
-                            <ShoppingCart className="mr-3 h-6 w-6" />
-                            Comprar Agora
-                        </a>
-                    </Button>
-                    <div className="mt-6 flex items-center justify-center gap-2 text-sm text-muted-foreground">
-                        <ShieldCheck className="h-5 w-5 text-green-600" />
-                        <span>Pagamento 100% seguro e acesso imediato.</span>
-                    </div>
-                </CardContent>
-            </Card>
+                            <a
+                                href="https://pay.cakto.com.br/oc4ztnt_639973"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <ShoppingCart className="mr-3 h-6 w-6" />
+                                Comprar Agora
+                            </a>
+                        </Button>
+                        <div className="mt-6 flex items-center justify-center gap-2 text-sm text-muted-foreground">
+                            <ShieldCheck className="h-5 w-5 text-green-600" />
+                            <span>Pagamento 100% seguro e acesso imediato.</span>
+                        </div>
+                    </CardContent>
+                </Card>
+            </div>
         </div>
     </section>
   );

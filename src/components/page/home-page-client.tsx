@@ -11,8 +11,8 @@ export default function HomePageClient() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <main className="flex-1">
+        <Hero />
         <div className="container relative px-4 sm:px-8">
-          <Hero />
           <Features />
           <DoodleSamples />
           <BuySection />

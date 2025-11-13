@@ -5,7 +5,7 @@ import { ShieldCheck } from 'lucide-react';
 export function Guarantee() {
   return (
     <div
-      className="relative rounded-2xl bg-card p-8 pt-12 text-center shadow-lg"
+      className="relative rounded-2xl bg-card p-8 pt-12 text-center shadow-lg border"
       id="guarantee"
     >
       <div className="absolute inset-x-0 top-0 flex justify-center">

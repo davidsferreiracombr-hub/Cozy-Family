@@ -6,9 +6,9 @@ import Image from 'next/image';
 
 export function Hero() {
   return (
-    <section className="w-full pt-16 pb-12 sm:pt-24 sm:pb-20 flex items-center justify-center text-center bg-background">
-      <div className="p-4 sm:p-6 flex flex-col items-center">
-         <div className="mx-auto max-w-3xl">
+    <section className="w-full pt-16 sm:pt-24 flex items-center justify-center text-center bg-background">
+      <div className="flex flex-col items-center">
+         <div className="mx-auto max-w-3xl px-4 sm:px-6">
             <h1
             id="hero-title"
             className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl text-foreground"
@@ -35,7 +35,7 @@ export function Hero() {
             alt="Pré-visualização do livro de colorir Cozy Coloring"
             width={1280}
             height={720}
-            className="mt-8 mb-20 w-full max-w-3xl rounded-lg aspect-video object-contain"
+            className="mt-8 mb-20 w-full object-contain"
             priority
             data-ai-hint="coloring book preview"
         />

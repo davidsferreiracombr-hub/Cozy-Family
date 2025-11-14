@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Cozy Coloring — Bobbie Goods',
+  title: 'Cozy Family',
   description:
     'Ilustrações fofas e aconchegantes para colorir e relaxar — perfeitas para todas as idades.',
 };

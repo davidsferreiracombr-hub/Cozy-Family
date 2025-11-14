@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles, ShieldCheck } from 'lucide-react';
 import Image from 'next/image';
 
 export function Hero() {
@@ -9,6 +9,10 @@ export function Hero() {
     <section className="w-full pt-12 sm:pt-16 flex items-center justify-center text-center bg-background">
       <div className="flex flex-col items-center">
          <div className="mx-auto max-w-3xl px-4 sm:px-6">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">
+                <ShieldCheck className="h-4 w-4" />
+                Pagamento 100% seguro
+            </div>
             <h1
             id="hero-title"
             className="text-4xl font-extrabold tracking-tight sm:text-5xl text-foreground"

@@ -9,6 +9,7 @@ import { AppFooter } from '@/components/page/footer';
 import { AnnouncementBar } from './announcement-bar';
 import { Guarantee } from './guarantee';
 import { Testimonials } from './testimonials';
+import { PurchaseNotifications } from './purchase-notifications';
 
 export default function HomePageClient() {
   return (
@@ -28,6 +29,7 @@ export default function HomePageClient() {
         </div>
       </main>
       <AppFooter />
+      <PurchaseNotifications />
     </div>
   );
 }

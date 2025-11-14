@@ -13,7 +13,7 @@ export function AboutCreator() {
             <CardContent className="p-0">
               <Image
                 src="https://picsum.photos/seed/creator/500/500"
-                alt="Foto da criadora Bobbie"
+                alt="Foto da criadora Bia"
                 width={500}
                 height={500}
                 className="object-cover w-full aspect-square"
@@ -28,10 +28,10 @@ export function AboutCreator() {
             Conheça a Criadora
           </h2>
           <p className="text-lg text-muted-foreground mb-4">
-            Oi, eu sou a Bobbie! Sou apaixonada por criar ilustrações que trazem uma sensação de conforto e alegria. Meu objetivo com o <strong>Cozy Family</strong> é oferecer um refúgio criativo para pessoas de todas as idades.
+            Oi, eu sou a Bia! Sou apaixonada por criar ilustrações e experiências que trazem uma sensação de conforto e alegria. Meu objetivo com o <strong>Cozy Family</strong> é oferecer um refúgio criativo para pessoas de todas as idades.
           </p>
           <p className="text-lg text-muted-foreground">
-            Cada desenho é feito com muito carinho, pensando em proporcionar momentos de relaxamento e conexão. Espero que você e sua família se divirtam colorindo tanto quanto eu me diverti criando!
+            Cada detalhe é feito com muito carinho, pensando em proporcionar momentos de relaxamento e conexão. Espero que você e sua família se divirtam tanto quanto eu me diverti criando!
           </p>
         </div>
       </div>

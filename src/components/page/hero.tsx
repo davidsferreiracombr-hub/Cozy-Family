@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import Image from 'next/image';
 
 export function Hero() {
   return (
@@ -27,6 +28,18 @@ export function Hero() {
                 <ArrowRight className="ml-3 h-6 w-6" />
             </a>
             </Button>
+        </div>
+
+        <div className="mt-12 w-full max-w-4xl">
+            <Image
+                src="https://i.ibb.co/XF3pDA0/Group-129.png"
+                alt="Pré-visualização do livro de colorir Cozy Coloring"
+                width={1280}
+                height={720}
+                className="rounded-lg shadow-2xl aspect-video object-cover"
+                priority
+                data-ai-hint="coloring book preview"
+            />
         </div>
       </div>
     </section>

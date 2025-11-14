@@ -28,7 +28,7 @@ export function AboutCreator() {
             De Coração para Coração
           </h2>
           <p className="text-lg text-muted-foreground mb-4">
-            Oi, eu sou a Bia! Sou mãe, artista e completamente apaixonada por transformar pequenos momentos em memórias afetivas. O <strong>Cozy Family</strong> nasceu do desejo de criar um refúgio de paz e criatividade, um cantinho onde as famílias pudessem se desconectar do mundo lá fora e se conectar de verdade.
+            Oi, eu sou a Bia! Sou mãe, artista e completamente apaixonada por transformar pequenos momentos em memórias afetivas. O <strong>Cozy Family</strong> nasceu do desejo de criar um refúgio de paz e criatividade, um cantinho onde as famílias pudessem se desconectar do mundo lá fora и se conectar de verdade.
           </p>
           <p className="text-lg text-muted-foreground">
             Cada ilustração, cada jogo e cada detalhe foi pensado com o carinho de quem entende a importância de um abraço apertado e de uma risada compartilhada. Meu sonho é que, ao abrir este material, vocês sintam todo o amor que coloquei aqui.

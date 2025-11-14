@@ -6,21 +6,21 @@ import { Card, CardContent } from '../ui/card';
 const testimonials = [
   {
     quote:
-      'Finalmente um momento de paz! É a minha atividade favorita para relaxar depois de um dia corrido com as crianças. Os desenhos são lindos e ajudam a desligar a mente.',
+      'Depois de colocar as crianças na cama, finalmente tenho um tempinho pra mim. Colorir esses desenhos fofos com uma xícara de chá virou meu ritual de paz. Simplesmente mágico.',
     author: 'Juliana M.',
     location: 'Porto Alegre, RS',
     avatar: 'J',
   },
   {
     quote:
-      'Meus filhos adoraram! Passamos a tarde inteira colorindo juntos, longe das telas. O aplicativo é super fácil de usar e o PDF para imprimir é um bônus maravilhoso.',
+      'Eu e minha filha de 7 anos passamos o fim de semana colorindo juntas, longe do celular. Foi incrível ver a criatividade dela fluir. Imprimimos as páginas e agora temos uma galeria de arte na porta da geladeira.',
     author: 'Ana Clara V.',
     location: 'Recife, PE',
     avatar: 'A',
   },
   {
     quote:
-      'Comprei para minha mãe e foi um sucesso. Ela amou a delicadeza dos desenhos. É uma ótima forma de presentear com algo que proporciona bem-estar e criatividade.',
+      'Comprei para minha avó, que sempre amou desenhar mas estava desanimada. Ela abriu um sorriso enorme! Disse que os desenhos a lembraram da infância. Um presente que valeu mais que mil palavras.',
     author: 'Beatriz L.',
     location: 'Curitiba, PR',
     avatar: 'B',

@@ -13,7 +13,7 @@ const testimonials = [
   },
   {
     quote:
-      'Depois que as crianças dormem, finalmente tenho um tempinho pra mim. Abrir o app e colorir esses desenhos fofos virou meu ritual de paz. O acesso vitalício é ótimo, sempre tem algo novo para relaxar.',
+      'Fiquei com um pé atrás de comprar, mas o acesso chegou certinho no meu e-mail logo depois do pagamento. Agora, depois que as crianças dormem, finalmente tenho um tempinho pra mim. Abrir o app e colorir esses desenhos fofos virou meu ritual de paz.',
     author: 'Juliana M.',
     location: 'Porto Alegre, RS',
     avatar: 'J',

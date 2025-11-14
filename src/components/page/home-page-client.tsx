@@ -8,6 +8,7 @@ import { BuySection } from '@/components/page/buy-section';
 import { AppFooter } from '@/components/page/footer';
 import { AnnouncementBar } from './announcement-bar';
 import { Guarantee } from './guarantee';
+import { AppExperience } from './app-experience';
 
 export default function HomePageClient() {
   return (
@@ -18,8 +19,9 @@ export default function HomePageClient() {
         <div className="container relative px-4 sm:px-8">
           <Features />
           <DoodleSamples />
+          <AppExperience />
           <BuySection />
-          <section className="py-16 sm:py-24">
+          <section className="py-12 sm:py-20">
             <Guarantee />
           </section>
           <Faq />

@@ -26,8 +26,8 @@ const features = [
 
 export function Features() {
   return (
-    <section className="py-16 sm:py-24">
-        <div className="text-center mb-8 sm:mb-12">
+    <section className="py-12 sm:py-20">
+        <div className="text-center mb-10">
             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
               Tudo que você precisa para relaxar e colorir
             </h2>

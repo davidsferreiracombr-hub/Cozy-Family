@@ -16,8 +16,8 @@ export function BuySection() {
   offerEndTime.setHours(offerEndTime.getHours() + 1);
 
   return (
-    <section id="buy-now" className="w-full py-16 sm:py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+    <section id="buy-now" className="w-full py-12 sm:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="space-y-6 text-center lg:text-left">
                 <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">
                     Oferta por Tempo Limitado
@@ -39,7 +39,7 @@ export function BuySection() {
             </div>
             
             <div className="flex flex-col items-center">
-                <div className="text-center mb-4">
+                <div className="text-center mb-6">
                     <p className="text-md text-muted-foreground">
                         A promoção termina em:
                     </p>

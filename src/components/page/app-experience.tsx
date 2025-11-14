@@ -5,8 +5,8 @@ import { Card, CardContent } from '../ui/card';
 
 export function AppExperience() {
   return (
-    <div id="app-experience" className="w-full">
-      <div className="text-center mb-8 sm:mb-12">
+    <section id="app-experience" className="w-full py-12 sm:py-20">
+      <div className="text-center mb-10">
         <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           Uma Experiência Completa: App e PDF
         </h2>
@@ -46,6 +46,6 @@ export function AppExperience() {
             </Card>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

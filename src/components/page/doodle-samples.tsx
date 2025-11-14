@@ -6,8 +6,8 @@ export function DoodleSamples() {
   const samples = PlaceHolderImages.slice(0, 3);
 
   return (
-    <section className="py-16 sm:py-24" id="doodle-samples">
-      <div className="mx-auto mb-12 max-w-2xl text-center">
+    <section className="py-12 sm:py-20" id="doodle-samples">
+      <div className="mx-auto mb-10 max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           Um mundo de fofura para colorir
         </h2>

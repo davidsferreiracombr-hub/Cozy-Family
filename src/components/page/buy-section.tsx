@@ -41,7 +41,7 @@ export function BuySection() {
             </div>
         </div>
         
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             {/* Plano Básico */}
             <Card
             className="mx-auto w-full max-w-md overflow-hidden rounded-2xl shadow-lg border"
@@ -95,7 +95,7 @@ export function BuySection() {
             aria-label="Comprar Plano Família"
             >
                 <div className="absolute top-0 right-0 -mr-1 -mt-1 z-10">
-                    <div className="flex items-center gap-1 bg-primary text-primary-foreground font-bold py-2 px-4 rounded-full text-sm">
+                    <div className="flex items-center gap-1 bg-primary text-primary-foreground font-bold py-2 px-4 rounded-full text-sm -translate-x-2 translate-y-2">
                         <Star className="h-4 w-4" />
                         <span>Mais Popular</span>
                     </div>

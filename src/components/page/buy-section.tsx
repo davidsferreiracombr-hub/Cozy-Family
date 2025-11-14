@@ -8,13 +8,13 @@ import { CountdownTimer } from './countdown-timer';
 const basicFeatures = [
     "Acesso vitalício ao aplicativo de colorir",
     "30 ilustrações em PDF para imprimir",
+    "Garantia de 7 dias para sua segurança"
 ]
 
 const familyFeatures = [
     ...basicFeatures,
     "App extra de Brincadeiras em Família",
     "Jogo da Memória com 30 cartas para imprimir",
-    "Garantia de 7 dias para sua segurança"
 ]
 
 export function BuySection() {
@@ -34,14 +34,14 @@ export function BuySection() {
                 Garanta sua vaga e comece a colorir agora mesmo. Você recebe acesso imediato a todo o conteúdo.
             </p>
             <div className="text-center pt-4">
-                <p className="text-lg font-semibold text-primary animate-pulse">
+                <p className="text-xl font-semibold text-primary animate-pulse">
                     A promoção termina em:
                 </p>
                 <CountdownTimer endTime={offerEndTime.toISOString()} />
             </div>
         </div>
         
-        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             {/* Plano Básico */}
             <Card
             className="mx-auto w-full max-w-md overflow-hidden rounded-2xl shadow-lg border"

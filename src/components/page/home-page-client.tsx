@@ -8,6 +8,7 @@ import { BuySection } from '@/components/page/buy-section';
 import { AppFooter } from '@/components/page/footer';
 import { AnnouncementBar } from './announcement-bar';
 import { Guarantee } from './guarantee';
+import { Testimonials } from './testimonials';
 
 export default function HomePageClient() {
   return (
@@ -22,6 +23,7 @@ export default function HomePageClient() {
             <Guarantee />
           </section>
           <BuySection />
+          <Testimonials />
           <Faq />
         </div>
       </main>

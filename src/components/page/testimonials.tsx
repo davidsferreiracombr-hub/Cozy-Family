@@ -6,24 +6,24 @@ import { Card, CardContent } from '../ui/card';
 const testimonials = [
   {
     quote:
-      'Depois de colocar as crianças na cama, finalmente tenho um tempinho pra mim. Colorir esses desenhos fofos com uma xícara de chá virou meu ritual de paz. Simplesmente mágico.',
-    author: 'Juliana M.',
-    location: 'Porto Alegre, RS',
-    avatar: 'J',
-  },
-  {
-    quote:
-      'Eu e minha filha de 7 anos passamos o fim de semana colorindo juntas, longe do celular. Foi incrível ver a criatividade dela fluir. Imprimimos as páginas e agora temos uma galeria de arte na porta da geladeira.',
+      'Minha filha amou! Ela passa horas colorindo no tablet com o aplicativo, e nos fins de semana imprimimos os desenhos para ela pintar com giz de cera. Ver a alegria dela não tem preço.',
     author: 'Ana Clara V.',
     location: 'Recife, PE',
     avatar: 'A',
   },
   {
     quote:
-      'Comprei para minha avó, que sempre amou desenhar mas estava desanimada. Ela abriu um sorriso enorme! Disse que os desenhos a lembraram da infância. Um presente que valeu mais que mil palavras.',
-    author: 'Beatriz L.',
-    location: 'Curitiba, PR',
-    avatar: 'B',
+      'Depois que as crianças dormem, finalmente tenho um tempinho pra mim. Abrir o app e colorir esses desenhos fofos virou meu ritual de paz. O acesso vitalício é ótimo, sempre tem algo novo para relaxar.',
+    author: 'Juliana M.',
+    location: 'Porto Alegre, RS',
+    avatar: 'J',
+  },
+  {
+    quote:
+      'Pegamos o plano família e foi a melhor decisão. Além das ilustrações, o Jogo da Memória fez o maior sucesso no nosso "fim de semana sem telas". Um resgate das brincadeiras antigas. Valeu muito a pena!',
+    author: 'Carlos F.',
+    location: 'Belo Horizonte, MG',
+    avatar: 'C',
   },
 ];
 

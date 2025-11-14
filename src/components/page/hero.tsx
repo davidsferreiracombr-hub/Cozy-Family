@@ -31,7 +31,7 @@ export function Hero() {
         </div>
 
         <Image
-            src="https://i.imgur.com/uGiM9HY.png"
+            src="https://i.imgur.com/l8JUy8s.png"
             alt="Pré-visualização do livro de colorir Cozy Coloring"
             width={1280}
             height={720}

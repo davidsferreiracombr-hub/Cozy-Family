@@ -30,17 +30,15 @@ export function Hero() {
             </Button>
         </div>
 
-        <div className="mt-12 w-full max-w-4xl">
-            <Image
-                src="https://i.imgur.com/uGiM9HY.png"
-                alt="Pré-visualização do livro de colorir Cozy Coloring"
-                width={1280}
-                height={720}
-                className="rounded-lg shadow-2xl aspect-video object-contain"
-                priority
-                data-ai-hint="coloring book preview"
-            />
-        </div>
+        <Image
+            src="https://i.imgur.com/uGiM9HY.png"
+            alt="Pré-visualização do livro de colorir Cozy Coloring"
+            width={1280}
+            height={720}
+            className="mt-12 w-full max-w-4xl rounded-lg shadow-2xl aspect-video object-contain"
+            priority
+            data-ai-hint="coloring book preview"
+        />
       </div>
     </section>
   );

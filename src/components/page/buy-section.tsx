@@ -23,7 +23,7 @@ export function BuySection() {
 
   return (
     <section id="buy-now" className="w-full py-12 sm:py-20">
-        <div className="space-y-6 text-center">
+        <div className="space-y-4 text-center">
             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">
                 Oferta por Tempo Limitado
             </div>
@@ -33,15 +33,15 @@ export function BuySection() {
             <p className="max-w-2xl text-lg text-muted-foreground mx-auto">
                 Garanta sua vaga e comece a colorir agora mesmo. Você recebe acesso imediato a todo o conteúdo.
             </p>
-            <div className="text-center mb-6">
-                <p className="text-md text-muted-foreground">
+            <div className="text-center pt-4">
+                <p className="text-lg font-semibold text-primary animate-pulse">
                     A promoção termina em:
                 </p>
                 <CountdownTimer endTime={offerEndTime.toISOString()} />
             </div>
         </div>
         
-        <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             {/* Plano Básico */}
             <Card
             className="mx-auto w-full max-w-md overflow-hidden rounded-2xl shadow-lg border"
@@ -105,9 +105,9 @@ export function BuySection() {
                 </CardHeader>
                 <CardContent className="p-8 bg-background">
                     <div className="mb-6 text-center">
-                        <span className="text-xl font-medium text-muted-foreground line-through">De R$ 29,90</span>
+                        <span className="text-xl font-medium text-muted-foreground line-through">De R$ 39,90</span>
                         <div className="mt-2 text-5xl font-extrabold text-foreground">
-                            Por R$ 14,90
+                            Por R$ 19,90
                         </div>
                         <p className="mt-2 text-lg text-muted-foreground">
                             Acesso vitalício completo.

@@ -12,7 +12,7 @@ export function AboutCreator() {
           <Card className="overflow-hidden rounded-xl border-border/10 shadow-lg w-full max-w-sm">
             <CardContent className="p-0">
               <Image
-                src="https://picsum.photos/seed/creator/500/500"
+                src="https://i.imgur.com/sGqu0WK.png"
                 alt="Foto da criadora Bia"
                 width={500}
                 height={500}

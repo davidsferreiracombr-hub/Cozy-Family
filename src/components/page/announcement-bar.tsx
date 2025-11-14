@@ -1,6 +1,7 @@
 "use client";
 
 const messages = [
+    "Pagamento 100% seguro 🛡️",
     "Bem-vindo ao Cozy Coloring ✨",
     "A experiência de colorir mais fofa e relaxante 🎨",
     "Relaxe, crie e divirta-se 💖",

@@ -32,7 +32,7 @@ export function Hero() {
 
         <div className="mt-12 w-full max-w-4xl">
             <Image
-                src="https://i.ibb.co/XF3pDA0/Group-129.png"
+                src="https://i.imgur.com/uGiM9HY.png"
                 alt="Pré-visualização do livro de colorir Cozy Coloring"
                 width={1280}
                 height={720}

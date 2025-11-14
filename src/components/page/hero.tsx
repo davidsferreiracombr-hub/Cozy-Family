@@ -39,10 +39,16 @@ export function Hero() {
             alt="Pré-visualização do livro de colorir Cozy Coloring"
             width={1280}
             height={720}
-            className="mt-8 mb-12 w-full object-contain max-w-xl px-4"
+            className="mt-8 max-w-xl w-full px-4"
             priority
             data-ai-hint="coloring book preview"
         />
+
+        <div className="mt-8 mb-12 max-w-3xl px-4 sm:px-6">
+          <p className="text-xl font-medium text-muted-foreground">
+            Cansado de ver seus filhos apenas nas telas? Resgate o tempo em família com uma atividade criativa e relaxante que todos vão amar.
+          </p>
+        </div>
       </div>
     </section>
   );

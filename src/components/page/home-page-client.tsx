@@ -11,6 +11,7 @@ import { Guarantee } from './guarantee';
 import { Testimonials } from './testimonials';
 import { PurchaseNotifications } from './purchase-notifications';
 import { Header } from './header';
+import { AboutCreator } from './about-creator';
 
 export default function HomePageClient() {
   return (
@@ -27,6 +28,7 @@ export default function HomePageClient() {
           </section>
           <BuySection />
           <Testimonials />
+          <AboutCreator />
           <Faq />
         </div>
       </main>

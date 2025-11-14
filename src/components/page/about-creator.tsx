@@ -25,13 +25,13 @@ export function AboutCreator() {
         <div className="text-center md:text-left">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl mb-4 flex items-center justify-center md:justify-start gap-3">
             <Paintbrush className="h-8 w-8 text-primary" />
-            Conheça a Criadora
+            De Coração para Coração
           </h2>
           <p className="text-lg text-muted-foreground mb-4">
-            Oi, eu sou a Bia! Sou apaixonada por criar ilustrações e experiências que trazem uma sensação de conforto e alegria. Meu objetivo com o <strong>Cozy Family</strong> é oferecer um refúgio criativo para pessoas de todas as idades.
+            Oi, eu sou a Bia! Sou mãe, artista e completamente apaixonada por transformar pequenos momentos em memórias afetivas. O <strong>Cozy Family</strong> nasceu do desejo de criar um refúgio de paz e criatividade, um cantinho onde as famílias pudessem se desconectar do mundo lá fora e se conectar de verdade.
           </p>
           <p className="text-lg text-muted-foreground">
-            Cada detalhe é feito com muito carinho, pensando em proporcionar momentos de relaxamento e conexão. Espero que você e sua família se divirtam tanto quanto eu me diverti criando!
+            Cada ilustração, cada jogo e cada detalhe foi pensado com o carinho de quem entende a importância de um abraço apertado e de uma risada compartilhada. Meu sonho é que, ao abrir este material, vocês sintam todo o amor que coloquei aqui.
           </p>
         </div>
       </div>

@@ -25,8 +25,8 @@ const appFeatures = [
 export function ExclusiveApp() {
   return (
     <section id="exclusive-app" className="w-full py-12 sm:py-20">
-        <div className="bg-muted/50 rounded-2xl p-4 md:p-12 border border-border/10">
-            <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
+        <div className="bg-muted/50 rounded-2xl border border-border/10">
+            <div className="container grid grid-cols-1 lg:grid-cols-5 gap-10 items-center py-12 sm:py-20">
                 <div className="text-center lg:text-left lg:col-span-2">
                     <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary mb-4">
                         Exclusivo do Plano Família

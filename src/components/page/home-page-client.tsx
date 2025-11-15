@@ -28,7 +28,9 @@ export default function HomePageClient() {
           <Guarantee />
         </section>
         <AboutCreator />
-        <ExclusiveApp />
+      </main>
+      <ExclusiveApp />
+      <main className="container flex-1 px-4 sm:px-8">
         <BuySection />
         <Faq />
       </main>

@@ -14,6 +14,7 @@ import { Header } from './header';
 import { AboutCreator } from './about-creator';
 import { ExclusiveApp } from './exclusive-app';
 import { WhatYouGet } from './what-you-get';
+import { FinalCta } from './final-cta';
 
 export default function HomePageClient() {
   return (
@@ -36,6 +37,7 @@ export default function HomePageClient() {
         <BuySection />
         <Faq />
       </main>
+      <FinalCta />
       <AppFooter />
       <PurchaseNotifications />
     </div>

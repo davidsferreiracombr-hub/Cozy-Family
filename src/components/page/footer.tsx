@@ -14,9 +14,9 @@ export function AppFooter() {
       <div className="container flex h-20 items-center justify-center py-8 text-center text-sm text-muted-foreground">
         © {year}{' '}
         <strong className="font-semibold text-primary/90 mx-1">
-          Bobbie Goods
+          Cozy Family
         </strong>{' '}
-        • Cozy Coloring • Todos os direitos reservados.
+        • Todos os direitos reservados.
       </div>
     </footer>
   );

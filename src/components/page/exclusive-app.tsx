@@ -54,7 +54,7 @@ export function ExclusiveApp() {
 
         {/* Image */}
         <div className="flex justify-center lg:col-span-3">
-          <div className="w-full lg:p-4 lg:border lg:rounded-2xl lg:shadow-lg lg:bg-card">
+          <div className="w-full">
               <Image
                 src="https://imgur.com/ErKsHo2.png"
                 alt="Demonstração do aplicativo de brincadeiras em família"

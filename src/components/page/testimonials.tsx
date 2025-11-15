@@ -37,15 +37,17 @@ export function Testimonials() {
         O que nossos clientes dizem
       </h2>
       <div
-        className="mt-8 grid grid-cols-1 gap-10 sm:mt-12 md:grid-cols-2 lg:grid-cols-3"
+        className="mt-8 grid grid-cols-1 gap-8 sm:mt-12 md:grid-cols-2 lg:grid-cols-3"
         aria-live="polite"
       >
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="flex flex-col">
-            <blockquote className="text-base text-muted-foreground">
-              <p>"{testimonial.quote}"</p>
-            </blockquote>
-            <div className="mt-4 flex items-center">
+          <Card key={index} className="flex flex-col justify-between p-6 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+            <CardContent className="p-0">
+                <blockquote className="text-base text-muted-foreground">
+                    <p>"{testimonial.quote}"</p>
+                </blockquote>
+            </CardContent>
+            <div className="mt-6 flex items-center">
               <div className="h-12 w-12 overflow-hidden rounded-full">
                 <Image
                   src={testimonial.avatar}
@@ -63,7 +65,7 @@ export function Testimonials() {
                 </p>
               </div>
             </div>
-          </div>
+          </Card>
         ))}
       </div>
     </div>

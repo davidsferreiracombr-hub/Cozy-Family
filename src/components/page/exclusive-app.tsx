@@ -26,7 +26,7 @@ export function ExclusiveApp() {
     <section id="exclusive-app" className="relative w-full py-20 sm:py-32 flex items-center justify-center min-h-[600px]">
       <div className="absolute inset-0">
         <Image
-          src="https://imgur.com/cmEaeqc.png"
+          src="https://i.imgur.com/cmEaeqc.png"
           alt="Demonstração do aplicativo de brincadeiras em família"
           fill
           className="object-cover brightness-50"

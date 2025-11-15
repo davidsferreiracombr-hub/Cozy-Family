@@ -56,11 +56,11 @@ export function ExclusiveApp() {
                 <Card className="overflow-hidden rounded-xl border-border/10 shadow-lg w-full max-w-sm">
                     <CardContent className="p-0">
                     <Image
-                        src="https://i.imgur.com/v8Gz2Yv.png"
+                        src="https://i.imgur.com/dc5OvXP.png"
                         alt="Demonstração do aplicativo de brincadeiras em família"
                         width={500}
                         height={500}
-                        className="object-cover w-full aspect-square"
+                        className="object-contain w-full"
                         data-ai-hint="family game app"
                     />
                     </CardContent>

@@ -37,35 +37,33 @@ export function Testimonials() {
         O que nossos clientes dizem
       </h2>
       <div
-        className="mt-8 grid grid-cols-1 gap-8 sm:mt-12 md:grid-cols-2 lg:grid-cols-3"
+        className="mt-8 grid grid-cols-1 gap-10 sm:mt-12 md:grid-cols-2 lg:grid-cols-3"
         aria-live="polite"
       >
         {testimonials.map((testimonial, index) => (
-          <Card key={index} className="shadow-lg border-border/10 transition-shadow hover:shadow-xl">
-            <CardContent className="p-6">
-              <blockquote className="text-lg text-foreground">
-                <p>"{testimonial.quote}"</p>
-              </blockquote>
-              <div className="mt-4 flex items-center">
-                <div className="h-14 w-14 overflow-hidden rounded-full border-2 border-primary/20">
-                  <Image
-                    src={testimonial.avatar}
-                    alt={`Foto de ${testimonial.author}`}
-                    width={56}
-                    height={56}
-                    className="h-full w-full object-cover"
-                    data-ai-hint={testimonial.aiHint}
-                  />
-                </div>
-                <div className="ml-4">
-                  <p className="font-semibold text-lg">{testimonial.author}</p>
-                  <p className="text-sm text-muted-foreground">
-                    {testimonial.location}
-                  </p>
-                </div>
+          <div key={index} className="flex flex-col">
+            <blockquote className="text-base text-muted-foreground">
+              <p>"{testimonial.quote}"</p>
+            </blockquote>
+            <div className="mt-4 flex items-center">
+              <div className="h-12 w-12 overflow-hidden rounded-full">
+                <Image
+                  src={testimonial.avatar}
+                  alt={`Foto de ${testimonial.author}`}
+                  width={48}
+                  height={48}
+                  className="h-full w-full object-cover"
+                  data-ai-hint={testimonial.aiHint}
+                />
               </div>
-            </CardContent>
-          </Card>
+              <div className="ml-4">
+                <p className="font-semibold text-base">{testimonial.author}</p>
+                <p className="text-sm text-muted-foreground">
+                  {testimonial.location}
+                </p>
+              </div>
+            </div>
+          </div>
         ))}
       </div>
     </div>

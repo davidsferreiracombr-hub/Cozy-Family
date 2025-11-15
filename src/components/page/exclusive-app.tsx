@@ -23,27 +23,26 @@ const appFeatures = [
 
 export function ExclusiveApp() {
   return (
-    <section id="exclusive-app" className="relative w-full py-20 sm:py-32 flex items-center justify-center min-h-[600px]">
+    <section id="exclusive-app" className="relative w-full flex items-center justify-center min-h-[600px]">
       <div className="absolute inset-0">
         <Image
           src="https://i.imgur.com/xwajIuD.png"
           alt="Demonstração do aplicativo de brincadeiras em família"
           fill
-          className="object-contain brightness-50"
+          className="object-contain"
           data-ai-hint="family game app"
         />
-        <div className="absolute inset-0 bg-black/30" />
       </div>
       <div className="relative container">
         <div className="max-w-3xl mx-auto text-center">
             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary mb-4">
                 Exclusivo do Plano Família
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-primary-foreground mb-4 flex items-center justify-center gap-3">
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground mb-4 flex items-center justify-center gap-3">
                 <Sparkles className="h-8 w-8 text-primary" />
                 E de Bônus... Um App para a Família!
             </h2>
-            <p className="text-base sm:text-lg text-primary-foreground/80 mb-8">
+            <p className="text-base sm:text-lg text-muted-foreground mb-8">
                 Além de colorir, o Plano Família desbloqueia um aplicativo exclusivo, pensado para criar momentos inesquecíveis e fortalecer os laços.
             </p>
             <div className="space-y-6 max-w-lg mx-auto">
@@ -53,8 +52,8 @@ export function ExclusiveApp() {
                             {feature.icon}
                         </div>
                         <div>
-                            <h3 className="font-bold text-primary-foreground">{feature.title}</h3>
-                            <p className="text-primary-foreground/80">{feature.description}</p>
+                            <h3 className="font-bold text-foreground">{feature.title}</h3>
+                            <p className="text-muted-foreground">{feature.description}</p>
                         </div>
                     </div>
                 ))}

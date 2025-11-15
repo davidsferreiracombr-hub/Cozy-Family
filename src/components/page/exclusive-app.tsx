@@ -23,10 +23,10 @@ const appFeatures = [
 
 export function ExclusiveApp() {
   return (
-    <section id="exclusive-app" className="w-full py-12 sm:py-20">
-      <div className="container grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
+    <section id="exclusive-app" className="w-full">
+      <div className="container grid grid-cols-1 items-center gap-10 py-12 sm:py-20 lg:grid-cols-5">
         {/* Text content */}
-        <div className="text-center lg:text-left lg:col-span-2">
+        <div className="order-2 text-center lg:order-1 lg:col-span-2 lg:text-left">
             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary mb-4">
                 Exclusivo do Plano Família
             </div>
@@ -53,14 +53,14 @@ export function ExclusiveApp() {
         </div>
 
         {/* Image */}
-        <div className="flex justify-center lg:col-span-3">
+        <div className="order-1 flex justify-center lg:order-2 lg:col-span-3">
           <div className="w-full">
               <Image
                 src="https://imgur.com/ErKsHo2.png"
                 alt="Demonstração do aplicativo de brincadeiras em família"
                 width={800}
                 height={600}
-                className="object-contain w-full"
+                className="w-full object-contain"
                 data-ai-hint="family game app"
               />
           </div>

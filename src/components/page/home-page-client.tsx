@@ -20,7 +20,7 @@ export default function HomePageClient() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <div className="container relative px-4 sm:px-8">
+        <div className="container px-4 sm:px-8">
           <Features />
           <DoodleSamples />
           <section className="py-12 sm:py-20">

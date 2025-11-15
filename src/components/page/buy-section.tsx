@@ -143,7 +143,7 @@ export function BuySection() {
                         asChild
                     >
                         <a
-                            href="https://pay.cakto.com.br/xxxxx_xxxxxx"
+                            href="https://pay.cakto.com.br/qv8kb6v_651065"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

@@ -1,0 +1,73 @@
+"use client";
+
+import Image from 'next/image';
+import { Card, CardContent } from '../ui/card';
+import { Gamepad2, Lightbulb, HelpCircle, Sparkles } from 'lucide-react';
+
+const appFeatures = [
+    {
+        icon: <Gamepad2 className="h-7 w-7 text-primary" />,
+        title: "+100 Brincadeiras",
+        description: "Atividades criativas para fazer em casa, longe das telas."
+    },
+    {
+        icon: <Lightbulb className="h-7 w-7 text-primary" />,
+        title: "12 Categorias de Quiz",
+        description: "Estimule a curiosidade e o diálogo com temas variados."
+    },
+    {
+        icon: <HelpCircle className="h-7 w-7 text-primary" />,
+        title: "+30 Perguntas por Tema",
+        description: "Horas de diversão e conversa garantida para toda a família."
+    }
+]
+
+export function ExclusiveApp() {
+  return (
+    <section id="exclusive-app" className="w-full py-12 sm:py-20">
+        <div className="bg-muted/50 rounded-2xl p-8 md:p-12 border border-border/10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div className="text-center lg:text-left">
+                    <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary mb-4">
+                        Exclusivo do Plano Família
+                    </div>
+                    <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl mb-4 flex items-center justify-center lg:justify-start gap-3">
+                        <Sparkles className="h-8 w-8 text-primary" />
+                        E de Bônus... Um App para a Família!
+                    </h2>
+                    <p className="text-lg text-muted-foreground mb-8">
+                        Além de colorir, o Plano Família desbloqueia um aplicativo exclusivo, pensado para criar momentos inesquecíveis e fortalecer os laços.
+                    </p>
+                    <div className="space-y-6">
+                        {appFeatures.map((feature, index) => (
+                             <div key={index} className="flex items-start gap-4">
+                                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-background border shadow-sm">
+                                    {feature.icon}
+                                </div>
+                                <div>
+                                    <h3 className="font-bold text-foreground">{feature.title}</h3>
+                                    <p className="text-muted-foreground">{feature.description}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className="flex justify-center">
+                <Card className="overflow-hidden rounded-xl border-border/10 shadow-lg w-full max-w-sm">
+                    <CardContent className="p-0">
+                    <Image
+                        src="https://i.imgur.com/v8Gz2Yv.png"
+                        alt="Demonstração do aplicativo de brincadeiras em família"
+                        width={500}
+                        height={500}
+                        className="object-cover w-full aspect-square"
+                        data-ai-hint="family game app"
+                    />
+                    </CardContent>
+                </Card>
+                </div>
+            </div>
+        </div>
+    </section>
+  );
+}

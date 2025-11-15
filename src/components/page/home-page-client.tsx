@@ -12,6 +12,7 @@ import { Testimonials } from './testimonials';
 import { PurchaseNotifications } from './purchase-notifications';
 import { Header } from './header';
 import { AboutCreator } from './about-creator';
+import { ExclusiveApp } from './exclusive-app';
 
 export default function HomePageClient() {
   return (
@@ -27,6 +28,7 @@ export default function HomePageClient() {
           <Guarantee />
         </section>
         <AboutCreator />
+        <ExclusiveApp />
         <BuySection />
         <Faq />
       </main>

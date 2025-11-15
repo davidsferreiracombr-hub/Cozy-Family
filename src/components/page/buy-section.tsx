@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Check, ShieldCheck, ShoppingCart, Star } from 'lucide-react';
+import { Check, ShieldCheck, Star } from 'lucide-react';
 import { CountdownTimer } from './countdown-timer';
 
 const basicFeatures = [
@@ -15,7 +15,7 @@ const familyFeatures = [
     ...basicFeatures,
     {
       text: "App Exclusivo de Brincadeiras em Família",
-      details: "+100 jogos para casa, Quiz com 12 categorias e +30 perguntas em cada."
+      details: "Um app com jogos e quizzes para todas as idades."
     },
     "Jogo da Memória com 30 cartas para imprimir",
 ]
@@ -76,7 +76,7 @@ export function BuySection() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <ShoppingCart className="mr-3 h-6 w-6" />
+                            <Star className="mr-3 h-6 w-6" />
                             Comprar Agora
                         </a>
                     </Button>

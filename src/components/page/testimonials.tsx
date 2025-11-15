@@ -1,6 +1,6 @@
 "use client";
 
-import { Avatar, AvatarFallback } from '../ui/avatar';
+import Image from 'next/image';
 import { Card, CardContent } from '../ui/card';
 
 const testimonials = [
@@ -9,21 +9,24 @@ const testimonials = [
       'Minha filha amou! Ela passa horas colorindo no tablet com o aplicativo, e nos fins de semana imprimimos os desenhos para ela pintar com giz de cera. Ver a alegria dela não tem preço.',
     author: 'Ana Clara V.',
     location: 'Recife, PE',
-    avatar: 'A',
+    avatar: 'https://picsum.photos/seed/ana/100/100',
+    aiHint: 'woman portrait',
   },
   {
     quote:
       'Fiquei com um pé atrás de comprar, mas o acesso chegou certinho no meu e-mail logo depois do pagamento. Agora, depois que as crianças dormem, finalmente tenho um tempinho pra mim. Abrir o app e colorir esses desenhos fofos virou meu ritual de paz.',
     author: 'Juliana M.',
     location: 'Porto Alegre, RS',
-    avatar: 'J',
+    avatar: 'https://picsum.photos/seed/juliana/100/100',
+    aiHint: 'woman portrait smiling',
   },
   {
     quote:
       'Pegamos o Plano Família e foi a melhor decisão. Além das ilustrações, o Jogo da Memória fez o maior sucesso no nosso "fim de semana sem telas". Um resgate das brincadeiras antigas. Valeu muito a pena!',
     author: 'Carlos F.',
     location: 'Belo Horizonte, MG',
-    avatar: 'C',
+    avatar: 'https://picsum.photos/seed/carlos/100/100',
+    aiHint: 'man portrait',
   },
 ];
 
@@ -44,11 +47,16 @@ export function Testimonials() {
                 <p>"{testimonial.quote}"</p>
               </blockquote>
               <div className="mt-4 flex items-center">
-                <Avatar className="h-12 w-12">
-                  <AvatarFallback className="text-lg font-bold bg-primary/10 text-primary">
-                    {testimonial.avatar}
-                  </AvatarFallback>
-                </Avatar>
+                <div className="h-14 w-14 overflow-hidden rounded-full border-2 border-primary/20">
+                  <Image
+                    src={testimonial.avatar}
+                    alt={`Foto de ${testimonial.author}`}
+                    width={56}
+                    height={56}
+                    className="h-full w-full object-cover"
+                    data-ai-hint={testimonial.aiHint}
+                  />
+                </div>
                 <div className="ml-4">
                   <p className="font-semibold text-lg">{testimonial.author}</p>
                   <p className="text-sm text-muted-foreground">

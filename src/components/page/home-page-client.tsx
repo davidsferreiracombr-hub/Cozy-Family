@@ -26,9 +26,9 @@ export default function HomePageClient() {
           <section className="py-12 sm:py-20">
             <Guarantee />
           </section>
+          <Testimonials />
           <AboutCreator />
           <BuySection />
-          <Testimonials />
           <Faq />
         </div>
       </main>

@@ -18,19 +18,17 @@ export default function HomePageClient() {
     <div className="flex min-h-screen flex-col bg-background">
       <AnnouncementBar />
       <Header />
-      <main className="flex-1">
+      <main className="container flex-1 px-4 sm:px-8">
         <Hero />
-        <div className="container px-4 sm:px-8">
-          <Features />
-          <DoodleSamples />
-          <section className="py-12 sm:py-20">
-            <Guarantee />
-          </section>
-          <Testimonials />
-          <AboutCreator />
-          <BuySection />
-          <Faq />
-        </div>
+        <Features />
+        <Testimonials />
+        <DoodleSamples />
+        <section className="py-12 sm:py-20">
+          <Guarantee />
+        </section>
+        <AboutCreator />
+        <BuySection />
+        <Faq />
       </main>
       <AppFooter />
       <PurchaseNotifications />

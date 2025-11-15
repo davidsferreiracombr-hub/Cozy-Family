@@ -20,7 +20,7 @@ const testimonials = [
   },
   {
     quote:
-      'Pegamos o plano Cozy Family e foi a melhor decisão. Além das ilustrações, o Jogo da Memória fez o maior sucesso no nosso "fim de semana sem telas". Um resgate das brincadeiras antigas. Valeu muito a pena!',
+      'Pegamos o Plano Família e foi a melhor decisão. Além das ilustrações, o Jogo da Memória fez o maior sucesso no nosso "fim de semana sem telas". Um resgate das brincadeiras antigas. Valeu muito a pena!',
     author: 'Carlos F.',
     location: 'Belo Horizonte, MG',
     avatar: 'C',

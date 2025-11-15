@@ -88,11 +88,11 @@ export function BuySection() {
                 </CardContent>
             </Card>
 
-            {/* Cozy Family Plan */}
+            {/* Plano Família */}
             <Card
             className="relative mx-auto w-full max-w-md overflow-hidden rounded-2xl shadow-2xl border-2 border-primary"
             role="region"
-            aria-label="Comprar Cozy Family"
+            aria-label="Comprar Plano Família"
             >
                 <div className="absolute top-0 right-0 -mr-1 -mt-1 z-10">
                     <div className="flex items-center gap-1 bg-primary text-primary-foreground font-bold py-2 px-4 rounded-full text-sm -translate-x-2 translate-y-2">
@@ -101,7 +101,7 @@ export function BuySection() {
                     </div>
                 </div>
                 <CardHeader className="bg-primary/10 p-6 text-center">
-                    <CardTitle className="text-2xl font-bold tracking-tight text-primary">Cozy Family</CardTitle>
+                    <CardTitle className="text-2xl font-bold tracking-tight text-primary">Plano Família</CardTitle>
                 </CardHeader>
                 <CardContent className="p-8 bg-background">
                     <div className="mb-6 text-center">
@@ -125,7 +125,7 @@ export function BuySection() {
                             rel="noopener noreferrer"
                         >
                             <ShoppingCart className="mr-3 h-6 w-6" />
-                            Quero o Cozy Family
+                            Quero o Plano Família
                         </a>
                     </Button>
                     <ul className="mt-8 space-y-4 text-left text-muted-foreground">

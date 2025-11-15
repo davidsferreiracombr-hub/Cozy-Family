@@ -16,7 +16,7 @@ export function PurchaseNotifications() {
     const showRandomToast = () => {
       const name = `${getRandomItem(firstNames)} ${getRandomItem(lastNames)[0]}.`;
       const location = getRandomItem(locations);
-      const plan = Math.random() > 0.4 ? 'Cozy Family' : 'Plano Básico';
+      const plan = Math.random() > 0.4 ? 'Plano Família' : 'Plano Básico';
 
       toast({
         description: (

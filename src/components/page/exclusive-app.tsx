@@ -53,7 +53,7 @@ export function ExclusiveApp() {
                     </div>
                 </div>
                 <div className="flex justify-center">
-                <Card className="overflow-hidden rounded-xl border-border/10 shadow-lg w-full max-w-sm">
+                <Card className="overflow-hidden rounded-xl border-border/10 shadow-lg w-full max-w-md">
                     <CardContent className="p-0">
                     <Image
                         src="https://i.imgur.com/dc5OvXP.png"

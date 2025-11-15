@@ -13,7 +13,6 @@ import { PurchaseNotifications } from './purchase-notifications';
 import { Header } from './header';
 import { AboutCreator } from './about-creator';
 import { ExclusiveApp } from './exclusive-app';
-import { ForWho } from './for-who';
 
 export default function HomePageClient() {
   return (
@@ -23,7 +22,6 @@ export default function HomePageClient() {
       <main className="container flex-1 px-4 sm:px-8">
         <Hero />
         <Features />
-        <ForWho />
         <Testimonials />
         <DoodleSamples />
         <section className="py-12 sm:py-20">

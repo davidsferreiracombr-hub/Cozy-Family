@@ -23,17 +23,9 @@ const appFeatures = [
 
 export function ExclusiveApp() {
   return (
-    <section id="exclusive-app" className="w-full bg-gray-900 py-20">
+    <section id="exclusive-app" className="w-full bg-gray-900 py-20 sm:py-32">
       <div className="container flex flex-col items-center text-center">
-        <Image
-          src="https://i.imgur.com/xwajIuD.png"
-          alt="Demonstração do aplicativo de brincadeiras em família"
-          width={800}
-          height={600}
-          className="object-contain"
-          data-ai-hint="family game app"
-        />
-        <div className="max-w-3xl mt-8">
+        <div className="max-w-3xl">
             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary mb-4">
                 Exclusivo do Plano Família
             </div>
@@ -41,7 +33,7 @@ export function ExclusiveApp() {
                 <Sparkles className="h-8 w-8 text-primary" />
                 E de Bônus... Um App para a Família!
             </h2>
-            <p className="text-base sm:text-lg text-gray-300 mb-8">
+            <p className="text-base sm:text-lg text-gray-300 mb-12">
                 Além de colorir, o Plano Família desbloqueia um aplicativo exclusivo, pensado para criar momentos inesquecíveis e fortalecer os laços.
             </p>
             <div className="space-y-6 max-w-lg mx-auto">
@@ -58,6 +50,14 @@ export function ExclusiveApp() {
                 ))}
             </div>
         </div>
+        <Image
+          src="https://i.imgur.com/xwajIuD.png"
+          alt="Demonstração do aplicativo de brincadeiras em família"
+          width={800}
+          height={600}
+          className="object-contain mt-12"
+          data-ai-hint="family game app"
+        />
       </div>
     </section>
   );

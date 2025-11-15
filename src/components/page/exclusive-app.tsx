@@ -56,7 +56,7 @@ export function ExclusiveApp() {
                 <Card className="overflow-hidden rounded-xl border-border/10 shadow-lg w-full">
                     <CardContent className="p-0">
                     <Image
-                        src="https://i.imgur.com/dc5OvXP.png"
+                        src="https://imgur.com/ErKsHo2.png"
                         alt="Demonstração do aplicativo de brincadeiras em família"
                         width={500}
                         height={500}

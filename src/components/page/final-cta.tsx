@@ -6,7 +6,7 @@ import { Sparkles, ArrowRight } from 'lucide-react';
 export function FinalCta() {
   return (
     <section className="w-full py-16 sm:py-24 bg-primary/5">
-      <div className="container text-center">
+      <div className="container flex flex-col items-center text-center">
         <Sparkles className="h-12 w-12 text-primary mx-auto mb-4" />
         <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
           Pronto para Criar Memórias Inesquecíveis?

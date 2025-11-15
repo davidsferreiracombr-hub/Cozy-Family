@@ -124,7 +124,7 @@ export function BuySection() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <ShoppingCart className="mr-3 h-6 w-6" />
+                            <Star className="mr-3 h-6 w-6" />
                             Quero o Plano Família
                         </a>
                     </Button>

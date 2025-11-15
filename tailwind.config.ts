@@ -18,7 +18,7 @@ export default {
     extend: {
       fontFamily: {
         body: ['Poppins', 'sans-serif'],
-        quote: ['Montserrat', 'sans-serif'],
+        quote: ['Poppins', 'sans-serif'],
       },
       colors: {
         border: 'hsl(var(--border))',

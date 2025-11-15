@@ -45,7 +45,7 @@ export function Hero() {
         />
 
         <div className="mt-8 mb-12 max-w-3xl px-4 sm:px-6">
-          <p className="text-xl font-quote font-medium text-muted-foreground animate-text-pulse">
+          <p className="text-xl font-quote font-medium text-muted-foreground">
             Cansado de ver seus filhos apenas nas telas? Resgate o tempo em família com uma atividade criativa e relaxante que todos vão amar.
           </p>
         </div>

@@ -29,7 +29,7 @@ export function ExclusiveApp() {
           src="https://i.imgur.com/xwajIuD.png"
           alt="Demonstração do aplicativo de brincadeiras em família"
           fill
-          className="object-cover brightness-50"
+          className="object-contain brightness-50"
           data-ai-hint="family game app"
         />
         <div className="absolute inset-0 bg-black/30" />

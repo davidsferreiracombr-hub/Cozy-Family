@@ -23,21 +23,21 @@ const appFeatures = [
 
 export function ExclusiveApp() {
   return (
-    <section id="exclusive-app" className="w-full">
-      <div className="container grid grid-cols-1 items-center gap-10 py-12 sm:py-20 lg:grid-cols-5">
+    <section id="exclusive-app" className="w-full bg-muted/30">
+      <div className="container py-12 sm:py-20">
         {/* Text content */}
-        <div className="order-2 text-center lg:order-1 lg:col-span-2 lg:text-left">
+        <div className="max-w-3xl mx-auto text-center">
             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary mb-4">
                 Exclusivo do Plano Família
             </div>
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl mb-4 flex items-center justify-center lg:justify-start gap-3">
+            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl mb-4 flex items-center justify-center gap-3">
                 <Sparkles className="h-8 w-8 text-primary" />
                 E de Bônus... Um App para a Família!
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
                 Além de colorir, o Plano Família desbloqueia um aplicativo exclusivo, pensado para criar momentos inesquecíveis e fortalecer os laços.
             </p>
-            <div className="space-y-6">
+            <div className="space-y-6 max-w-lg mx-auto">
                 {appFeatures.map((feature, index) => (
                       <div key={index} className="flex items-start gap-4 text-left">
                         <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-background border shadow-sm flex-shrink-0">
@@ -53,8 +53,8 @@ export function ExclusiveApp() {
         </div>
 
         {/* Image */}
-        <div className="order-1 flex justify-center lg:order-2 lg:col-span-3">
-          <div className="w-full">
+        <div className="mt-12 flex justify-center">
+          <div className="w-full max-w-4xl">
               <Image
                 src="https://imgur.com/ErKsHo2.png"
                 alt="Demonstração do aplicativo de brincadeiras em família"

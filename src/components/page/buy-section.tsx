@@ -19,7 +19,7 @@ const familyFeatures = [
 
 export function BuySection() {
   const offerEndTime = new Date();
-  offerEndTime.setHours(offerEndTime.getHours() + 1);
+  offerEndTime.setMinutes(offerEndTime.getMinutes() + 15);
 
   return (
     <section id="buy-now" className="w-full py-12 sm:py-20">

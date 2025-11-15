@@ -13,7 +13,10 @@ const basicFeatures = [
 
 const familyFeatures = [
     ...basicFeatures,
-    "App extra de Brincadeiras em Família",
+    {
+      text: "App Exclusivo de Brincadeiras em Família",
+      details: "+100 jogos para casa, Quiz com 12 categorias e +30 perguntas em cada."
+    },
     "Jogo da Memória com 30 cartas para imprimir",
 ]
 
@@ -34,7 +37,7 @@ export function BuySection() {
                 Garanta sua vaga e comece a colorir agora mesmo. Você recebe acesso imediato a todo o conteúdo.
             </p>
             <div className="text-center pt-4">
-                <p className="text-xl font-semibold text-primary animate-pulse">
+                <p className="text-xl font-semibold text-primary">
                     A promoção termina em:
                 </p>
                 <CountdownTimer endTime={offerEndTime.toISOString()} />
@@ -129,10 +132,22 @@ export function BuySection() {
                         </a>
                     </Button>
                     <ul className="mt-8 space-y-4 text-left text-muted-foreground">
-                        {familyFeatures.map((feature) => (
-                            <li key={feature} className="flex items-start gap-3">
-                                <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
-                                <span className="text-base">{feature}</span>
+                        {familyFeatures.map((feature, index) => (
+                            <li key={index} className="flex items-start gap-3">
+                                {typeof feature === 'string' ? (
+                                    <>
+                                        <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                                        <span className="text-base">{feature}</span>
+                                    </>
+                                ) : (
+                                    <>
+                                        <Star className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                                        <div className="flex flex-col">
+                                            <span className="text-base font-semibold text-foreground/90">{feature.text}</span>
+                                            <span className="text-sm">{feature.details}</span>
+                                        </div>
+                                    </>
+                                )}
                             </li>
                         ))}
                     </ul>

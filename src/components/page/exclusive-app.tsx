@@ -26,23 +26,7 @@ export function ExclusiveApp() {
   return (
     <section id="exclusive-app" className="w-full py-12 sm:py-20">
       <div className="container grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
-        {/* Image first for mobile dominance */}
-        <div className="flex justify-center lg:col-span-3 lg:order-last">
-          <Card className="overflow-hidden rounded-xl border-border/10 shadow-lg w-full bg-transparent border-0">
-            <CardContent className="p-0">
-              <Image
-                src="https://imgur.com/ErKsHo2.png"
-                alt="Demonstração do aplicativo de brincadeiras em família"
-                width={500}
-                height={500}
-                className="object-contain w-full"
-                data-ai-hint="family game app"
-              />
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* Text content second */}
+        {/* Text content first */}
         <div className="text-center lg:text-left lg:col-span-2">
             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary mb-4">
                 Exclusivo do Plano Família
@@ -67,6 +51,22 @@ export function ExclusiveApp() {
                     </div>
                 ))}
             </div>
+        </div>
+
+        {/* Image second */}
+        <div className="flex justify-center lg:col-span-3">
+          <Card className="overflow-hidden rounded-xl border-border/10 shadow-lg w-full bg-transparent border-0">
+            <CardContent className="p-0">
+              <Image
+                src="https://imgur.com/ErKsHo2.png"
+                alt="Demonstração do aplicativo de brincadeiras em família"
+                width={500}
+                height={500}
+                className="object-contain w-full"
+                data-ai-hint="family game app"
+              />
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

@@ -15,11 +15,11 @@ export function FinalCta() {
           Não espere mais para transformar momentos em família. Garanta seu acesso vitalício e comece a colorir, brincar e se conectar hoje mesmo.
         </p>
         <div className="mt-8">
-          <Button size="lg" className="h-14 px-8 text-lg font-bold shadow-lg" asChild>
+          <Button size="lg" className="h-14 px-6 text-base md:text-lg font-bold shadow-lg whitespace-nowrap" asChild>
             <a href="#buy-now">
-              <Sparkles className="mr-3 h-6 w-6" />
+              <Sparkles className="mr-2 h-5 w-5 md:mr-3 md:h-6 md:w-6" />
               Quero Minha Oferta Agora!
-              <ArrowRight className="ml-3 h-6 w-6" />
+              <ArrowRight className="ml-2 h-5 w-5 md:ml-3 md:h-6 md:w-6" />
             </a>
           </Button>
         </div>

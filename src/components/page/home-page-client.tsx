@@ -13,7 +13,6 @@ import { PurchaseNotifications } from './purchase-notifications';
 import { Header } from './header';
 import { AboutCreator } from './about-creator';
 import { ExclusiveApp } from './exclusive-app';
-import { AppExperience } from './app-experience';
 import { WhatYouGet } from './what-you-get';
 
 export default function HomePageClient() {
@@ -26,7 +25,6 @@ export default function HomePageClient() {
         <Features />
         <WhatYouGet />
         <DoodleSamples />
-        <AppExperience />
         <Testimonials />
         <section className="py-12 sm:py-20">
           <Guarantee />

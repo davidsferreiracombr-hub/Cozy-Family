@@ -26,8 +26,8 @@ export function ExclusiveApp() {
   return (
     <section id="exclusive-app" className="w-full py-12 sm:py-20">
         <div className="bg-muted/50 rounded-2xl p-8 md:p-12 border border-border/10">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-                <div className="text-center lg:text-left">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
+                <div className="text-center lg:text-left lg:col-span-2">
                     <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary mb-4">
                         Exclusivo do Plano Família
                     </div>
@@ -52,7 +52,7 @@ export function ExclusiveApp() {
                         ))}
                     </div>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center lg:col-span-3">
                 <Card className="overflow-hidden rounded-xl border-border/10 shadow-lg w-full">
                     <CardContent className="p-0">
                     <Image

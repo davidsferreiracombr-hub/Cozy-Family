@@ -23,7 +23,7 @@ const appFeatures = [
 
 export function ExclusiveApp() {
   return (
-    <section id="exclusive-app" className="relative w-full py-20 sm:py-32">
+    <section id="exclusive-app" className="relative w-full py-20 sm:py-32 flex items-center justify-center min-h-[600px]">
       <div className="absolute inset-0">
         <Image
           src="https://imgur.com/ErKsHo2.png"
@@ -39,11 +39,11 @@ export function ExclusiveApp() {
             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary mb-4">
                 Exclusivo do Plano Família
             </div>
-            <h2 className="text-3xl font-bold tracking-tight text-primary-foreground sm:text-4xl mb-4 flex items-center justify-center gap-3">
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-primary-foreground mb-4 flex items-center justify-center gap-3">
                 <Sparkles className="h-8 w-8 text-primary" />
                 E de Bônus... Um App para a Família!
             </h2>
-            <p className="text-lg text-primary-foreground/80 mb-8">
+            <p className="text-base sm:text-lg text-primary-foreground/80 mb-8">
                 Além de colorir, o Plano Família desbloqueia um aplicativo exclusivo, pensado para criar momentos inesquecíveis e fortalecer os laços.
             </p>
             <div className="space-y-6 max-w-lg mx-auto">

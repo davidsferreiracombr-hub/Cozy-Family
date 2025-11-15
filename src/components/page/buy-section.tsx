@@ -6,18 +6,35 @@ import { Check, ShieldCheck, Star } from 'lucide-react';
 import { CountdownTimer } from './countdown-timer';
 
 const basicFeatures = [
-    "Acesso vitalício ao aplicativo de colorir",
-    "30 ilustrações em PDF para imprimir",
-    "Garantia de 7 dias para sua segurança"
+    {
+        text: "App de Colorir Interativo (Exclusivo)",
+        details: "Animações, tema claro e escuro, e mais.",
+        icon: <Star className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+    },
+    {
+        text: "30 ilustrações em PDF para imprimir",
+        details: null,
+        icon: <Check className="h-5 w-5 text-green-500 flex-shrink-0 mt-1" />
+    },
+    {
+        text: "Garantia de 7 dias para sua segurança",
+        details: null,
+        icon: <Check className="h-5 w-5 text-green-500 flex-shrink-0 mt-1" />
+    }
 ]
 
 const familyFeatures = [
     ...basicFeatures,
     {
       text: "App Exclusivo de Brincadeiras em Família",
-      details: "Um app com jogos e quizzes para todas as idades."
+      details: "Um app com jogos e quizzes para todas as idades.",
+      icon: <Star className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
     },
-    "Jogo da Memória com 30 cartas para imprimir",
+    {
+      text: "Jogo da Memória com 30 cartas para imprimir",
+      details: null,
+      icon: <Check className="h-5 w-5 text-green-500 flex-shrink-0 mt-1" />
+    },
 ]
 
 export function BuySection() {
@@ -81,10 +98,13 @@ export function BuySection() {
                         </a>
                     </Button>
                     <ul className="mt-8 space-y-4 text-left text-muted-foreground">
-                        {basicFeatures.map((feature) => (
-                            <li key={feature} className="flex items-start gap-3">
-                                <Check className="h-5 w-5 text-green-500 flex-shrink-0 mt-1" />
-                                <span className="text-base">{feature}</span>
+                        {basicFeatures.map((feature, index) => (
+                           <li key={index} className="flex items-start gap-3">
+                                {feature.icon}
+                                <div className="flex flex-col">
+                                    <span className={`text-base ${feature.details ? 'font-semibold text-foreground/90' : ''}`}>{feature.text}</span>
+                                    {feature.details && <span className="text-sm">{feature.details}</span>}
+                                </div>
                             </li>
                         ))}
                     </ul>
@@ -133,21 +153,12 @@ export function BuySection() {
                     </Button>
                     <ul className="mt-8 space-y-4 text-left text-muted-foreground">
                         {familyFeatures.map((feature, index) => (
-                            <li key={index} className="flex items-start gap-3">
-                                {typeof feature === 'string' ? (
-                                    <>
-                                        <Check className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
-                                        <span className="text-base">{feature}</span>
-                                    </>
-                                ) : (
-                                    <>
-                                        <Star className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
-                                        <div className="flex flex-col">
-                                            <span className="text-base font-semibold text-foreground/90">{feature.text}</span>
-                                            <span className="text-sm">{feature.details}</span>
-                                        </div>
-                                    </>
-                                )}
+                           <li key={index} className="flex items-start gap-3">
+                                {feature.icon}
+                                <div className="flex flex-col">
+                                    <span className={`text-base ${feature.details ? 'font-semibold text-foreground/90' : ''}`}>{feature.text}</span>
+                                    {feature.details && <span className="text-sm">{feature.details}</span>}
+                                </div>
                             </li>
                         ))}
                     </ul>

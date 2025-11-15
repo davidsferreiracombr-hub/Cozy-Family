@@ -1,7 +1,6 @@
 "use client";
 
 import Image from 'next/image';
-import { Card, CardContent } from '../ui/card';
 import { Gamepad2, Lightbulb, HelpCircle, Sparkles } from 'lucide-react';
 
 const appFeatures = [
@@ -26,7 +25,7 @@ export function ExclusiveApp() {
   return (
     <section id="exclusive-app" className="w-full py-12 sm:py-20">
       <div className="container grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
-        {/* Text content first */}
+        {/* Text content */}
         <div className="text-center lg:text-left lg:col-span-2">
             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm font-semibold text-primary mb-4">
                 Exclusivo do Plano Família
@@ -53,20 +52,18 @@ export function ExclusiveApp() {
             </div>
         </div>
 
-        {/* Image second */}
+        {/* Image */}
         <div className="flex justify-center lg:col-span-3">
-          <Card className="overflow-hidden rounded-xl border-border/10 shadow-lg w-full bg-transparent border-0">
-            <CardContent className="p-0">
+          <div className="w-full lg:p-4 lg:border lg:rounded-2xl lg:shadow-lg lg:bg-card">
               <Image
                 src="https://imgur.com/ErKsHo2.png"
                 alt="Demonstração do aplicativo de brincadeiras em família"
-                width={500}
-                height={500}
+                width={800}
+                height={600}
                 className="object-contain w-full"
                 data-ai-hint="family game app"
               />
-            </CardContent>
-          </Card>
+          </div>
         </div>
       </div>
     </section>

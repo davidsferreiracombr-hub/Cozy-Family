@@ -28,7 +28,7 @@ const familyPlanFeatures = [
 export function UpsellModal({ isOpen, onOpenChange }: UpsellModalProps) {
   return (
     <AlertDialog open={isOpen} onOpenChange={onOpenChange}>
-      <AlertDialogContent className="max-w-2xl p-0 overflow-hidden">
+      <AlertDialogContent className="max-w-lg p-0 overflow-hidden">
         <AlertDialogHeader className="p-8 pb-0 space-y-4">
           <div className="flex justify-center">
             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">

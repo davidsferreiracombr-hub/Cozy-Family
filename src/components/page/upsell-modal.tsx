@@ -36,7 +36,7 @@ export function UpsellModal({ isOpen, onOpenChange }: UpsellModalProps) {
         </AlertDialogHeader>
 
         <div className="px-6 pb-6">
-            <div className="hidden md:grid grid-cols-2 gap-6 items-center bg-muted/30 p-4 rounded-lg border">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center bg-muted/30 p-4 rounded-lg border">
                 <div>
                     <h3 className="font-bold text-foreground mb-2">O que você ganha a mais:</h3>
                     <p className="text-sm text-muted-foreground">
@@ -51,9 +51,6 @@ export function UpsellModal({ isOpen, onOpenChange }: UpsellModalProps) {
                     className="object-contain rounded-md w-full"
                     data-ai-hint="family game app"
                 />
-            </div>
-            <div className="md:hidden mt-2 text-center text-sm text-muted-foreground">
-                <p>Leve também nosso <strong>app de brincadeiras</strong> e um <strong>jogo da memória exclusivo</strong> para imprimir e se divertir em família.</p>
             </div>
         </div>
 

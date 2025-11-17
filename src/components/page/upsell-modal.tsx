@@ -28,8 +28,8 @@ const familyPlanFeatures = [
 export function UpsellModal({ isOpen, onOpenChange }: UpsellModalProps) {
   return (
     <AlertDialog open={isOpen} onOpenChange={onOpenChange}>
-      <AlertDialogContent className="max-w-lg p-0">
-        <AlertDialogHeader className="p-6 pb-4 space-y-2">
+      <AlertDialogContent className="max-w-lg p-0 flex flex-col max-h-[90vh]">
+        <AlertDialogHeader className="p-6 pb-4 space-y-2 flex-shrink-0">
           <div className="flex justify-center">
             <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary">
                 <Gift className="h-7 w-7" />
@@ -43,7 +43,7 @@ export function UpsellModal({ isOpen, onOpenChange }: UpsellModalProps) {
           </AlertDialogDescription>
         </AlertDialogHeader>
 
-        <div className="px-6 py-4 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+        <div className="px-6 py-4 grid grid-cols-1 md:grid-cols-2 gap-6 items-center overflow-y-auto flex-grow">
             <div className="space-y-3">
                 <h3 className="text-lg font-bold text-foreground">O que você ganha a mais:</h3>
                 <ul className="space-y-2">
@@ -67,7 +67,7 @@ export function UpsellModal({ isOpen, onOpenChange }: UpsellModalProps) {
             </div>
         </div>
 
-        <AlertDialogFooter className="p-6 pt-4 flex-col sm:flex-col sm:space-x-0 gap-2">
+        <AlertDialogFooter className="p-6 pt-4 flex-col sm:flex-col sm:space-x-0 gap-2 flex-shrink-0">
           <Button
             size="lg"
             className="w-full text-lg h-12 font-bold shadow-md"

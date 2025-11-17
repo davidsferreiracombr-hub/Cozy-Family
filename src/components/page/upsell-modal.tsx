@@ -20,7 +20,7 @@ interface UpsellModalProps {
 export function UpsellModal({ isOpen, onOpenChange }: UpsellModalProps) {
   return (
     <AlertDialog open={isOpen} onOpenChange={onOpenChange}>
-      <AlertDialogContent className="max-w-lg p-0">
+      <AlertDialogContent className="max-w-md p-0 overflow-hidden">
         <AlertDialogHeader className="p-6 pb-4 space-y-2">
           <div className="flex justify-center">
             <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary">
@@ -36,25 +36,27 @@ export function UpsellModal({ isOpen, onOpenChange }: UpsellModalProps) {
         </AlertDialogHeader>
 
         <div className="px-6 pb-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center bg-muted/30 p-4 rounded-lg border">
-                <div>
-                    <h3 className="font-bold text-foreground mb-2">O que você ganha a mais:</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center bg-muted/30 p-4 rounded-lg border">
+                <div className="space-y-2">
+                    <h3 className="font-bold text-foreground">O que você ganha a mais:</h3>
                     <p className="text-sm text-muted-foreground">
-                        Acesso ao nosso <strong>aplicativo exclusivo de brincadeiras</strong> com quizzes e jogos para a família, além de um <strong>jogo da memória</strong> para imprimir e montar.
+                        Acesso ao nosso <strong>aplicativo de brincadeiras</strong> com quizzes, jogos para a família e um <strong>jogo da memória</strong> para imprimir.
                     </p>
                 </div>
-                <Image 
-                    src="https://i.imgur.com/xwajIuD.png" 
-                    alt="Bônus do Plano Família"
-                    width={300}
-                    height={200}
-                    className="object-contain rounded-md w-full"
-                    data-ai-hint="family game app"
-                />
+                <div className="flex justify-center items-center">
+                    <Image 
+                        src="https://i.imgur.com/xwajIuD.png" 
+                        alt="Bônus do Plano Família"
+                        width={200}
+                        height={150}
+                        className="object-contain rounded-md w-full max-w-[200px]"
+                        data-ai-hint="family game app"
+                    />
+                </div>
             </div>
         </div>
 
-        <AlertDialogFooter className="p-6 pt-0 flex-col sm:flex-col sm:space-x-0 gap-2">
+        <AlertDialogFooter className="p-6 pt-0 bg-muted/40 flex-col sm:flex-col sm:space-x-0 gap-2">
           <Button
             size="lg"
             className="w-full text-lg h-12 font-bold shadow-md"
@@ -72,7 +74,7 @@ export function UpsellModal({ isOpen, onOpenChange }: UpsellModalProps) {
           </Button>
           <Button
             variant="link"
-            className="text-sm text-muted-foreground hover:text-primary"
+            className="text-sm text-muted-foreground hover:text-primary h-auto"
             asChild
           >
             <a

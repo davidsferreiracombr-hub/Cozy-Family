@@ -1,9 +1,9 @@
 "use client";
 
 const messages = [
-    "Bem-vindo ao Cozy Coloring ✨",
+    "Feliz Natal da Cozy Family! 🎄",
     "A experiência de colorir mais fofa e relaxante 🎨",
-    "Relaxe, crie e divirta-se 💖",
+    "Relaxe, crie e divirta-se com um tema festivo! 💖",
 ];
 
 export function AnnouncementBar() {

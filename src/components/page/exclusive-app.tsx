@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import { Gamepad2, Lightbulb, HelpCircle, Sparkles } from 'lucide-react';
+import { Gamepad2, Lightbulb, HelpCircle, Snowflake } from 'lucide-react';
 
 const appFeatures = [
     {
@@ -30,7 +30,7 @@ export function ExclusiveApp() {
                 Exclusivo do Plano Família
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-4 flex items-center justify-center gap-3">
-                <Sparkles className="h-8 w-8 text-primary" />
+                <Snowflake className="h-8 w-8 text-primary" />
                 E de Bônus... Um App para a Família!
             </h2>
             <p className="text-base sm:text-lg text-gray-300 mb-12">

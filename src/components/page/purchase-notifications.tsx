@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import { firstNames, lastNames, locations } from '@/lib/notifications';
-import { Sparkles } from 'lucide-react';
+import { Snowflake } from 'lucide-react';
 
 export function PurchaseNotifications() {
   const { toast } = useToast();
@@ -22,7 +22,7 @@ export function PurchaseNotifications() {
         description: (
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-                <Sparkles className="h-5 w-5 text-primary" />
+                <Snowflake className="h-5 w-5 text-primary" />
             </div>
             <div className="flex flex-col">
               <p className="font-semibold text-foreground">{name}</p>

@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Sparkles, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Snowflake, ShieldCheck } from 'lucide-react';
 import Image from 'next/image';
 
 export function Hero() {
@@ -17,7 +17,7 @@ export function Hero() {
             id="hero-title"
             className="text-4xl font-extrabold tracking-tight sm:text-5xl text-foreground"
             >
-            A experiência de colorir mais <span className="text-primary">fofa e relaxante</span>
+            A magia do <span className="text-primary">Natal</span> para colorir em família
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
             Liberte sua criatividade com 30 ilustrações no estilo Bobbie Goods. Pinte no app ou imprima o PDF bônus.
@@ -27,8 +27,8 @@ export function Hero() {
         <div className="mt-8 flex justify-center">
             <Button size="lg" className="h-14 px-8 text-lg font-bold shadow-lg" asChild>
             <a href="#buy-now">
-                <Sparkles className="mr-3 h-6 w-6" />
-                Quero Minha Oferta
+                <Snowflake className="mr-3 h-6 w-6" />
+                Quero Minha Oferta de Natal
                 <ArrowRight className="ml-3 h-6 w-6" />
             </a>
             </Button>

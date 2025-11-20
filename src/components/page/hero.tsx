@@ -39,7 +39,7 @@ export function Hero() {
             alt="Pré-visualização do livro de colorir Cozy Coloring"
             width={1280}
             height={720}
-            className="mt-8 max-w-xl w-full px-4"
+            className="mt-8 max-w-xl w-full rounded-2xl border-4 border-primary shadow-lg"
             priority
             data-ai-hint="coloring book preview"
         />

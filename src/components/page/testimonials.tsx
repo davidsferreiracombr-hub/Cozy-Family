@@ -17,7 +17,7 @@ const testimonials = [
       'Fiquei com um pé atrás de comprar, mas o acesso chegou certinho no meu e-mail logo depois do pagamento. Agora, depois que as crianças dormem, finalmente tenho um tempinho pra mim. Abrir o app e colorir esses desenhos fofos virou meu ritual de paz.',
     author: 'Juliana M.',
     location: 'Porto Alegre, RS',
-    avatar: 'https://picsum.photos/seed/juliana/100/100',
+    avatar: 'https://i.imgur.com/XQKnwcp.png',
     aiHint: 'woman portrait smiling',
   },
   {

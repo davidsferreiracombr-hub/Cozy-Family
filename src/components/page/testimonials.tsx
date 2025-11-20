@@ -25,7 +25,7 @@ const testimonials = [
       'Pegamos o Plano Família e foi a melhor decisão. Além das ilustrações, o Jogo da Memória fez o maior sucesso no nosso "fim de semana sem telas". Um resgate das brincadeiras antigas. Valeu muito a pena!',
     author: 'Carlos F.',
     location: 'Belo Horizonte, MG',
-    avatar: 'https://picsum.photos/seed/carlos/100/100',
+    avatar: 'https://i.imgur.com/WyuDOuP.png',
     aiHint: 'man portrait',
   },
 ];

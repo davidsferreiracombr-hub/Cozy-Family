@@ -9,7 +9,7 @@ const testimonials = [
       'Minha filha amou! Ela passa horas colorindo no tablet com o aplicativo, e nos fins de semana imprimimos os desenhos para ela pintar com giz de cera. Ver a alegria dela não tem preço.',
     author: 'Ana Clara V.',
     location: 'Recife, PE',
-    avatar: 'https://picsum.photos/seed/ana/100/100',
+    avatar: 'https://i.imgur.com/7LDvTXU.png',
     aiHint: 'woman portrait',
   },
   {

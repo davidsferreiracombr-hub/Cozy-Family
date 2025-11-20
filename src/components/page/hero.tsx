@@ -25,13 +25,17 @@ export function Hero() {
         </div>
 
         <div className="mt-8 flex justify-center">
-            <Button size="lg" className="h-14 px-8 text-lg font-bold shadow-lg" asChild>
+          <Button
+            size="lg"
+            className="h-12 px-6 text-base font-bold shadow-lg md:h-14 md:px-8 md:text-lg"
+            asChild
+          >
             <a href="#buy-now">
-                <Snowflake className="mr-3 h-6 w-6" />
-                Quero Minha Oferta de Natal
-                <ArrowRight className="ml-3 h-6 w-6" />
+              <Snowflake className="mr-2 h-5 w-5 md:mr-3 md:h-6 md:w-6" />
+              Quero Minha Oferta de Natal
+              <ArrowRight className="ml-2 h-5 w-5 md:ml-3 md:h-6 md:w-6" />
             </a>
-            </Button>
+          </Button>
         </div>
 
         <Image

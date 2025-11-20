@@ -9,33 +9,43 @@ import { UpsellModal } from './upsell-modal';
 
 const basicFeatures = [
     {
-        text: "App de Colorir Interativo (Exclusivo)",
+        text: "App de Colorir Interativo",
         details: "Animações, tema claro e escuro, e mais.",
-        icon: <Star className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+        icon: <Star className="h-5 w-5 text-primary flex-shrink-0 mt-1" />,
+        value: "R$ 29,90"
     },
     {
         text: "30 ilustrações em PDF para imprimir",
         details: null,
-        icon: <Check className="h-5 w-5 text-green-500 flex-shrink-0 mt-1" />
+        icon: <Check className="h-5 w-5 text-green-500 flex-shrink-0 mt-1" />,
+        value: "R$ 19,90"
     },
     {
         text: "Garantia de 7 dias para sua segurança",
         details: null,
-        icon: <Check className="h-5 w-5 text-green-500 flex-shrink-0 mt-1" />
+        icon: <Check className="h-5 w-5 text-green-500 flex-shrink-0 mt-1" />,
+        value: "Incluso"
     }
 ]
 
 const familyFeatures = [
-    ...basicFeatures,
+    {
+        text: "Tudo do Plano Básico +",
+        details: null,
+        icon: <Star className="h-5 w-5 text-primary flex-shrink-0 mt-1" />,
+        value: null,
+    },
     {
       text: "App Exclusivo de Brincadeiras em Família",
       details: "Um app com jogos e quizzes para todas as idades.",
-      icon: <Star className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+      icon: <Star className="h-5 w-5 text-primary flex-shrink-0 mt-1" />,
+      value: "R$ 39,90"
     },
     {
-      text: "Jogo da Memória com 30 cartas para imprimir",
-      details: null,
-      icon: <Check className="h-5 w-5 text-green-500 flex-shrink-0 mt-1" />
+      text: "Jogo da Memória com 30 cartas",
+      details: "Para imprimir e se divertir longe das telas.",
+      icon: <Check className="h-5 w-5 text-green-500 flex-shrink-0 mt-1" />,
+      value: "R$ 19,90"
     },
 ]
 
@@ -77,12 +87,12 @@ export function BuySection() {
                   </CardHeader>
                   <CardContent className="p-8 bg-background">
                       <div className="mb-6 text-center">
-                          <span className="text-xl font-medium text-muted-foreground line-through">De R$ 17,90</span>
+                          <span className="text-xl font-medium text-muted-foreground line-through">De R$ 49,80</span>
                           <div className="mt-2 text-5xl font-extrabold text-foreground">
                               Por R$ 7,90
                           </div>
                           <p className="mt-2 text-lg text-muted-foreground">
-                              Pagamento único.
+                              Economize R$ 41,90
                           </p>
                       </div>
                       
@@ -97,12 +107,15 @@ export function BuySection() {
                       </Button>
                       <ul className="mt-8 space-y-4 text-left text-muted-foreground">
                           {basicFeatures.map((feature, index) => (
-                             <li key={index} className="flex items-start gap-3">
-                                  {feature.icon}
-                                  <div className="flex flex-col">
-                                      <span className={`text-base ${feature.details ? 'font-semibold text-foreground/90' : ''}`}>{feature.text}</span>
-                                      {feature.details && <span className="text-sm">{feature.details}</span>}
+                             <li key={index} className="flex items-start justify-between gap-3">
+                                  <div className="flex items-start gap-3">
+                                    {feature.icon}
+                                    <div className="flex flex-col">
+                                        <span className={`text-base ${feature.details ? 'font-semibold text-foreground/90' : ''}`}>{feature.text}</span>
+                                        {feature.details && <span className="text-sm">{feature.details}</span>}
+                                    </div>
                                   </div>
+                                  {feature.value && <span className="font-bold text-primary flex-shrink-0">{feature.value}</span>}
                               </li>
                           ))}
                       </ul>
@@ -126,12 +139,12 @@ export function BuySection() {
                   </CardHeader>
                   <CardContent className="p-8 bg-background">
                       <div className="mb-6 text-center">
-                          <span className="text-xl font-medium text-muted-foreground line-through">De R$ 39,90</span>
+                          <span className="text-xl font-medium text-muted-foreground line-through">De R$ 109,60</span>
                           <div className="mt-2 text-5xl font-extrabold text-foreground">
                               Por R$ 19,90
                           </div>
                           <p className="mt-2 text-lg text-muted-foreground">
-                              Acesso vitalício completo.
+                              Economize R$ 89,70
                           </p>
                       </div>
                       
@@ -151,12 +164,15 @@ export function BuySection() {
                       </Button>
                       <ul className="mt-8 space-y-4 text-left text-muted-foreground">
                           {familyFeatures.map((feature, index) => (
-                             <li key={index} className="flex items-start gap-3">
-                                  {feature.icon}
-                                  <div className="flex flex-col">
-                                      <span className={`text-base ${feature.details ? 'font-semibold text-foreground/90' : ''}`}>{feature.text}</span>
-                                      {feature.details && <span className="text-sm">{feature.details}</span>}
+                             <li key={index} className={`flex items-start gap-3 ${feature.value ? "justify-between" : ""}`}>
+                                  <div className="flex items-start gap-3">
+                                      {feature.icon}
+                                      <div className="flex flex-col">
+                                          <span className={`text-base ${feature.details ? 'font-semibold text-foreground/90' : 'font-bold text-foreground/90'}`}>{feature.text}</span>
+                                          {feature.details && <span className="text-sm">{feature.details}</span>}
+                                      </div>
                                   </div>
+                                  {feature.value && <span className="font-bold text-primary flex-shrink-0">{feature.value}</span>}
                               </li>
                           ))}
                       </ul>
